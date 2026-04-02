@@ -1,0 +1,382 @@
+/*taustaväri ja muut */
+body {
+background-image: url(pelitausta.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+background-attachment: fixed;
+background-color: #0d470d;
+font-family: 'Arial',Arial, sans-serif;
+align-items: center;
+display: flex;
+  touch-action: manipulation;
+justify-content: center;
+margin: 0;
+height: 100vh;
+overflow: hidden;
+}
+.startButton {
+background-color: rgb(218,43, 31);
+color: white; 
+border: none;
+padding: 15px 30px;
+font-size: clamp(40px, 3vh, 50px);
+border-radius: 8px;
+margin: 10px;
+cursor: pointer;
+width: 25vh; 
+height:  10vh;
+max-width: 500px; 
+text-align: center;
+position: absolute;
+}
+/* aloitus textin keskitys  */
+header {
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 0.1em 0.5em;
+  display: inline-block;
+  text-align: center;
+  padding: 20px;
+  font-size: clamp(50px, 2.5vh, 40px);
+  max-width: 600px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  Position: absolute;
+  display: flex;
+  top: 20vh;
+
+} 
+.etusivulogo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  Position: absolute;
+  top:5vh;
+  height: 5vh;
+   max-width: 600px;
+}
+
+.johdantovalikko{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  gap: 2vh;
+  position: fixed;
+  top: 4vh;
+  left: 0; 
+  width: 40vh;
+  z-index: 100;
+  font-size: 5vh;
+  text-align: left;
+}
+.latausruutu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 10vh; 
+  width: 20vh;
+  height: 6vh;
+  color: rgb(255, 255, 255);
+  font-size: clamp(16px, 2.5vh, 28px);
+  z-index: 4;
+  position: absolute;
+}
+
+@keyframes popIn {
+  0%   { transform: translateX(-50%) scale(0); opacity: 0; }
+  60%  { transform: translateX(-50%) scale(1.2); opacity: 1; }
+  100% { transform: translateX(-50%) scale(1); opacity: 1; }
+}
+.johdantonappi{
+   background-color: rgb(218,43, 31);
+  border: none;
+  color: white;
+  cursor: pointer;
+  position: absolute;     
+  bottom: 5vh; 
+  width: 20vh;
+  height: 6vh;
+  padding: 15px 30px;
+  max-width: 500px;
+  text-align: center;
+  font-size: 3vh;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+}
+.sulje{ 
+  background-color: rgb(218,43, 31);
+  border: none;
+  color: white;
+  cursor: pointer;
+  position: absolute;     
+  bottom: 5vh; 
+  width: 20vh;
+  height: 6vh;
+  text-align: center;
+  font-size: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 31;
+  padding: 15px 30px;
+}
+/* lippujen paikka ja väri */
+/* joo ei sitte mitää hajua miten nää on siel nurkassa varmaan pimeellä taijalla*/
+.flagbutton img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: block;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background: none;
+}
+#suomilippu {
+  width: 8vh;
+  height: 6vh;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+#englantilippu {
+  width: 8vh;
+  height: 6vh;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+/* jätän ruottin lipun tähän vaikka ei tarvita viel*/
+#ruotsilippu {
+  width: 8vh;
+  height: 6vh;
+  background-color: rgb(0, 81, 255);
+  cursor: pointer;
+}
+.liput {
+  gap: 5px;
+  display: flex;
+  Position: absolute;
+  justify-content: center;
+  bottom: 10px;
+  right:10px  
+}
+
+
+.palkintoteksti {
+  color: white;
+  font-size: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+}
+.pisteet{
+  color: white;
+  font-size: 6vh;
+  display: flex;
+  justify-content: center;
+  text-transform: none;
+  align-items: center;
+  z-index: 4;
+}
+.end-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20vh;
+  position: fixed;
+  top: 4vh;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+
+.alkuruudunpalausnappi,
+.jatkanappi{
+  background-color: rgb(218,43, 31);
+  border: none;
+  color: white;
+  cursor: pointer;
+  position: absolute;     
+  bottom: 5vh; 
+  width: 20vh;
+  height: 6vh;
+  padding: 15px 30px;
+  margin: 10px;
+  border-radius: 8px;
+  max-width: 500px;
+  text-align: center;
+  font-size: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+}
+.questiontext{
+    color: rgb(0, 0, 0);
+  border-radius: 10px;
+  padding: 0.1em 0.5em;
+  display: inline-block;
+  text-align: left;
+  padding: 20px;
+  font-size: 3vh;
+  max-width: 800px;
+  margin-bottom: 20px;
+  Position: absolute;
+  display: flex;
+  top: 5vh;
+} 
+.kysymyscontainer {
+  font-size: clamp(16px, 2.5vh, 28px);
+  display: flex;
+
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+.kysymys{
+  min-width: 20vh;
+  font-size: 1em;
+  padding: 0.8em 1.5em;
+  text-align: left;
+  background-color: rgb(218,43, 31);
+  color: white;
+  border-radius: 8px;
+  border:none;
+  cursor: pointer;
+}
+.oikeintaivaarin{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 13vh; 
+  width: 20vh;
+  height: 6vh;
+   left: 50%;
+  transform: translateX(-50%);
+  color: rgb(255, 255, 255);
+  font-size: 3vh;
+  z-index: 4;
+  position: absolute;
+  animation: popIn 0.6s ease;
+}
+.oikeintaivaarin.correct{
+  color: #4caf50;
+
+}
+.oikeintaivaarin.wrong{
+  color: rgb(218,43, 31);
+
+}
+.luettunappi{
+  background-color: rgb(218,43, 31);
+  border: none;
+  color: white;
+  cursor: pointer;
+  position: absolute;     
+  bottom: 5vh;
+  left: 2vh; 
+  width: 20vh;
+  height: 6vh;
+  padding: 15px 30px;
+  border-radius: 8px;
+  margin: 10px;
+  max-width: 500px;
+  text-align: center;
+  font-size: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+}
+.puhuminen {
+  position:absolute;
+    width: 16vh;
+    height: 16vh;
+  bottom: 5vh; 
+  right: 2vh;
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+  cursor: pointer;
+} 
+
+.aktiiviteettitehty{
+  background-color: rgb(218,43, 31);
+  border: none;
+  color: white;
+  cursor: pointer;
+  position: absolute;     
+  bottom: 5vh; 
+  right: 2vh;
+  width: 20vh;
+  height: 6vh;
+  padding: 15px 30px;
+  border-radius: 8px;
+  margin: 10px;
+  max-width: 500px;
+  text-align: center;
+  font-size: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+}
+.kartta{
+    width:100vw;
+  height:100vh;
+  z-index: 1;
+   }
+.palkintoteksti {
+display: block;
+margin: 10px;
+width: auto;
+font-size: 4vh;
+padding: 0.1em 0.5em;
+}
+
+.palkintoteksti{order: 1;}
+.palkintopistetekstit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5vh;
+   position: fixed;
+  top: 6vh;
+  margin: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+.tarinateksti {
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  text-align: left;
+  max-width: 900px;
+  Position: absolute;
+  display: flex;
+  top: 1vh;
+  z-index: 4;
+  padding: 0.1em 0.5em;
+  white-space: pre-line;
+}
+.lopputeksti,
+.finaalipisteet,
+.creditsteksti {
+  color: white;
+  position: static; 
+  display: block;
+  margin: 0;
+  width: auto;
+  padding: 0.1em 0.5em;
+  border-radius: 1vh;
+  font-size: 3vh;
+  white-space: pre-line;
+}
