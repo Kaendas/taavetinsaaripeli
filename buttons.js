@@ -1,9 +1,6 @@
 function isMobile() {
   return /Mobi|Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(navigator.userAgent);
 }
-//copyright kaikki oikeudet hiisille 2024
-// miksi 2024 eikä 2025?
-//miksi 2025 eikä 2026???
 //kielien vaihtaminen on asia.textContent =gametext[language].asia;
 // 
 let pisteet =0;
@@ -51,7 +48,7 @@ const gametext ={
   //ohjeet:"Pelin ohjeet: Ohjeiden teksti tähän.",
   //credits:"Tekijät:\nRoope: Työnjohtaja\nElla: Graafinen suunnittelu\nPeetu: Äänittäjä\nSara: Käännös ja bugitestaus\nVänni: Bugitestaus\nLauri: Koodaus",
   //lopputeksti: "Kiitos että pelasitte, toivottavasti pelaatte uudestaan! T:Hiisi. Pisteet:" 
-  //alkuruudunpalausnappi:"Palaa alkuruutuunen"
+  //alkuruudunpalausnappi:"Lorem ipsum"
 };
 // tässä on /kuvat koska se on se kansio
 // jos joku haluaa lisätä kuvia tai vaihtaa nii pistäkkee oikeesee kansioo muuten ei toimi//
@@ -69,9 +66,6 @@ const imagesToPreloadMobile = [
   'kuvat/kartta_10.png',
   'kuvat/serlachius-black.png',
   'KysymysTausta3.png',
-  'Hiisi 1.png',
-  'Hiisi 2.png',
-  'Hiisi 3.png',
   'testi.png',
   'testi2.png',
   'testi3.png',
@@ -89,22 +83,19 @@ const imagesToPreloadDesktop =[
   'kuvat/kartta_9.png',
   'kuvat/kartta_10.png',
   'KysymysTausta3.png',
-  'Hiisi 1.png',
-  'Hiisi 2.png',
-  'Hiisi 3.png',
   'testi.png',
   'testi2.png',
   'testi3.png',
 ];
 
-// nöin mää sain kuvan vaihtamisen toimimaan elkää kysykö miten toimii 
+// Kuvan vaihtaminen
 function createCyclingAudioImage(images,audioSrc, alt="vaihtokuva") {
   let idx =0;
   const hissi = document.createElement('img');
   hissi.src = images[idx]
     hissi.alt = alt;
   hissi.className = 'puhuminen';
-// tää ihme koodi jotenkin lopettaa kuvien vaihtamisen kun ääni loppuu
+  //Päätä kuvan vaihtaminen kun äänitiedosto saavuttaa lopun
   const audio = new Audio(audioSrc);
   audio.preload = 'auto';
 let cyclingInterval = null;
@@ -123,11 +114,10 @@ function startCycling() {
   }
  
   hissi.addEventListener('click', () => {
-if (!audio.paused){  //äänen pausaus kun clikkaa kun ääni on päällä
+if (!audio.paused){ 
   audio.pause();
   stopCycling();
 } else {
-  //aloitaa äänen pyörittämisen kun ei ole päällä
    audio.play().catch(() => {});
    startCycling();
 }
@@ -138,12 +128,7 @@ if (!audio.paused){  //äänen pausaus kun clikkaa kun ääni on päällä
    hissi.audio = audio;
   return hissi;
 }
-// Todo: muistutus ittelleni VAIHA NE HEMMETIN TIATOKONE KUVAT SITTEN KU ON TARVE
-// nvm ei sittenkää//
-//jos haluaa lisätä asioita joka vaihtelee per stage nii src pitää olla: "asianimi.src = stage.asianimi;" esimerkiksi 
-// line breakin voi lisätä \n//
-// kielien vaihtaminen  asia.textContent = stage[`asia_${language}`];
-//husse leipoo
+
 const storyStages = [
   {
   text_fi: "Metsä on tiheästi kasvavien puiden ja monimuotoisen elinympäristön muodostama kokonaisuus.\n Se on koti tuhansille eläin-, kasvi- ja sienilajeille sekä tärkeä hiilinielu ja -varasto.\n Monelle metsä tarjoaa työtä ja toimeentuloa, toisille rauhoittumisen paikan ja hyvinvoinnin lähteen.\n Suomalaisista puhutaan metsäkansana ja monilla on metsään oma, ainutlaatuinen suhteensa.",
@@ -162,7 +147,6 @@ const storyStages = [
   ],
   rewardText: " ",
   rewardText_en:"englanti test",
-  rewardImage: 'kuvat/Sieni.png',
   minimap:'kuvat/kartta_1.png',
   audioSrc:'puhu1.mp3',
   audioSrc_en:'puhu1en.mp3',
@@ -210,9 +194,7 @@ const storyStages = [
   oikein: [3]
   }
   ],
-  rewardText: "Löysit soppakauhan!",
   rewardText_en:"englani test",
-  rewardImage: 'kuvat/Soppakauha.png',
   minimap:'kuvat/kartta_2.png',
   audioSrc:'puhu2.mp3',
   fontSize: "3vh" 
@@ -233,10 +215,8 @@ const storyStages = [
   oikein:[1,],
 }
   ],
-  rewardText: "Löysit kynttelikön",
   rewardText_en:"englani 3 test",
   
-  rewardImage: 'kuvat/kynttelikkö.png',
   minimap:'kuvat/kartta_3.png',
   fontSize: "2.5vh"
  },
@@ -255,9 +235,7 @@ const storyStages = [
   oikein: [2]
 }
   ],
-  rewardText: "Löysit metsätontun",
   rewardText_en:"englani 4 test",
-  rewardImage: 'kuvat/Metsatonttu.png',
   minimap:'kuvat/kartta_4.png',
   fontSize: "3vh"
  },
@@ -285,10 +263,7 @@ questionSets: [
   oikein: [0, 1, 2, 3]
   }
   ],
-  rewardText: "Löysit pensselin",
   rewardText_en:"englani 5 test",
-
-  rewardImage: 'kuvat/Penseli.png',
   minimap:'kuvat/kartta_5.png',
   fontSize: "3vh"
  },
@@ -308,10 +283,7 @@ questionSets: [
   oikein:[1,],
 }
   ],
-  
-  rewardText: "Löysit taikakirjan",
   rewardText_en:"englani 6 test",
-  rewardImage: "kuvat/Taikakirja.png",
   minimap:'kuvat/kartta_6.png',
   fontSize: "3vh"
   },
@@ -342,7 +314,6 @@ questionSets: [
   ],
   rewardText: " ",
   rewardText_en:"englani 7 test",
-  rewardImage: "kuvat/poron_valjaat.png",
   minimap:'kuvat/kartta_7.png',
   fontSize: "3vh"
   },
@@ -362,9 +333,7 @@ questionSets: [
 }
 
   ],
-  rewardText: "Löysit poron",
   rewardText_en:"englani 8 test",
-  rewardImage: "kuvat/PORO.png",
   minimap:'kuvat/kartta_8.png',
   fontSize: "3vh"
   },
@@ -384,9 +353,7 @@ questionSets: [
 }
 
   ],
-  rewardText: "Löysit avaimen",
   rewardText_en:"englani 9 test",
-  rewardImage: "kuvat/Avain.png",
   minimap:'kuvat/kartta_9.png',
   fontSize: "3vh"
   },
@@ -405,9 +372,7 @@ questionSets: [
   oikein: [0, 1, 2, 3]
 }
   ],  
-  rewardText: "Löysit taika kävyn",
   rewardText_en:"englani 10 test",
-  rewardImage: "kuvat/Taikakäpy.png",
   minimap:'kuvat/kartta_10.png',
   fontSize: "3vh"
   }
@@ -450,7 +415,7 @@ document.body.appendChild(latausruutu);
 
 
 const preloadimages = {};
-//poistaa aloitus napin toiminnasta kunnes peli kuvat on ladanneet
+//Aloitusnapin käytettävyyden poisto kunnes kuvat ovat ladanneet
 startButton.disabled = true;
 let loadedCount = 0;
 imagesToPreload.forEach(src => {
@@ -466,14 +431,12 @@ imagesToPreload.forEach(src => {
   preloadimages[src] = img;
 });
 
-// pelin toiminta
-// periaateessa tästä eteenpäin on pelin logiikka
-// siinä on esimerkiksi tarina teksti, kuvat, palkinnot ja jne
+// Pelin toiminta, eli logiikkaa tästä eteenpäin
 
 function showStage(index) {
   document.body.innerHTML = '';
 
-  // näytää pelin loppu ruudun kun kentät loppuu
+  // Näytä loppuruutu pelin päättyessä
   if (!storyStages[index]) {
     showEndScreen();
     return;
@@ -490,13 +453,7 @@ function showStage(index) {
  if (stage.fontSize) {
   textDiv.style.fontSize = stage.fontSize;
  }
-  // Tarinakuva
-  //const img = document.createElement('img');
-  //img.className = 'tarina';
-  //img.src = isMobile() ? stage.imageMobile : stage.imageDesktop;
-  //document.body.appendChild(img);//  
-// kuvan vaihtaminen toimii jotengin emmää tierä
-// hiisi jumppa osa 4 milloin//
+
   const cyclingWidget = createCyclingAudioImage(
     [
       preloadimages['testi.png'].src,
@@ -507,11 +464,9 @@ function showStage(index) {
    language === 'en' ? 'Hiisi talking' : 'Hiisi puhuu'
   );
   document.body.appendChild(cyclingWidget);
-    //tää kattoo onko hiisi puhumassa jotta voidaan pausata kun clikaa
     if (cyclingWidget.audio && !cyclingWidget.audio.paused) {
   cyclingWidget.audio.pause();
 }
-//serlachius käski suoritettu helevettii nii piti poistaa
 const luettunappi = document.createElement('button');
   luettunappi.textContent =gametext[language].luettunappi;
   luettunappi.className = 'luettunappi';
@@ -592,8 +547,7 @@ showQuestion();
 function showRewardScreen(stage, currentIndex) {
 const palkintopistetekstit = document.createElement('div');
 palkintopistetekstit.className = 'palkintopistetekstit';
-// pyyrä ellalta tekevän puhelin resoluutio version //
-// palkinnon teksti
+
   const minimap = document.createElement('img');
   minimap.className ='kartta';
   if (stage.minimap) {
@@ -604,16 +558,15 @@ document.body.appendChild(minimap);
 //rewardText.textContent = stage[`rewardText_${language}`] || stage.rewardText;
 //rewardText.className = 'palkintoteksti';
 //palkintopistetekstit.appendChild(rewardText);
-//pisteet
+//Pisteet
 const pistemäärä = document.createElement('div');
 pistemäärä.className ='pisteet'
 pistemäärä.style.textTransform = 'none';
 pistemäärä.textContent = `${gametext[language].pistetexti}: ${pisteet}`;
 console.log(gametext[language].pistetexti);
 palkintopistetekstit.appendChild(pistemäärä);
-// ryhmitän tekstin jotta css olisi siistimpi
+
 document.body.appendChild(palkintopistetekstit);
-//e
 
 
       // Jatka-nappi
@@ -641,15 +594,11 @@ function showEndScreen() {
   document.body.innerHTML = '';
   const loppulaatikko = document.createElement("div");
   loppulaatikko.className = "loppulaatikko";
-// tässä ajattelin päivänä 7.9 kello 16:27 "että varmaa pitäis lisätä kommentteja"
-// sitten tajusi oon ainoa joka koodaa projectia 
-// roope on mukava :)
-// turpakii roope
-// täsäs on pelin loppu ruutu//
+
+// Loppuruutu
 const lopputeksti = document.createElement("div");
   lopputeksti.textContent = gametext[language].lopputeksti;
   lopputeksti.className = "lopputeksti";
-  //lopu piste
   const finaalipisteet = document.createElement("div");
   finaalipisteet.className = "finaalipisteet";
   finaalipisteet.textContent = `${gametext[language].pistetexti}: ${pisteet}`;
@@ -668,7 +617,7 @@ const lopputeksti = document.createElement("div");
   document.body.appendChild(alkuruudunpalausnappi);
   alkuruudunpalausnappi.addEventListener('click', () => location.reload());
 }
-// start nappi ja johdanto
+// Johdanto ja Start-nappi
 startButton.addEventListener('click', () => {
   if (header) header.remove();
   if (startButton) startButton.remove();
@@ -703,8 +652,7 @@ startButton.addEventListener('click', () => {
     
      
     showStage(0);
-    // Äänieffectien looppaus
-    //ois tarkoitus että olisi yksi ääni efecti taustalla pyörimässä
+    //Äänen toisto
   });
 });
 
