@@ -65,10 +65,11 @@ header {
   gap: 2vh;
   position: fixed;
   top: 4vh;
-  left: 0; 
   width: 40vh;
   z-index: 100;
-  font-size: 5vh;
+  font-size: 3vh;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: left;
 }
 .latausruutu{
