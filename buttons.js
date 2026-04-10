@@ -143,6 +143,14 @@ const storyStages = [
     "D. Metsä ei merkitse minulle mitään",
   ],
   oikein:[0, 1, 2, 3 ],
+  questiontext_en: "Mitä metsä sinulle merkitsee?",
+   options:[
+    "A. Rentoutumista ja hyvää oloaenkuks",
+    "B. Metsän antimia",
+    "C. Toimeentuloa ja vaurastumista",
+    "D. Metsä ei merkitse minulle mitään",
+  ],
+  oikein:[0, 1, 2, 3 ],
 }
   ],
   rewardText: " ",
