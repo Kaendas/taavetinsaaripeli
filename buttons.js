@@ -14,44 +14,30 @@ const gametext ={
     pistetexti:"Pisteet",
     suoritettu:"Suoritettu",
     johdnatonappi:"Jatka",
-    johdanto:"pelinjohdanotähä",
-    ohjeet:"Pelin ohjeet: Jokaisella pisteellä saat kysymyksen, jossa on neljä vaihtoehtoa. Jokaisesta oikeasta vastauksesta saat pisteitä, jotka lasketaan yhteen pelin loputtua. Joissain kysymyksissä ei ole vääriä vastuksia.",
+    johdanto:"Peli perustuu Taavetinsaaren metsäpolkuun, jossa pääset vastaamaan metsiin ja luontoon liittyviin kysymyksiin. \nPolussa on 10 erilaista pistettä, joissa voi olla useampi kysymys.",
+    ohjeet:"Ohjeet: \nJokaisella pisteellä saat kysymyksen, jossa on neljä vaihtoehtoa. Jokaisesta oikeasta vastauksesta saat pisteitä, jotka lasketaan yhteen pelin loputtua. Joissain kysymyksissä ei ole vääriä vastuksia.",
     credits:"Tekijät:\nRoope: Työnjohtaja\nElla: Graafinen suunnittelu\nPeetu: Äänittäjä\nSara: Käännös ja bugitestaus\nVänni: Bugitestaus\nLauri: Koodaus",
     lopputeksti: "Kiitos että pelasitte, toivottavasti pelaatte uudestaan! Suorititte 10 tasoa",
     alkuruudunpalausnappi:"Palaa alkuruutuun"
   },
 
   en:{
-    startButton:"Aloita enkuks",
-    luettunappi:"luettuen",
-    header:"Metsäpolku enkuksi",
+    startButton:"Begin",
+    luettunappi:"Read",
+    header:"MGame title",
     jatka:"Continue",
     pistetexti:"Points",
-    suoritettu:"Suoritettuen",
-    johdnatonappi:"Jatkaen",
-    johdanto:"pelinjohdanotähä enkuks",
-    ohjeet:"Pelin ohjeet: Ohjeiden teksti tähän enkuks.",
-    credits:"Tekijätenkuks:\nRoope: Työnjohtaja\nElla: Graafinen suunnittelu\nPeetu: Äänittäjä\nSara: Käännös ja bugitestaus\nVänni: Bugitestaus\nLauri: Koodaus",
-    lopputeksti:"Kiitos että pelasitte, toivottavasti pelaatte uudestaan! Suorititte 10 tasoa",
-    alkuruudunpalausnappi:"Palaa alkuruutuunen"
+    suoritettu:"Completed",
+    johdnatonappi:"Continue",
+    johdanto:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    ohjeet:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    credits:"Credits:\nRoope: Työnjohtaja\nElla: Graafinen suunnittelu\nPeetu: Äänittäjä\nSara: Käännös ja bugitestaus\nVänni: Bugitestaus\nLauri: Koodaus",
+    lopputeksti:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    alkuruudunpalausnappi:"Return to the main menu"
   }
-  //sitten kun tarvitaan lisätä ruotsin kieli niin jätän tän iha varulta 
-  //ru:{
-  //startButton:"Aloita",
-  //luettunappi:"luettu",
-  //header:"Metsäpolku",
-  //jatka:"jatka",
-  //pistetexti:"pisteet",
-  //suoritettu:"Suoritettu",
-  //johdnatonappi:"aloita",
-  //johdanto:"pelinjohdanotähä",
-  //ohjeet:"Pelin ohjeet: Ohjeiden teksti tähän.",
-  //credits:"Tekijät:\nRoope: Työnjohtaja\nElla: Graafinen suunnittelu\nPeetu: Äänittäjä\nSara: Käännös ja bugitestaus\nVänni: Bugitestaus\nLauri: Koodaus",
-  //lopputeksti: "Kiitos että pelasitte, toivottavasti pelaatte uudestaan! T:Hiisi. Pisteet:" 
-  //alkuruudunpalausnappi:"Lorem ipsum"
+
 };
-// tässä on /kuvat koska se on se kansio
-// jos joku haluaa lisätä kuvia tai vaihtaa nii pistäkkee oikeesee kansioo muuten ei toimi//
+// Kuvien esilataus
 const imagesToPreloadMobile = [
   'KysymysTausta.png',
   'kuvat/kartta_1.png',
@@ -132,7 +118,7 @@ if (!audio.paused){
 const storyStages = [
   {
   text_fi: "Metsä on tiheästi kasvavien puiden ja monimuotoisen elinympäristön muodostama kokonaisuus.\n Se on koti tuhansille eläin-, kasvi- ja sienilajeille sekä tärkeä hiilinielu ja -varasto.\n Monelle metsä tarjoaa työtä ja toimeentuloa, toisille rauhoittumisen paikan ja hyvinvoinnin lähteen.\n Suomalaisista puhutaan metsäkansana ja monilla on metsään oma, ainutlaatuinen suhteensa.",
-  text_en: "english version here",
+  text_en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   questionSets:[
     {
   questiontext_fi: "Mitä metsä sinulle merkitsee?",
