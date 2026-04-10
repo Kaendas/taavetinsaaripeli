@@ -131,10 +131,10 @@ const storyStages = [
   oikein:[0, 1, 2, 3 ],
   questiontext_en: "Mitä metsä sinulle merkitsee?",
    options:[
-    "A. Rentoutumista ja hyvää oloaenkuks",
-    "B. Metsän antimia",
-    "C. Toimeentuloa ja vaurastumista",
-    "D. Metsä ei merkitse minulle mitään",
+    "A. Lorem ipsum dolor sit amet",
+    "B. Lorem ipsum dolor sit amet",
+    "C. Lorem ipsum dolor sit amet",
+    "D. Lorem ipsum dolor sit amet",
   ],
   oikein:[0, 1, 2, 3 ],
 }
