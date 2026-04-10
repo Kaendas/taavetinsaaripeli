@@ -122,21 +122,21 @@ const storyStages = [
   questionSets:[
     {
   questiontext_fi: "Mitä metsä sinulle merkitsee?",
-  options:[
+  options_fi:[
     "A. Rentoutumista ja hyvää oloa",
     "B. Metsän antimia",
     "C. Toimeentuloa ja vaurastumista",
     "D. Metsä ei merkitse minulle mitään",
   ],
-  oikein:[0, 1, 2, 3 ],
+  oikein_fi:[0, 1, 2, 3 ],
   questiontext_en: "Mitä metsä sinulle merkitsee?",
-   options:[
+   options_:[
     "A. Lorem ipsum dolor sit amet",
     "B. Lorem ipsum dolor sit amet",
     "C. Lorem ipsum dolor sit amet",
     "D. Lorem ipsum dolor sit amet",
   ],
-  oikein:[0, 1, 2, 3 ],
+  oikein_en:[0, 1, 2, 3 ],
 }
   ],
   rewardText: " ",
@@ -502,7 +502,7 @@ const luettunappi = document.createElement('button');
   document.body.appendChild(questiontext)
     const kysymyscontainer = document.createElement("div");
   kysymyscontainer.className ="kysymyscontainer";
-  currentQ.options.forEach((options, optionsIndex) => {
+  currentQ[`options_${language}`].forEach((options, optionsIndex) => {
 
   
   const kysymys = document.createElement("button");
@@ -510,7 +510,7 @@ const luettunappi = document.createElement('button');
   kysymys.className = "kysymys";
 
   kysymys.onclick = () => {
-    if (currentQ.oikein && currentQ.oikein.includes(optionsIndex)) {
+    if (currentQ[`oikein_${language}`] && currentQ[`oikein_${language}`].includes(optionsIndex)) {
       pisteet += 10;
       oikeinvaivaarin(
       language === 'en' ? 'Correct!':'Oikein!',
