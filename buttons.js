@@ -122,7 +122,7 @@ const storyStages = [
   questionSets:[
     {
   questiontext_fi: "Mitä metsä sinulle merkitsee?",
-  options:[
+  options_fi:[
     "A. Rentoutumista ja hyvää oloa",
     "B. Metsän antimia",
     "C. Toimeentuloa ja vaurastumista",
@@ -130,13 +130,13 @@ const storyStages = [
   ],
   oikein:[0, 1, 2, 3 ],
   questiontext_en: "Lorem ipsum",
-   options:[
+   options_en:[
     "A. Lorem ipsum dolor sit amet",
     "B. Lorem ipsum dolor sit amet",
     "C. Lorem ipsum dolor sit amet",
     "D. Lorem ipsum dolor sit amet",
   ],
-  oikein:[0, 1, 2, 3 ],
+  oikein_en:[0, 1, 2, 3 ],
 }
   ],
   rewardText: " ",
@@ -152,14 +152,14 @@ const storyStages = [
   questionSets: [
   {
   questiontext_fi: "Mikä ääni on varma kevään merkki?",
-  options: [
+  options_fi: [
   "A. Jäiden ritinä",
   "B. Tuulen ujellus",
   "C. Lintujen laulu"
   ],
   oikein: [2],
   questiontext_en: "Lorem ipsum",
-  options: [
+  options_en: [
     "A. Lorem ipsum dolor sit amet",
     "B. Lorem ipsum dolor sit amet",
     "C. Lorem ipsum dolor sit amet",
@@ -169,7 +169,7 @@ const storyStages = [
   },
   {
   questiontext_fi: "Mikä tuoksu on tyypillinen kesäisessä metsässä?",
-  options: [
+  options_fi: [
   "A. Savun tuoksu",
   "B. Kukkien ja tuoreen kasvillisuuden tuoksu",
   "C. Kosteiden lehtien ja maan tuoksu"
@@ -178,7 +178,7 @@ const storyStages = [
   },
   {
   questiontext_fi: "Minkä värinen metsä on syksyisin?",
-  options: [
+  options_fi: [
   "A. Keltaisen ja punaisen sävyinen",
   "B. Sinisen ja violetin sävyinen",
   "C. Harmaan ja valkoisen sävyinen"
@@ -187,7 +187,7 @@ const storyStages = [
   },
   {
   questiontext_fi: "Miten metsä muuttuu talvella?",
-  options: [
+  options_en: [
   "A. Se muuttuu vihreämmäksi",
   "B. Se kuhisee eläinten ääniä",
   "C. Se täyttyy kukista",
@@ -207,7 +207,7 @@ const storyStages = [
   questionSets:[
 {
   questiontext_fi: "Mitkä metsän ominaisuudet tukevat hyvinvointia?",
-  options:[
+  options_fi:[
     "A. Kirkkaat valot ja musiikki",
     "B. Hiljaisuus, puhdas ilma ja kauneus",
     "C. Vilkas liikenne",
@@ -228,7 +228,7 @@ const storyStages = [
   questionSets: [
   {
   questiontext_fi: "Mikä seuraavista EI kuulu rentoutusharjoitukseen?",
-  options: [
+  options_fi: [
   "A. Hengityksen tasaaminen ja maata vasten makaaminen",
   "B. Silmien sulkeminen ja luonnon äänten kuuntelu",
   "C. Puhelimen selaaminen ja musiikin kuuntelu kuulokkeista",
@@ -510,7 +510,7 @@ const luettunappi = document.createElement('button');
   document.body.appendChild(questiontext)
     const kysymyscontainer = document.createElement("div");
   kysymyscontainer.className ="kysymyscontainer";
-  currentQ.options.forEach((options, optionsIndex) => {
+  currentQ[`options_${language}`].forEach((options, optionsIndex) => {
 
   
   const kysymys = document.createElement("button");
@@ -518,7 +518,7 @@ const luettunappi = document.createElement('button');
   kysymys.className = "kysymys";
 
   kysymys.onclick = () => {
-    if (currentQ.oikein && currentQ.oikein.includes(optionsIndex)) {
+    if (currentQ[`oikein_${language}`] && currentQ[`oikein_${language}`].includes(optionsIndex)) {
       pisteet += 10;
       oikeinvaivaarin(
       language === 'en' ? 'Correct!':'Oikein!',
