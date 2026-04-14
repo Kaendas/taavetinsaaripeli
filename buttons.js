@@ -139,8 +139,6 @@ const storyStages = [
   oikein_en:[0, 1, 2, 3 ],
 }
   ],
-  rewardText: " ",
-  rewardText_en:"englanti test",
   minimap:'kuvat/kartta_1.png',
   audioSrc:'puhu1.mp3',
   audioSrc_en:'puhu1en.mp3',
@@ -174,7 +172,15 @@ const storyStages = [
   "B. Kukkien ja tuoreen kasvillisuuden tuoksu",
   "C. Kosteiden lehtien ja maan tuoksu"
   ],
-  oikein_fi: [1]
+  oikein_fi: [1],
+  questiontext_en: "Lorem ipsum",
+  options_en: [
+    "A. Lorem ipsum dolor sit amet1",
+    "B. Lorem ipsum dolor sit amet1",
+    "C. Lorem ipsum dolor sit amet1",
+    "D. Lorem ipsum dolor sit amet1",
+  ],
+  oikein_en: [1],
   },
   {
   questiontext_fi: "Minkä värinen metsä on syksyisin?",
@@ -183,20 +189,35 @@ const storyStages = [
   "B. Sinisen ja violetin sävyinen",
   "C. Harmaan ja valkoisen sävyinen"
   ],
-  oikein_fi: [0]
+  oikein_fi: [0],
+  questiontext_en: "Lorem ipsum",
+  options_en: [
+    "A. Lorem ipsum dolor sit amet2",
+    "B. Lorem ipsum dolor sit amet2",
+    "C. Lorem ipsum dolor sit amet2",
+    "D. Lorem ipsum dolor sit amet2",
+  ],
+  oikein_en: [0],
   },
   {
   questiontext_fi: "Miten metsä muuttuu talvella?",
-  options_en: [
+  options_fi: [
   "A. Se muuttuu vihreämmäksi",
   "B. Se kuhisee eläinten ääniä",
   "C. Se täyttyy kukista",
   "D. Se peittyy lumeen ja rauhoittuu"
   ],
-  oikein_fi: [3]
+  oikein_fi: [3],
+  questiontext_en: "Lorem ipsum",
+  options_en: [
+    "A. Lorem ipsum dolor sit amet3",
+    "B. Lorem ipsum dolor sit amet3",
+    "C. Lorem ipsum dolor sit amet3",
+    "D. Lorem ipsum dolor sit amet3",
+  ],
+  oikein_en: [3],
   }
   ],
-  rewardText_en:"englani test",
   minimap:'kuvat/kartta_2.png',
   audioSrc:'puhu2.mp3',
   fontSize: "3vh" 
@@ -214,11 +235,17 @@ const storyStages = [
     "D. Kaupungin melu"
     
   ],
-  oikein_fi:[1,],
+  oikein_fi:[1],
+  questiontext_en: "Lorem ipsum",
+  options_en: [
+    "A. Lorem ipsum dolor sit amet",
+    "B. Lorem ipsum dolor sit amet",
+    "C. Lorem ipsum dolor sit amet",
+    "D. Lorem ipsum dolor sit amet",
+  ],
+  oikein_en: [1],
 }
   ],
-  rewardText_en:"englani 3 test",
-  
   minimap:'kuvat/kartta_3.png',
   fontSize: "2.5vh"
  },
@@ -234,10 +261,17 @@ const storyStages = [
   "C. Puhelimen selaaminen ja musiikin kuuntelu kuulokkeista",
   "D. Mielen tyhjentäminen ja torkkuminen"
   ],
-  oikein_fi: [2]
+  oikein_fi: [2],
+  questiontext_en: "Lorem ipsum",
+  options_en: [
+    "A. Lorem ipsum dolor sit amet",
+    "B. Lorem ipsum dolor sit amet",
+    "C. Lorem ipsum dolor sit amet",
+    "D. Lorem ipsum dolor sit amet",
+  ],
+  oikein_en: [2],
 }
   ],
-  rewardText_en:"englani 4 test",
   minimap:'kuvat/kartta_4.png',
   fontSize: "3vh"
  },
@@ -252,7 +286,15 @@ questionSets: [
   "B. Koska metsät ovat olleet uhattuina ja niiden arvo halutaan säilyttää",
   "C. Koska metsät eivät liity kulttuuriin"
   ],
-  oikein_fi: [1]
+  oikein_fi: [1],
+  questiontext_en: "Lorem ipsum",
+  options_en: [
+    "A. Lorem ipsum dolor sit amet",
+    "B. Lorem ipsum dolor sit amet",
+    "C. Lorem ipsum dolor sit amet",
+    "D. Lorem ipsum dolor sit amet",
+  ],
+  oikein_en: [1],
   },
   {
   questiontext_fi: "Millaisen maiseman haluaisit jättää tuleville sukupolville?",
@@ -262,14 +304,20 @@ questionSets: [
   "C. Autioituneen peltomaiseman",
   "D. Rakennetun kaupunkiympäristön"
   ],   
-  oikein_fi: [0, 1, 2, 3]
+  oikein_fi: [0, 1, 2, 3],
+  questiontext_en: "Lorem ipsum",
+  options_en: [
+    "A. Lorem ipsum dolor sit amet1",
+    "B. Lorem ipsum dolor sit amet1",
+    "C. Lorem ipsum dolor sit amet1",
+    "D. Lorem ipsum dolor sit amet1",
+  ],
+  oikein_en: [0, 1, 2, 3],
   }
   ],
-  rewardText_en:"englani 5 test",
   minimap:'kuvat/kartta_5.png',
   fontSize: "3vh"
  },
- //serlacihus on skibidi sigma #serlachius!!!!!!!!
    {
   text_fi: "Kerää metsästä erilaisia lehtiä, oksia, käpyjä tai kiviä – valitse omat suosikkisi. Asettele ne taideteokseksi maahan tai kiven päälle, esittäväksi tai abstraktiksi teokseksi. \n Jätä luomuksesi muiden ihailtavaksi ja ota itsellesi kuva muistoksi!",
   text_en: "english 6 version here",
@@ -282,10 +330,17 @@ questionSets: [
     "C. Vältä roskien tuomista luontoon",
     "D. Kaikki edellä mainitut"
   ],
-  oikein_fi:[1,],
+  oikein_fi:[1],
+  questiontext_en: "Lorem ipsum",
+  options_en: [
+    "A. Lorem ipsum dolor sit amet",
+    "B. Lorem ipsum dolor sit amet",
+    "C. Lorem ipsum dolor sit amet",
+    "D. Lorem ipsum dolor sit amet",
+  ],
+  oikein_en: [1],
 }
   ],
-  rewardText_en:"englani 6 test",
   minimap:'kuvat/kartta_6.png',
   fontSize: "3vh"
   },
@@ -302,6 +357,14 @@ questionSets: [
     "D. Ne tuottavat metallia"
   ],
   oikein_fi:[0],
+  questiontext_en: "Lorem ipsum",
+  options_en: [
+    "A. Lorem ipsum dolor sit amet",
+    "B. Lorem ipsum dolor sit amet",
+    "C. Lorem ipsum dolor sit amet",
+    "D. Lorem ipsum dolor sit amet",
+  ],
+  oikein_en: [0],
 },
 {
   questiontext_fi: "Mikä on yksi kestävän metsäteollisuuden tavoite?",
@@ -312,10 +375,16 @@ questionSets: [
     "D. Lopettaa metsien käyttö kokonaan"
   ],
   oikein_fi:[2],
+  questiontext_en: "Lorem ipsum",
+  options_en: [
+    "A. Lorem ipsum dolor sit amet1",
+    "B. Lorem ipsum dolor sit amet1",
+    "C. Lorem ipsum dolor sit amet1",
+    "D. Lorem ipsum dolor sit amet1",
+  ],
+  oikein_en: [2],
 }
   ],
-  rewardText: " ",
-  rewardText_en:"englani 7 test",
   minimap:'kuvat/kartta_7.png',
   fontSize: "3vh"
   },
@@ -332,10 +401,17 @@ questionSets: [
     "D. Se tekee siemenestä koristeen" 
   ],
   oikein_fi:[1],
+  questiontext_en: "Lorem ipsum",
+  options_en: [
+    "A. Lorem ipsum dolor sit amet",
+    "B. Lorem ipsum dolor sit amet",
+    "C. Lorem ipsum dolor sit amet",
+    "D. Lorem ipsum dolor sit amet",
+  ],
+  oikein_en: [1],
 }
 
   ],
-  rewardText_en:"englani 8 test",
   minimap:'kuvat/kartta_8.png',
   fontSize: "3vh"
   },
@@ -352,10 +428,17 @@ questionSets: [
     "D. Ainoastaan eläimet"
   ],
   oikein_fi:[0],
+  questiontext_en: "Lorem ipsum",
+  options_en: [
+    "A. Lorem ipsum dolor sit amet",
+    "B. Lorem ipsum dolor sit amet",
+    "C. Lorem ipsum dolor sit amet",
+    "D. Lorem ipsum dolor sit amet",
+  ],
+  oikein_en: [0],
 }
 
   ],
-  rewardText_en:"englani 9 test",
   minimap:'kuvat/kartta_9.png',
   fontSize: "3vh"
   },
@@ -371,10 +454,17 @@ questionSets: [
     "C. Käsityötaitoa ja materiaalien tunnistamista",
     "D. Kaikki edellä mainitut"
   ],
-  oikein_fi: [0, 1, 2, 3]
+  oikein_fi: [0, 1, 2, 3],
+  questiontext_en: "Lorem ipsum",
+  options_en: [
+    "A. Lorem ipsum dolor sit amet",
+    "B. Lorem ipsum dolor sit amet",
+    "C. Lorem ipsum dolor sit amet",
+    "D. Lorem ipsum dolor sit amet",
+  ],
+  oikein_en: [0, 1, 2, 3],
 }
-  ],  
-  rewardText_en:"englani 10 test",
+  ],
   minimap:'kuvat/kartta_10.png',
   fontSize: "3vh"
   }
@@ -391,9 +481,7 @@ const liputContainer = document.querySelector('.liput');
 suomilippu.style.display ='none';
 const etusivulogo = document.querySelector('.etusivulogo')
 
-//kielien vaihtaminen 
-// sitten kun jos pitää lisätä ruotti kielinen versio niin htlm pitää muistaa lisätä se sinne
-//sen ID on "ruotsilippu"
+//Kielien 
 document.getElementById('suomilippu')?.addEventListener('click', () => testFlag('Suomi'));
 document.getElementById('suomilippu')?.addEventListener('click',() =>{
 language = 'fi';
