@@ -129,7 +129,7 @@ const storyStages = [
     "D. Metsä ei merkitse minulle mitään",
   ],
   oikein:[0, 1, 2, 3 ],
-  questiontext_en: "Mitä metsä sinulle merkitsee?",
+  questiontext_en: "Lorem ipsum",
    options:[
     "A. Lorem ipsum dolor sit amet",
     "B. Lorem ipsum dolor sit amet",
@@ -157,7 +157,15 @@ const storyStages = [
   "B. Tuulen ujellus",
   "C. Lintujen laulu"
   ],
-  oikein: [2]
+  oikein: [2],
+  questiontext_en: "Lorem ipsum",
+  options: [
+    "A. Lorem ipsum dolor sit amet",
+    "B. Lorem ipsum dolor sit amet",
+    "C. Lorem ipsum dolor sit amet",
+    "D. Lorem ipsum dolor sit amet",
+  ],
+  oikein: [2],
   },
   {
   questiontext_fi: "Mikä tuoksu on tyypillinen kesäisessä metsässä?",
