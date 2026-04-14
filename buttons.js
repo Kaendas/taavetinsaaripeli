@@ -24,7 +24,7 @@ const gametext ={
   en:{
     startButton:"Begin",
     luettunappi:"Read",
-    header:"MGame title",
+    header:"Game title",
     jatka:"Continue",
     pistetexti:"Points",
     suoritettu:"Completed",
