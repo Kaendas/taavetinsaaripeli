@@ -72,6 +72,28 @@ header {
   transform: translateX(-50%);
   text-align: left;
 }
+.johdantopalaus
+{
+    background-color: rgb(218,43, 31);
+  border: none;
+  color: white;
+  cursor: pointer;
+  position: absolute;     
+  bottom: 5vh;
+  left: 2vh; 
+  width: 20vh;
+  height: 6vh;
+  padding: 15px 30px;
+  border-radius: 8px;
+  margin: 10px;
+  max-width: 500px;
+  text-align: center;
+  font-size: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+}
 .latausruutu{
   display: flex;
   justify-content: center;
