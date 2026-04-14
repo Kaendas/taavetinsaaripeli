@@ -730,11 +730,7 @@ startButton.addEventListener('click', () => {
 
 
 
-  const johdantopalaus = document.createElement("button");
-  johdantopalaus.textContent = gametext[language].alkuruudunpalausnappi;
-  johdantopalaus.className = "johdantopalaus";
-  document.body.appendChild(johdantopalaus);
-  johdantopalaus.addEventListener('click', () => location.reload());
+
   const johdnatonappi = document.createElement("button");
   johdnatonappi.textContent =gametext[language].johdnatonappi;
   johdnatonappi.className = "johdantonappi";
