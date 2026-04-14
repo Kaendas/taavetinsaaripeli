@@ -128,7 +128,7 @@ const storyStages = [
     "C. Toimeentuloa ja vaurastumista",
     "D. Metsä ei merkitse minulle mitään",
   ],
-  oikein:[0, 1, 2, 3 ],
+  oikein_fi:[0, 1, 2, 3 ],
   questiontext_en: "Lorem ipsum",
    options_en:[
     "A. Lorem ipsum dolor sit amet",
@@ -157,7 +157,7 @@ const storyStages = [
   "B. Tuulen ujellus",
   "C. Lintujen laulu"
   ],
-  oikein: [2],
+  oikein_fi: [2],
   questiontext_en: "Lorem ipsum",
   options_en: [
     "A. Lorem ipsum dolor sit amet",
@@ -165,7 +165,7 @@ const storyStages = [
     "C. Lorem ipsum dolor sit amet",
     "D. Lorem ipsum dolor sit amet",
   ],
-  oikein: [2],
+  oikein_en: [2],
   },
   {
   questiontext_fi: "Mikä tuoksu on tyypillinen kesäisessä metsässä?",
@@ -174,7 +174,7 @@ const storyStages = [
   "B. Kukkien ja tuoreen kasvillisuuden tuoksu",
   "C. Kosteiden lehtien ja maan tuoksu"
   ],
-  oikein: [1]
+  oikein_fi: [1]
   },
   {
   questiontext_fi: "Minkä värinen metsä on syksyisin?",
@@ -183,7 +183,7 @@ const storyStages = [
   "B. Sinisen ja violetin sävyinen",
   "C. Harmaan ja valkoisen sävyinen"
   ],
-  oikein: [0]
+  oikein_fi: [0]
   },
   {
   questiontext_fi: "Miten metsä muuttuu talvella?",
@@ -193,7 +193,7 @@ const storyStages = [
   "C. Se täyttyy kukista",
   "D. Se peittyy lumeen ja rauhoittuu"
   ],
-  oikein: [3]
+  oikein_fi: [3]
   }
   ],
   rewardText_en:"englani test",
@@ -214,7 +214,7 @@ const storyStages = [
     "D. Kaupungin melu"
     
   ],
-  oikein:[1,],
+  oikein_fi:[1,],
 }
   ],
   rewardText_en:"englani 3 test",
@@ -234,7 +234,7 @@ const storyStages = [
   "C. Puhelimen selaaminen ja musiikin kuuntelu kuulokkeista",
   "D. Mielen tyhjentäminen ja torkkuminen"
   ],
-  oikein: [2]
+  oikein_fi: [2]
 }
   ],
   rewardText_en:"englani 4 test",
@@ -247,22 +247,22 @@ const storyStages = [
 questionSets: [
 {
   questiontext_fi: "Miksi metsien säilyminen on ollut huolenaihe taiteessa?",
-  options: [
+  options_fi: [
   "A. Koska metsät estävät rakentamista",
   "B. Koska metsät ovat olleet uhattuina ja niiden arvo halutaan säilyttää",
   "C. Koska metsät eivät liity kulttuuriin"
   ],
-  oikein: [1]
+  oikein_fi: [1]
   },
   {
   questiontext_fi: "Millaisen maiseman haluaisit jättää tuleville sukupolville?",
-  options: [
+  options_fi: [
   "A. Luonnon monimuotoisen ja rauhallisen metsän",
   "B. Teollisuusalueen",
   "C. Autioituneen peltomaiseman",
   "D. Rakennetun kaupunkiympäristön"
   ],   
-  oikein: [0, 1, 2, 3]
+  oikein_fi: [0, 1, 2, 3]
   }
   ],
   rewardText_en:"englani 5 test",
@@ -276,13 +276,13 @@ questionSets: [
     questionSets:[
 {
   questiontext_fi: "Mikä seuraavista on hyvä vinkki luonnonmateriaalien keräämiseen?",
-  options:[
+  options_fi:[
     "A. Kerää vain maasta löytyviä materiaaleja",
     "B. Älä vahingoita eläviä kasveja",
     "C. Vältä roskien tuomista luontoon",
     "D. Kaikki edellä mainitut"
   ],
-  oikein:[1,],
+  oikein_fi:[1,],
 }
   ],
   rewardText_en:"englani 6 test",
@@ -295,23 +295,23 @@ questionSets: [
     questionSets:[
 {
   questiontext_fi: "Miksi metsät ovat olleet Suomen vaurauden perusta?",
-  options:[
+  options_fi:[
     "A. Ne tarjoavat raaka-aineita teollisuudelle",
     "B. Ne ovat matkailun vetonauloja",
     "C. Ne ovat ainoa energian lähde",
     "D. Ne tuottavat metallia"
   ],
-  oikein:[0],
+  oikein_fi:[0],
 },
 {
   questiontext_fi: "Mikä on yksi kestävän metsäteollisuuden tavoite?",
-  options:[
+  options_fi:[
     "A. Käyttää mahdollisimman paljon muovia",
     "B. Vähentää tietoisuutta ympäristöstä",
     "C. Kehittää ratkaisuja, jotka säästävät luontoa",
     "D. Lopettaa metsien käyttö kokonaan"
   ],
-  oikein:[2],
+  oikein_fi:[2],
 }
   ],
   rewardText: " ",
@@ -325,13 +325,13 @@ questionSets: [
     questionSets:[
 {
   questiontext_fi: "Miksi siemen kannattaa ensin laittaa veteen?",
-  options:[
+  options_fi:[
     "A. Se näyttää kauniilta maljakossa",
     "B. Se auttaa siementä itämään ennen maahan istutusta",
     "C. Se estää siementä kuivumasta liikaa",
     "D. Se tekee siemenestä koristeen" 
   ],
-  oikein:[1],
+  oikein_fi:[1],
 }
 
   ],
@@ -345,13 +345,13 @@ questionSets: [
     questionSets:[
 {
   questiontext_fi: "Minkälaisia olentoja suomalaisessa kansanperinteessä on uskottu asuvan metsässä?",
-  options:[
+  options_fi:[
     "A. Tontut, keijut ja peikot",
     "B. Lohikäärmeet ja merihevoset",
     "C. Aaveet ja vampyyrit",
     "D. Ainoastaan eläimet"
   ],
-  oikein:[0],
+  oikein_fi:[0],
 }
 
   ],
@@ -365,13 +365,13 @@ questionSets: [
     questionSets:[
 {
   questiontext_fi: "Mitä käpyhahmon tekeminen opettaa?",
-  options:[
+  options_fi:[
     "A. Metsän ekologiaa ja kiertokulkua",
     "B. Luovuutta ja ongelmanratkaisua",
     "C. Käsityötaitoa ja materiaalien tunnistamista",
     "D. Kaikki edellä mainitut"
   ],
-  oikein: [0, 1, 2, 3]
+  oikein_fi: [0, 1, 2, 3]
 }
   ],  
   rewardText_en:"englani 10 test",
