@@ -129,8 +129,8 @@ const storyStages = [
     "D. Metsä ei merkitse minulle mitään",
   ],
   oikein_fi:[0, 1, 2, 3 ],
-  questiontext_en: "Mitä metsä sinulle merkitsee?",
-   options_:[
+  questiontext_en: "Lorem ipsum",
+   options_en:[
     "A. Lorem ipsum dolor sit amet",
     "B. Lorem ipsum dolor sit amet",
     "C. Lorem ipsum dolor sit amet",
@@ -139,8 +139,6 @@ const storyStages = [
   oikein_en:[0, 1, 2, 3 ],
 }
   ],
-  rewardText: " ",
-  rewardText_en:"englanti test",
   minimap:'kuvat/kartta_1.png',
   audioSrc:'puhu1.mp3',
   audioSrc_en:'puhu1en.mp3',
@@ -148,225 +146,325 @@ const storyStages = [
   },
   {
   text_fi: "Metsä muuttuu vuodenaikojen mukana: keväällä se herää kosteiden tuoksujen ja lintujen laulun myötä, kesällä metsä kasvaa ja kuhisee elämää.\n Syksyllä metsä hehkuu keltaisen ja punaisen sävyissä ja tarjoaa herkullista satoaan, kun taas talvella metsä peittyy lumeen ja rauhoittuu lepoon.\n Pohdi metsän ääniä, tuoksuja ja värejä: milloin metsä on sinusta kauneimmillaan?",
-  text_en: "english 2 version here",
+  text_en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   questionSets: [
   {
   questiontext_fi: "Mikä ääni on varma kevään merkki?",
-  options: [
+  options_fi: [
   "A. Jäiden ritinä",
   "B. Tuulen ujellus",
   "C. Lintujen laulu"
   ],
-  oikein: [2]
+  oikein_fi: [2],
+  questiontext_en: "Lorem ipsum",
+  options_en: [
+    "A. Lorem ipsum dolor sit amet",
+    "B. Lorem ipsum dolor sit amet",
+    "C. Lorem ipsum dolor sit amet",
+    "D. Lorem ipsum dolor sit amet",
+  ],
+  oikein_en: [2],
   },
   {
   questiontext_fi: "Mikä tuoksu on tyypillinen kesäisessä metsässä?",
-  options: [
+  options_fi: [
   "A. Savun tuoksu",
   "B. Kukkien ja tuoreen kasvillisuuden tuoksu",
   "C. Kosteiden lehtien ja maan tuoksu"
   ],
-  oikein: [1]
+  oikein_fi: [1],
+  questiontext_en: "Lorem ipsum",
+  options_en: [
+    "A. Lorem ipsum dolor sit amet1",
+    "B. Lorem ipsum dolor sit amet1",
+    "C. Lorem ipsum dolor sit amet1",
+    "D. Lorem ipsum dolor sit amet1",
+  ],
+  oikein_en: [1],
   },
   {
   questiontext_fi: "Minkä värinen metsä on syksyisin?",
-  options: [
+  options_fi: [
   "A. Keltaisen ja punaisen sävyinen",
   "B. Sinisen ja violetin sävyinen",
   "C. Harmaan ja valkoisen sävyinen"
   ],
-  oikein: [0]
+  oikein_fi: [0],
+  questiontext_en: "Lorem ipsum",
+  options_en: [
+    "A. Lorem ipsum dolor sit amet2",
+    "B. Lorem ipsum dolor sit amet2",
+    "C. Lorem ipsum dolor sit amet2",
+    "D. Lorem ipsum dolor sit amet2",
+  ],
+  oikein_en: [0],
   },
   {
   questiontext_fi: "Miten metsä muuttuu talvella?",
-  options: [
+  options_fi: [
   "A. Se muuttuu vihreämmäksi",
   "B. Se kuhisee eläinten ääniä",
   "C. Se täyttyy kukista",
   "D. Se peittyy lumeen ja rauhoittuu"
   ],
-  oikein: [3]
+  oikein_fi: [3],
+  questiontext_en: "Lorem ipsum",
+  options_en: [
+    "A. Lorem ipsum dolor sit amet3",
+    "B. Lorem ipsum dolor sit amet3",
+    "C. Lorem ipsum dolor sit amet3",
+    "D. Lorem ipsum dolor sit amet3",
+  ],
+  oikein_en: [3],
   }
   ],
-  rewardText_en:"englani test",
   minimap:'kuvat/kartta_2.png',
   audioSrc:'puhu2.mp3',
   fontSize: "3vh" 
   },
  {
   text_fi: "Metsä rauhoittaa ja antaa uutta voimaa. Useat tutkimukset ovat osoittaneet, että jo pienikin metsässä vietetty aika saa sydämen sykkeen tasaantumaan ja mielen rauhoittumaan.\n Metsän hyvinvointivaikutukset voi saavuttaa usein tahdosta riippumatta, kun vain antautuu aistien vietäväksi. Luonnon kauneus, sen kiinnostavuus ja turvallisuus sekä puhdas ilmanlaatu ja hiljaisuus vaikuttavat sieltä saatuihin hyötyihin. \n Moni löytää metsästä oman lempipaikkansa: hyvän marjamättään, riistaseudun tai vaikkapa leposijan metsälammen rannalta.\n Mikä on sinun lempipaikkasi metsässä? ",
-  text_en: "english 3 version here",
+  text_en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   questionSets:[
 {
   questiontext_fi: "Mitkä metsän ominaisuudet tukevat hyvinvointia?",
-  options:[
+  options_fi:[
     "A. Kirkkaat valot ja musiikki",
     "B. Hiljaisuus, puhdas ilma ja kauneus",
     "C. Vilkas liikenne",
     "D. Kaupungin melu"
     
   ],
-  oikein:[1,],
+  oikein_fi:[1],
+  questiontext_en: "Lorem ipsum",
+  options_en: [
+    "A. Lorem ipsum dolor sit amet",
+    "B. Lorem ipsum dolor sit amet",
+    "C. Lorem ipsum dolor sit amet",
+    "D. Lorem ipsum dolor sit amet",
+  ],
+  oikein_en: [1],
 }
   ],
-  rewardText_en:"englani 3 test",
-  
   minimap:'kuvat/kartta_3.png',
   fontSize: "2.5vh"
  },
  {
   text_fi: "Asetu selin makuulle kalliolle tai sammalmatolle, katse kohti taivasta. Hengitä syvään ja anna hengityksen vähitellen tasaantua. Tunne maa koko kehosi alla.\n Voit ensin katsella mitä näet, sitten sulkea silmät ja kuunnella: veden ääntä, lintujen laulua, tuulen huminaa puissa. Miltä kädet ja iho tuntuvat – lämpimältä vai viileältä? Tyhjennä mieli ajatuksista, voit vaikka torkahtaa. \n Herättyäsi aisti olotilaasi: auttoiko luonto sinua rauhoittumaan?",
-  text_en: "english 4 version here",
+  text_en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   questionSets: [
   {
   questiontext_fi: "Mikä seuraavista EI kuulu rentoutusharjoitukseen?",
-  options: [
+  options_fi: [
   "A. Hengityksen tasaaminen ja maata vasten makaaminen",
   "B. Silmien sulkeminen ja luonnon äänten kuuntelu",
   "C. Puhelimen selaaminen ja musiikin kuuntelu kuulokkeista",
   "D. Mielen tyhjentäminen ja torkkuminen"
   ],
-  oikein: [2]
+  oikein_fi: [2],
+  questiontext_en: "Lorem ipsum",
+  options_en: [
+    "A. Lorem ipsum dolor sit amet",
+    "B. Lorem ipsum dolor sit amet",
+    "C. Lorem ipsum dolor sit amet",
+    "D. Lorem ipsum dolor sit amet",
+  ],
+  oikein_en: [2],
 }
   ],
-  rewardText_en:"englani 4 test",
   minimap:'kuvat/kartta_4.png',
   fontSize: "3vh"
  },
  {
   text_fi: "Metsällä on vahva asema suomalaisessa kulttuurissa ja taiteessa. Kultakauden mestarit, kuten Akseli Gallen-Kallela, löysivät inspiraation erämaasta ja sen kauneudesta. Heidän teoksissaan korostuu luonnon monimuotoisuus ja rauha, mutta myös huoli metsien säilymisestä.\n Nykytaiteessa metsä nähdään edelleen merkityksellisenä, se voi olla pakopaikka arjesta, symboli suomalaisuudesta tai kannanotto ympäristön tilaan.",
-  text_en: "english 5 version here",
+  text_en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
 questionSets: [
 {
   questiontext_fi: "Miksi metsien säilyminen on ollut huolenaihe taiteessa?",
-  options: [
+  options_fi: [
   "A. Koska metsät estävät rakentamista",
   "B. Koska metsät ovat olleet uhattuina ja niiden arvo halutaan säilyttää",
   "C. Koska metsät eivät liity kulttuuriin"
   ],
-  oikein: [1]
+  oikein_fi: [1],
+  questiontext_en: "Lorem ipsum",
+  options_en: [
+    "A. Lorem ipsum dolor sit amet",
+    "B. Lorem ipsum dolor sit amet",
+    "C. Lorem ipsum dolor sit amet",
+    "D. Lorem ipsum dolor sit amet",
+  ],
+  oikein_en: [1],
   },
   {
   questiontext_fi: "Millaisen maiseman haluaisit jättää tuleville sukupolville?",
-  options: [
+  options_fi: [
   "A. Luonnon monimuotoisen ja rauhallisen metsän",
   "B. Teollisuusalueen",
   "C. Autioituneen peltomaiseman",
   "D. Rakennetun kaupunkiympäristön"
   ],   
-  oikein: [0, 1, 2, 3]
+  oikein_fi: [0, 1, 2, 3],
+  questiontext_en: "Lorem ipsum",
+  options_en: [
+    "A. Lorem ipsum dolor sit amet1",
+    "B. Lorem ipsum dolor sit amet1",
+    "C. Lorem ipsum dolor sit amet1",
+    "D. Lorem ipsum dolor sit amet1",
+  ],
+  oikein_en: [0, 1, 2, 3],
   }
   ],
-  rewardText_en:"englani 5 test",
   minimap:'kuvat/kartta_5.png',
   fontSize: "3vh"
  },
- //serlacihus on skibidi sigma #serlachius!!!!!!!!
    {
   text_fi: "Kerää metsästä erilaisia lehtiä, oksia, käpyjä tai kiviä – valitse omat suosikkisi. Asettele ne taideteokseksi maahan tai kiven päälle, esittäväksi tai abstraktiksi teokseksi. \n Jätä luomuksesi muiden ihailtavaksi ja ota itsellesi kuva muistoksi!",
-  text_en: "english 6 version here",
+  text_en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     questionSets:[
 {
   questiontext_fi: "Mikä seuraavista on hyvä vinkki luonnonmateriaalien keräämiseen?",
-  options:[
+  options_fi:[
     "A. Kerää vain maasta löytyviä materiaaleja",
     "B. Älä vahingoita eläviä kasveja",
     "C. Vältä roskien tuomista luontoon",
     "D. Kaikki edellä mainitut"
   ],
-  oikein:[1,],
+  oikein_fi:[1],
+  questiontext_en: "Lorem ipsum",
+  options_en: [
+    "A. Lorem ipsum dolor sit amet",
+    "B. Lorem ipsum dolor sit amet",
+    "C. Lorem ipsum dolor sit amet",
+    "D. Lorem ipsum dolor sit amet",
+  ],
+  oikein_en: [1],
 }
   ],
-  rewardText_en:"englani 6 test",
   minimap:'kuvat/kartta_6.png',
   fontSize: "3vh"
   },
   {
   text_fi: "Metsät ovat olleet Suomen vaurauden ja yhteiskunnan perusta.\n Mäntän teollistuminen alkoi Serlachiuksen perustamasta tehtaasta vuonna 1868, ja paikkakunnasta tuli merkittävä talouden ja taiteen keskus. Tehtaan tunnetuin tuote on toiletti- eli vessapaperi, jonka Serlachius toi markkinoille 1900-luvun alussa.\n Serla on edelleen arjen välttämättömyys. Metsäteollisuus on muuttanut maisemaa, mutta tietoisuus ja kestävät puuteollisuuden ratkaisut kehittyvät jatkuvasti.\n Millainen rooli metsällä on sinun mielestäsi suomalaisuudessa?",
-  text_en: "english 7 version here",
+  text_en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     questionSets:[
 {
   questiontext_fi: "Miksi metsät ovat olleet Suomen vaurauden perusta?",
-  options:[
+  options_fi:[
     "A. Ne tarjoavat raaka-aineita teollisuudelle",
     "B. Ne ovat matkailun vetonauloja",
     "C. Ne ovat ainoa energian lähde",
     "D. Ne tuottavat metallia"
   ],
-  oikein:[0],
+  oikein_fi:[0],
+  questiontext_en: "Lorem ipsum",
+  options_en: [
+    "A. Lorem ipsum dolor sit amet",
+    "B. Lorem ipsum dolor sit amet",
+    "C. Lorem ipsum dolor sit amet",
+    "D. Lorem ipsum dolor sit amet",
+  ],
+  oikein_en: [0],
 },
 {
   questiontext_fi: "Mikä on yksi kestävän metsäteollisuuden tavoite?",
-  options:[
+  options_fi:[
     "A. Käyttää mahdollisimman paljon muovia",
     "B. Vähentää tietoisuutta ympäristöstä",
     "C. Kehittää ratkaisuja, jotka säästävät luontoa",
     "D. Lopettaa metsien käyttö kokonaan"
   ],
-  oikein:[2],
+  oikein_fi:[2],
+  questiontext_en: "Lorem ipsum",
+  options_en: [
+    "A. Lorem ipsum dolor sit amet1",
+    "B. Lorem ipsum dolor sit amet1",
+    "C. Lorem ipsum dolor sit amet1",
+    "D. Lorem ipsum dolor sit amet1",
+  ],
+  oikein_en: [2],
 }
   ],
-  rewardText: " ",
-  rewardText_en:"englani 7 test",
   minimap:'kuvat/kartta_7.png',
   fontSize: "3vh"
   },
   {
   text_fi: "Oletko kokeillut istuttaa puuta?\n Keväällä voit poimia esimerkiksi tammenterhon ja laittaa sen vesilasiin. Kun se alkaa itää, siirrä versot maljakkoon ja myöhemmin istuta taimet maahan.\n Katso, kuinka siemenestä kasvaa uusi puu! ",
-  text_en: "english 8 version here",
+  text_en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     questionSets:[
 {
   questiontext_fi: "Miksi siemen kannattaa ensin laittaa veteen?",
-  options:[
+  options_fi:[
     "A. Se näyttää kauniilta maljakossa",
     "B. Se auttaa siementä itämään ennen maahan istutusta",
     "C. Se estää siementä kuivumasta liikaa",
     "D. Se tekee siemenestä koristeen" 
   ],
-  oikein:[1],
+  oikein_fi:[1],
+  questiontext_en: "Lorem ipsum",
+  options_en: [
+    "A. Lorem ipsum dolor sit amet",
+    "B. Lorem ipsum dolor sit amet",
+    "C. Lorem ipsum dolor sit amet",
+    "D. Lorem ipsum dolor sit amet",
+  ],
+  oikein_en: [1],
 }
 
   ],
-  rewardText_en:"englani 8 test",
   minimap:'kuvat/kartta_8.png',
   fontSize: "3vh"
   },
   {
   text_fi: "Metsä on ollut aina satujen ja mielikuvituksen lähde sekä loputon leikkipaikka sammalmättäineen ja kannonkoloineen.\n Tarinoissa siellä asuvat metsän eläimet, tontut ja keijut, ja myös puihin liittyy monia uskomuksia ja myyttejä, jotka ovat siirtyneet sukupolvelta toiselle. Kun katsot tarkasti, voit kuvitella juurien lomassa piilopaikkoja peikoille ja keijuille. Metsä on täynnä salaisuuksia. Näetkö ympärilläsi metsätontun tai keijun kotikolon",
-  text_en: "english 9 version here",
+  text_en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     questionSets:[
 {
   questiontext_fi: "Minkälaisia olentoja suomalaisessa kansanperinteessä on uskottu asuvan metsässä?",
-  options:[
+  options_fi:[
     "A. Tontut, keijut ja peikot",
     "B. Lohikäärmeet ja merihevoset",
     "C. Aaveet ja vampyyrit",
     "D. Ainoastaan eläimet"
   ],
-  oikein:[0],
+  oikein_fi:[0],
+  questiontext_en: "Lorem ipsum",
+  options_en: [
+    "A. Lorem ipsum dolor sit amet",
+    "B. Lorem ipsum dolor sit amet",
+    "C. Lorem ipsum dolor sit amet",
+    "D. Lorem ipsum dolor sit amet",
+  ],
+  oikein_en: [0],
 }
 
   ],
-  rewardText_en:"englani 9 test",
   minimap:'kuvat/kartta_9.png',
   fontSize: "3vh"
   },
   {
   text_fi: "Etsi maasta käpy ja lisäksi pieniä oksia. Tee kävystä hahmo: työnnä tikut jaloiksi, lisää lehdet korviksi ja pieni oksa hännäksi. Keksi hahmollesi nimi ja tarina!",
-    text_en: "english 10 version here",
+    text_en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     questionSets:[
 {
   questiontext_fi: "Mitä käpyhahmon tekeminen opettaa?",
-  options:[
+  options_fi:[
     "A. Metsän ekologiaa ja kiertokulkua",
     "B. Luovuutta ja ongelmanratkaisua",
     "C. Käsityötaitoa ja materiaalien tunnistamista",
     "D. Kaikki edellä mainitut"
   ],
-  oikein: [0, 1, 2, 3]
+  oikein_fi: [0, 1, 2, 3],
+  questiontext_en: "Lorem ipsum",
+  options_en: [
+    "A. Lorem ipsum dolor sit amet",
+    "B. Lorem ipsum dolor sit amet",
+    "C. Lorem ipsum dolor sit amet",
+    "D. Lorem ipsum dolor sit amet",
+  ],
+  oikein_en: [0, 1, 2, 3],
 }
-  ],  
-  rewardText_en:"englani 10 test",
+  ],
   minimap:'kuvat/kartta_10.png',
   fontSize: "3vh"
   }
@@ -383,9 +481,7 @@ const liputContainer = document.querySelector('.liput');
 suomilippu.style.display ='none';
 const etusivulogo = document.querySelector('.etusivulogo')
 
-//kielien vaihtaminen 
-// sitten kun jos pitää lisätä ruotti kielinen versio niin htlm pitää muistaa lisätä se sinne
-//sen ID on "ruotsilippu"
+//Kielien 
 document.getElementById('suomilippu')?.addEventListener('click', () => testFlag('Suomi'));
 document.getElementById('suomilippu')?.addEventListener('click',() =>{
 language = 'fi';
@@ -518,7 +614,7 @@ const luettunappi = document.createElement('button');
     );
     } else {
       oikeinvaivaarin(
-      language === 'en' ? 'Incorrect!':'väärin',
+      language === 'en' ? 'Incorrect!':'Väärin!',
       false
       );
     }
