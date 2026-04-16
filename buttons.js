@@ -531,7 +531,7 @@ function showStage(index) {
     showEndScreen();
     return;
   }
-
+let nykyisentasonpisteet =0;
   const stage = storyStages[index];
  document.body.style.backgroundImage = `url('tausta.png')`;
   // Tarinateksti
@@ -606,9 +606,10 @@ const luettunappi = document.createElement('button');
   kysymys.className = "kysymys";
 
   kysymys.onclick = () => {
-    if (currentQ[`oikein_${language}`] && currentQ[`oikein_${language}`].includes(optionsIndex)) {
-      pisteet += 10;
-      oikeinvaivaarin(
+   if (currentQ[`oikein_${language}`] && currentQ[`oikein_${language}`].includes(optionsIndex)) {
+    nykyisentasonpisteet += 10;  // Add this line
+    pisteet += 10;
+    oikeinvaivaarin(
       language === 'en' ? 'Correct!':'Oikein!',
       true
     );
@@ -652,7 +653,8 @@ document.body.appendChild(minimap);
 const pistemäärä = document.createElement('div');
 pistemäärä.className ='pisteet'
 pistemäärä.style.textTransform = 'none';
-pistemäärä.textContent = `${gametext[language].pistetexti}: ${pisteet}`;
+const maxStagePisteet = stage.questionSets.length * 10;
+pistemäärä.textContent = `${gametext[language].pistetexti}: ${nykyisentasonpisteet}/${maxStagePisteet}`;
 console.log(gametext[language].pistetexti);
 palkintopistetekstit.appendChild(pistemäärä);
 
