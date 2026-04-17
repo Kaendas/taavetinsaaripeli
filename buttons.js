@@ -114,7 +114,27 @@ if (!audio.paused){
    hissi.audio = audio;
   return hissi;
 }
-
+//Kysymys pohja koska työkumppani ei ikinä tehnyt sitä
+//  questionSets:[
+//    {
+//  questiontext_fi: "Mitä metsä sinulle merkitsee?",
+//  options_fi:[
+//    "A. Rentoutumista ja hyvää oloa",
+//     "B. Metsän antimia",
+//     "C. Toimeentuloa ja vaurastumista",
+//     "D. Metsä ei merkitse minulle mitään",
+//   ],
+//   oikein_fi:[0, 1, 2, 3 ],
+//   questiontext_en: "Lorem ipsum",
+//    options_en:[
+//     "A. Lorem ipsum dolor sit amet",
+//     "B. Lorem ipsum dolor sit amet",
+//     "C. Lorem ipsum dolor sit amet",
+//  "D. Lorem ipsum dolor sit amet",
+//   ],
+//   oikein_en:[0, 1, 2, 3 ],
+// }
+  // ],
 const storyStages = [
   {
   text_fi: "Metsä on tiheästi kasvavien puiden ja monimuotoisen elinympäristön muodostama kokonaisuus.\n Se on koti tuhansille eläin-, kasvi- ja sienilajeille sekä tärkeä hiilinielu ja -varasto.\n Monelle metsä tarjoaa työtä ja toimeentuloa, toisille rauhoittumisen paikan ja hyvinvoinnin lähteen.\n Suomalaisista puhutaan metsäkansana ja monilla on metsään oma, ainutlaatuinen suhteensa.",
@@ -600,14 +620,14 @@ const luettunappi = document.createElement('button');
   kysymyscontainer.className ="kysymyscontainer";
   currentQ[`options_${language}`].forEach((options, optionsIndex) => {
 
-  
+  // kysymykset, tarkistaa kun klikkaa kohtaa vastaukset löytyy siittä teksti pläjästä toilla ylhäällä kun joku niistä painaa niin tulee oikea vastaus, jos ei nii väärin
   const kysymys = document.createElement("button");
   kysymys.textContent = options;
   kysymys.className = "kysymys";
 
   kysymys.onclick = () => {
    if (currentQ[`oikein_${language}`] && currentQ[`oikein_${language}`].includes(optionsIndex)) {
-    nykyisentasonpisteet += 10;  // Add this line
+    nykyisentasonpisteet += 10; 
     pisteet += 10;
     oikeinvaivaarin(
       language === 'en' ? 'Correct!':'Oikein!',
@@ -645,10 +665,7 @@ palkintopistetekstit.className = 'palkintopistetekstit';
     minimap.src = stage.minimap;
    }
 document.body.appendChild(minimap);
-//const rewardText = document.createElement('div');
-//rewardText.textContent = stage[`rewardText_${language}`] || stage.rewardText;
-//rewardText.className = 'palkintoteksti';
-//palkintopistetekstit.appendChild(rewardText);
+
 //Pisteet
 const pistemäärä = document.createElement('div');
 pistemäärä.className ='pisteet'
