@@ -302,6 +302,18 @@ header {
   color: rgb(218,43, 31);
 
 }
+.lisäyspisteet {
+  color: #ffffff;
+  font-size: 5vh;
+  font-weight: bold;
+  position: absolute;
+  top: 2vh;
+  right: 2vh;
+  z-index: 5;
+  padding: 1vh 2vh;
+  border-radius: 8px;
+  animation: popIn 0.3s ease;
+}
 .luettunappi{
   background-color: rgb(218,43, 31);
   border: none;
