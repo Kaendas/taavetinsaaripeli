@@ -595,10 +595,13 @@ const luettunappi = document.createElement('button');
   cyclingWidget.remove();
   let currentQuestionIndex = 0;
   function showQuestion() {
+ 
   if (currentQuestionIndex >= stage.questionSets.length){
+     document.querySelectorAll('.lisäyspisteet').forEach(el => el.remove());
     showRewardScreen(stage, index);
     return;
   }
+  //kysymys osio
   function oikeinvaivaarin(text, iscorrect){
     const oikeintaivaarin = document.createElement('div');
     oikeintaivaarin.className = `oikeintaivaarin ${iscorrect ? 'correct':'wrong'}`;
@@ -606,16 +609,15 @@ const luettunappi = document.createElement('button');
     document.body.appendChild(oikeintaivaarin)
       setTimeout(() => {
     oikeintaivaarin.remove();
-  }, 900);
+  }, 1000);
   }
   const currentQ = stage.questionSets[currentQuestionIndex];
   document.body.style.backgroundImage = `url('KysymysTausta3.png')`;
-   console.log("Current question object:", currentQ);
-  console.log("Question text:", currentQ.questiontext);
   const questiontext = document.createElement('div');
   questiontext.textContent = currentQ[`questiontext_${language}`];
   questiontext.className ='questiontext';
   document.body.appendChild(questiontext)
+
     const kysymyscontainer = document.createElement("div");
   kysymyscontainer.className ="kysymyscontainer";
   currentQ[`options_${language}`].forEach((options, optionsIndex) => {
@@ -626,23 +628,45 @@ const luettunappi = document.createElement('button');
   kysymys.className = "kysymys";
 
   kysymys.onclick = () => {
+  
    if (currentQ[`oikein_${language}`] && currentQ[`oikein_${language}`].includes(optionsIndex)) {
+    const oldPisteet = pisteet;
     nykyisentasonpisteet += 10; 
     pisteet += 10;
+      // Create and animate the counter
+    const lisäyspisteet = document.createElement('div');
+    lisäyspisteet.className = 'lisäyspisteet';
+    lisäyspisteet.textContent = `${gametext[language].pistetexti}: ${oldPisteet}`;
+    document.body.appendChild(lisäyspisteet);
+    
+    // Animate counting from old to new
+    let currentValue = oldPisteet;
+    const interval = setInterval(() => {
+      currentValue += 1;
+      lisäyspisteet.textContent = `${gametext[language].pistetexti}: ${currentValue}`;
+      if (currentValue >= pisteet) {
+        clearInterval(interval);
+      }
+    }, 30);
+    
     oikeinvaivaarin(
       language === 'en' ? 'Correct!':'Oikein!',
       true
     );
+      setTimeout(() => {
+    if (lisäyspisteet.parentNode) lisäyspisteet.remove();
+    }, 2000);
     } else {
       oikeinvaivaarin(
       language === 'en' ? 'Incorrect!':'Väärin!',
       false
       );
     }
-    console.log("Score", pisteet)
+
   document.querySelectorAll('.questiontext').forEach(btn => btn.remove());
   document.querySelectorAll('.kysymys').forEach(btn => btn.remove());
    document.querySelectorAll('.kysymyscontainer').forEach(btn => btn.remove());
+   
  currentQuestionIndex++;
   showQuestion();
   };
