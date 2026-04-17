@@ -274,6 +274,10 @@ header {
   border:none;
   cursor: pointer;
 }
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
 .oikeintaivaarin{
   display: flex;
   justify-content: center;
@@ -287,8 +291,9 @@ header {
   font-size: 3vh;
   z-index: 4;
   position: absolute;
-  animation: popIn 0.6s ease;
+  animation: popIn 0.3s ease, fadeOut 0.5s ease 7s forwards;
 }
+
 .oikeintaivaarin.correct{
   color: #4caf50;
 
