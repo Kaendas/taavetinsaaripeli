@@ -114,7 +114,7 @@ if (!audio.paused){
    hissi.audio = audio;
   return hissi;
 }
-//Kysymys pohja koska työkumppani ei ikinä tehnyt sitä
+//Pohja kysymyksille
 //  questionSets:[
 //    {
 //  questiontext_fi: "Mitä metsä sinulle merkitsee?",
@@ -130,7 +130,7 @@ if (!audio.paused){
 //     "A. Lorem ipsum dolor sit amet",
 //     "B. Lorem ipsum dolor sit amet",
 //     "C. Lorem ipsum dolor sit amet",
-//  "D. Lorem ipsum dolor sit amet",
+//     "D. Lorem ipsum dolor sit amet",
 //   ],
 //   oikein_en:[0, 1, 2, 3 ],
 // }
@@ -296,7 +296,7 @@ const storyStages = [
   fontSize: "3vh"
  },
  {
-  text_fi: "Metsällä on vahva asema suomalaisessa kulttuurissa ja taiteessa. Kultakauden mestarit, kuten Akseli Gallen-Kallela, löysivät inspiraation erämaasta ja sen kauneudesta. Heidän teoksissaan korostuu luonnon monimuotoisuus ja rauha, mutta myös huoli metsien säilymisestä.\n Nykytaiteessa metsä nähdään edelleen merkityksellisenä, se voi olla pakopaikka arjesta, symboli suomalaisuudesta tai kannanotto ympäristön tilaan.",
+  text_fi: "Metsällä on vahva asema suomalaisessa kulttuurissa ja taiteessa. \n Kultakauden mestarit, kuten Akseli Gallen-Kallela, löysivät inspiraation erämaasta ja sen kauneudesta. Heidän teoksissaan korostuu luonnon monimuotoisuus ja rauha, mutta myös huoli metsien säilymisestä.\n Nykytaiteessa metsä nähdään edelleen merkityksellisenä, se voi olla pakopaikka arjesta, symboli suomalaisuudesta tai kannanotto ympäristön tilaan.",
   text_en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
 questionSets: [
 {
