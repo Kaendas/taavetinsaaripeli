@@ -12,6 +12,7 @@ const gametext ={
     header:"Metsäpolku",
     jatka:"Jatka",
     pistetexti:"Pisteet",
+    lisäyspisteet:"+10 pistettä",
     suoritettu:"Suoritettu",
     johdnatonappi:"Jatka",
     johdanto:"Peli perustuu Taavetinsaaren metsäpolkuun, jossa pääset vastaamaan metsiin ja luontoon liittyviin kysymyksiin. \nPolussa on 10 erilaista pistettä, joissa voi olla useampi kysymys.",
@@ -27,6 +28,7 @@ const gametext ={
     header:"Game title",
     jatka:"Continue",
     pistetexti:"Points",
+    lisäyspisteet:"+10 points",
     suoritettu:"Completed",
     johdnatonappi:"Continue",
     johdanto:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -636,18 +638,11 @@ const luettunappi = document.createElement('button');
       // Create and animate the counter
     const lisäyspisteet = document.createElement('div');
     lisäyspisteet.className = 'lisäyspisteet';
-    lisäyspisteet.textContent = `${gametext[language].pistetexti}: ${oldPisteet}`;
+    lisäyspisteet.textContent = `${gametext[language].lisäyspisteet} `;
     document.body.appendChild(lisäyspisteet);
     
-    // Animate counting from old to new
-    let currentValue = oldPisteet;
-    const interval = setInterval(() => {
-      currentValue += 1;
-      lisäyspisteet.textContent = `${gametext[language].pistetexti}: ${currentValue}`;
-      if (currentValue >= pisteet) {
-        clearInterval(interval);
-      }
-    }, 30);
+
+
     
     oikeinvaivaarin(
       language === 'en' ? 'Correct!':'Oikein!',
