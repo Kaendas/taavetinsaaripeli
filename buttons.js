@@ -597,7 +597,14 @@ const luettunappi = document.createElement('button');
   cyclingWidget.remove();
   let currentQuestionIndex = 0;
   function showQuestion() {
- 
+  const maxStagePisteet = stage.questionSets.length * 10;
+  
+  if (!document.querySelector('.pointscounter')) {
+    const pointsCounter = document.createElement('div');
+    pointsCounter.className = 'pointscounter';
+    pointsCounter.textContent = `${gametext[language].pistetexti}: ${nykyisentasonpisteet}/${maxStagePisteet}`;
+    document.body.appendChild(pointsCounter);
+  }
   if (currentQuestionIndex >= stage.questionSets.length){
      document.querySelectorAll('.lisäyspisteet').forEach(el => el.remove());
     showRewardScreen(stage, index);
@@ -632,7 +639,6 @@ const luettunappi = document.createElement('button');
   kysymys.onclick = () => {
   
    if (currentQ[`oikein_${language}`] && currentQ[`oikein_${language}`].includes(optionsIndex)) {
-    const oldPisteet = pisteet;
     nykyisentasonpisteet += 10; 
     pisteet += 10;
       // Create and animate the counter
@@ -640,13 +646,16 @@ const luettunappi = document.createElement('button');
     lisäyspisteet.className = 'lisäyspisteet';
     lisäyspisteet.textContent = `${gametext[language].lisäyspisteet} `;
     document.body.appendChild(lisäyspisteet);
-    
-
+    const counter = document.querySelector('.pointscounter');
+    if (counter) {
+      counter.textContent = `${gametext[language].pistetexti}: ${nykyisentasonpisteet}/${maxStagePisteet}`;
+    }
 
     
     oikeinvaivaarin(
       language === 'en' ? 'Correct!':'Oikein!',
       true
+      
     );
       setTimeout(() => {
     if (lisäyspisteet.parentNode) lisäyspisteet.remove();

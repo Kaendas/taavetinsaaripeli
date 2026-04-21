@@ -302,6 +302,18 @@ header {
   color: rgb(218,43, 31);
 
 }
+.pointscounter {
+  color: #ffffff;
+  font-size: 5vh;
+  font-weight: bold;
+  position: absolute;
+  bottom: 15vh;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  padding: 1vh 2vh;
+  border-radius: 8px;
+}
 .lisäyspisteet {
   color: #ffffff;
   font-size: 5vh;
