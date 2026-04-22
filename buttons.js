@@ -4,6 +4,7 @@ function isMobile() {
 //kielien vaihtaminen on asia.textContent =gametext[language].asia;
 // 
 let pisteet =0;
+let totalmaximunpoints = 0;
 let language = 'fi';
 const gametext ={
   fi: {
@@ -602,7 +603,7 @@ const luettunappi = document.createElement('button');
   if (!document.querySelector('.pointscounter')) {
     const pointsCounter = document.createElement('div');
     pointsCounter.className = 'pointscounter';
-    pointsCounter.textContent = `${gametext[language].pistetexti}: ${nykyisentasonpisteet}/${maxStagePisteet}`;
+    pointsCounter.textContent = `${gametext[language].pistetexti}: ${pisteet}/${totalmaximunpoints + (stage.questionSets.length * 10)}`;
     document.body.appendChild(pointsCounter);
   }
   if (currentQuestionIndex >= stage.questionSets.length){
@@ -648,8 +649,8 @@ const luettunappi = document.createElement('button');
     document.body.appendChild(lisäyspisteet);
     const counter = document.querySelector('.pointscounter');
     if (counter) {
-      counter.textContent = `${gametext[language].pistetexti}: ${nykyisentasonpisteet}/${maxStagePisteet}`;
-    }
+  counter.textContent = `${gametext[language].pistetexti}: ${pisteet}/${totalmaximunpoints + (stage.questionSets.length * 10)}`;
+}
 
     
     oikeinvaivaarin(
@@ -684,6 +685,7 @@ showQuestion();
   });
 
 function showRewardScreen(stage, currentIndex) {
+totalmaximunpoints += stage.questionSets.length * 10;
 const palkintopistetekstit = document.createElement('div');
 palkintopistetekstit.className = 'palkintopistetekstit';
 
