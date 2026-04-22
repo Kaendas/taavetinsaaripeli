@@ -602,6 +602,7 @@ const luettunappi = document.createElement('button');
   
   if (!document.querySelector('.pointscounter')) {
     const pointsCounter = document.createElement('div');
+    
     pointsCounter.className = 'pointscounter';
     pointsCounter.textContent = `${gametext[language].pistetexti}: ${pisteet}/${totalmaximunpoints + (stage.questionSets.length * 10)}`;
     document.body.appendChild(pointsCounter);
@@ -644,9 +645,16 @@ const luettunappi = document.createElement('button');
     pisteet += 10;
       // Create and animate the counter
     const lisäyspisteet = document.createElement('div');
+    const pointsCounter = document.querySelector('.pointscounter');
+    pointsCounter.classList.add('hidden-during-bonus');
+
+setTimeout(() => {
+  pointsCounter.classList.remove('hidden-during-bonus');
+}, 600);
     lisäyspisteet.className = 'lisäyspisteet';
     lisäyspisteet.textContent = `${gametext[language].lisäyspisteet} `;
     document.body.appendChild(lisäyspisteet);
+    
     const counter = document.querySelector('.pointscounter');
     if (counter) {
   counter.textContent = `${gametext[language].pistetexti}: ${pisteet}/${totalmaximunpoints + (stage.questionSets.length * 10)}`;
@@ -658,9 +666,11 @@ const luettunappi = document.createElement('button');
       true
       
     );
+    if (currentQuestionIndex + 1 < stage.questionSets.length) {
       setTimeout(() => {
     if (lisäyspisteet.parentNode) lisäyspisteet.remove();
-    }, 2000);
+  }, 600);
+}
     } else {
       oikeinvaivaarin(
       language === 'en' ? 'Incorrect!':'Väärin!',
@@ -686,6 +696,7 @@ showQuestion();
 
 function showRewardScreen(stage, currentIndex) {
 totalmaximunpoints += stage.questionSets.length * 10;
+document.querySelector('.pointscounter')?.remove();
 const palkintopistetekstit = document.createElement('div');
 palkintopistetekstit.className = 'palkintopistetekstit';
 
@@ -701,7 +712,7 @@ const pistemäärä = document.createElement('div');
 pistemäärä.className ='pisteet'
 pistemäärä.style.textTransform = 'none';
 const maxStagePisteet = stage.questionSets.length * 10;
-pistemäärä.textContent = `${gametext[language].pistetexti}: ${nykyisentasonpisteet}/${maxStagePisteet}`;
+pistemäärä.textContent =`${gametext[language].pistetexti}: ${pisteet}/${totalmaximunpoints}`;
 console.log(gametext[language].pistetexti);
 palkintopistetekstit.appendChild(pistemäärä);
 

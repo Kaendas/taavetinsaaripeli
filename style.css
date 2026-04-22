@@ -302,6 +302,8 @@ header {
   color: rgb(218,43, 31);
 
 }
+
+
 .pointscounter {
   color: #ffffff;
   font-size: 5vh;
@@ -313,6 +315,11 @@ header {
   z-index: 5;
   padding: 1vh 2vh;
   border-radius: 8px;
+
+}
+.pointscounter.hidden-during-bonus {
+  opacity: 0;
+   pointer-events: none;
 }
 .lisäyspisteet {
   color: #ffffff;
