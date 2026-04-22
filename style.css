@@ -306,10 +306,10 @@ header {
 
 .pointscounter {
   color: #ffffff;
-  font-size: 5vh;
-  font-weight: bold;
+  font-size: 3vh;
+  
   position: absolute;
-  bottom: 15vh;
+  bottom: 17vh;
   left: 50%;
   transform: translateX(-50%);
   z-index: 5;
@@ -317,23 +317,7 @@ header {
   border-radius: 8px;
 
 }
-.pointscounter.hidden-during-bonus {
-  opacity: 0;
-   pointer-events: none;
-}
-.lisäyspisteet {
-  color: #ffffff;
-  font-size: 5vh;
-  font-weight: bold;
-  position: absolute;
-  bottom: 5vh;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 5;
-  padding: 1vh 2vh;
-  border-radius: 8px;
-  animation: popIn 0.6s ease;
-}
+
 .luettunappi{
   background-color: rgb(218,43, 31);
   border: none;

@@ -643,17 +643,18 @@ const luettunappi = document.createElement('button');
    if (currentQ[`oikein_${language}`] && currentQ[`oikein_${language}`].includes(optionsIndex)) {
     nykyisentasonpisteet += 10; 
     pisteet += 10;
-      // Create and animate the counter
-    const lisäyspisteet = document.createElement('div');
-    const pointsCounter = document.querySelector('.pointscounter');
-    pointsCounter.classList.add('hidden-during-bonus');
+      // siirsin tän kommenttiin koska ei enään tarvita vielä
+      //tämä pätkä vaan laskee ne pojot siihen pointscounter kohtaan koodissa
+//    const lisäyspisteet = document.createElement('div');
+//    const pointsCounter = document.querySelector('.pointscounter');
+//    pointsCounter.classList.add('hidden-during-bonus');
 
-setTimeout(() => {
-  pointsCounter.classList.remove('hidden-during-bonus');
-}, 600);
-    lisäyspisteet.className = 'lisäyspisteet';
-    lisäyspisteet.textContent = `${gametext[language].lisäyspisteet} `;
-    document.body.appendChild(lisäyspisteet);
+//setTimeout(() => {
+//  pointsCounter.classList.remove('hidden-during-bonus');
+//}, 600);
+//    lisäyspisteet.className = 'lisäyspisteet';
+//    lisäyspisteet.textContent = `${gametext[language].lisäyspisteet} `;
+//    document.body.appendChild(lisäyspisteet);
     
     const counter = document.querySelector('.pointscounter');
     if (counter) {
@@ -662,18 +663,19 @@ setTimeout(() => {
 
     
     oikeinvaivaarin(
-      language === 'en' ? 'Correct!':'Oikein!',
+      language === 'en' ? '+10 points':'+10 pistettä',
       true
       
     );
-    if (currentQuestionIndex + 1 < stage.questionSets.length) {
-      setTimeout(() => {
-    if (lisäyspisteet.parentNode) lisäyspisteet.remove();
-  }, 600);
-}
+    //tää ois vaan poistanut sen pointscounter kun lisäyspisteet astuu sisään
+//    if (currentQuestionIndex + 1 < stage.questionSets.length) {
+//      setTimeout(() => {
+//    if (lisäyspisteet.parentNode) lisäyspisteet.remove();
+//  }, 600);
+//}
     } else {
       oikeinvaivaarin(
-      language === 'en' ? 'Incorrect!':'Väärin!',
+      language === 'en' ? '+0 points':'+0 pistettä',
       false
       );
     }
