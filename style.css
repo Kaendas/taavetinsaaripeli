@@ -74,21 +74,20 @@ header {
 }
 .johdantopalaus
 {
-    background-color: rgb(218,43, 31);
+   background-color: rgb(218,43, 31);
   border: none;
   color: white;
   cursor: pointer;
   position: absolute;     
-  bottom: 5vh;
-  left: 2vh; 
-  width: 20vh;
-  height: 6vh;
+  bottom: 5vh; 
+  width: 15vh;
+  height: 5vh;
+  left: 5vh;
   padding: 15px 30px;
-  border-radius: 8px;
-  margin: 10px;
   max-width: 500px;
   text-align: center;
-  font-size: 3vh;
+  font-size: 2vh;
+  border-radius: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -119,12 +118,13 @@ header {
   cursor: pointer;
   position: absolute;     
   bottom: 5vh; 
-  width: 20vh;
-  height: 6vh;
+  width: 15vh;
+  height: 5vh;
+  right: 5vh;
   padding: 15px 30px;
   max-width: 500px;
   text-align: center;
-  font-size: 3vh;
+  font-size: 2vh;
   border-radius: 8px;
   display: flex;
   justify-content: center;

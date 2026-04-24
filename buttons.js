@@ -504,7 +504,7 @@ const liputContainer = document.querySelector('.liput');
 suomilippu.style.display ='none';
 const etusivulogo = document.querySelector('.etusivulogo')
 
-//Kielien 
+//Kielien toiminnan logiika, painamalla tiettyä nappia vaihtaakielen
 document.getElementById('suomilippu')?.addEventListener('click', () => testFlag('Suomi'));
 document.getElementById('suomilippu')?.addEventListener('click',() =>{
 language = 'fi';
@@ -790,7 +790,11 @@ startButton.addEventListener('click', () => {
   johdantovalikko.appendChild(ohjeet);
   document.body.appendChild(johdantovalikko);
 
-
+ const johdantopalaus = document.createElement("button");
+  johdantopalaus.textContent = gametext[language].alkuruudunpalausnappi;
+  johdantopalaus.className = "johdantopalaus";
+  document.body.appendChild(johdantopalaus);
+  johdantopalaus.addEventListener('click', () => location.reload());
 
 
   const johdnatonappi = document.createElement("button");
@@ -806,7 +810,7 @@ startButton.addEventListener('click', () => {
     
      
     showStage(0);
-    //Äänen toisto
+   
   });
 ;
 })
