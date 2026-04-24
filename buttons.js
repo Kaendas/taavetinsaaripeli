@@ -807,7 +807,7 @@ startButton.addEventListener('click', () => {
     if (johdanto) johdanto.remove();
     if (johdantovalikko) johdantovalikko.remove();
     if (johdnatonappi) johdnatonappi.remove();
-    
+    if (johdantopalaus) johdantopalaus.remove();
      
     showStage(0);
    
