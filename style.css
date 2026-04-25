@@ -333,7 +333,11 @@ header {
   align-items: center;
   z-index: 4;
 }
-.puhuminen {
+@keyframes bounce {
+  from { transform: translateY(0); }
+  to { transform: translateY(-5px); }
+}
+.narrator {
   position:absolute;
     width: 16vh;
     height: 16vh;
@@ -344,6 +348,7 @@ header {
   align-items: center;
   z-index: 4;
   cursor: pointer;
+  animation: bounce 0.3s infinite alternate;
 } 
 
 .aktiiviteettitehty{

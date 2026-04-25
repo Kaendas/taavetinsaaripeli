@@ -528,7 +528,19 @@ let nykyisentasonpisteet =0;
  if (stage.fontSize) {
   textDiv.style.fontSize = stage.fontSize;
  }
-
+const narrator = document.createElement('img');
+narrator.src =gameState.language === 'fi' ? 'kertoja_FI.png' :'Kertoja_EN.png';
+narrator.className ='narrator';
+const narration = new Audio(stage['audioSrc_${gameState.language}']|| stage.audioSrc); 
+narrator.addEventListener('click', () => {
+    if (narration.paused) {
+    narration.play().catch(() => {});
+  } else {
+    narration.pause();
+    narration.currentTime = 0;
+  }
+})
+document.body.appendChild(narrator);
 const luettunappi = document.createElement('button');
   luettunappi.textContent =gametext[gameState.language].luettunappi;
   luettunappi.className = 'luettunappi';
@@ -538,6 +550,9 @@ const luettunappi = document.createElement('button');
    luettunappi.disabled = false;
   }, 500);
   luettunappi.addEventListener('click', () => {
+  narration.pause();
+  narration.currentTime = 0;
+  narrator.remove();
     luettunappi.remove();
   textDiv.remove();
   let Nykyisetkysymystenpisteet = 0;
