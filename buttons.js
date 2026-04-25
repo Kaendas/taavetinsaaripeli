@@ -470,7 +470,7 @@ const etusivulogo = document.querySelector('.etusivulogo')
 
 //Kielien toiminnan logiika, painamalla tiettyä nappia vaihtaakielen
 document.getElementById('suomilippu')?.addEventListener('click',() =>{
-gamestate.gameState.language = 'fi';
+gameState.language = 'fi';
 startButton.textContent = gametext[gameState.language].startButton;
 header.textContent = gametext[gameState.language].header;
 suomilippu.style.display ='none';
