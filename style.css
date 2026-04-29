@@ -1,4 +1,5 @@
 /*taustaväri ja muut */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
 body {
 background-image: url(pelitausta.jpg);
 background-size: cover;
@@ -6,7 +7,7 @@ background-repeat: no-repeat;
 background-position: center;
 background-attachment: fixed;
 background-color: #0d470d;
-font-family: 'Arial',Arial, sans-serif;
+font-family: 'Libre Franklin',Arial, sans-serif;
 align-items: center;
 display: flex;
   touch-action: manipulation;
