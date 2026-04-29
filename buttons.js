@@ -44,7 +44,6 @@ const gametext ={
 };
 // Kuvien esilataus
 const imagesToPreloadMobile = [
-  'KysymysTausta.png',
   'kuvat/kartta_1.png',
   'kuvat/kartta_2.png',
   'kuvat/kartta_3.png',
@@ -56,13 +55,10 @@ const imagesToPreloadMobile = [
   'kuvat/kartta_9.png',
   'kuvat/kartta_10.png',
   'kuvat/serlachius-black.png',
-  'KysymysTausta3.png',
-  'testi.png',
-  'testi2.png',
-  'testi3.png',
+  'kuvat/KysymysTausta3.png',
+ 
 ];
 const imagesToPreloadDesktop =[
-  'KysymysTausta.png',
   'kuvat/kartta_1.png',
   'kuvat/kartta_2.png',
   'kuvat/kartta_3.png',
@@ -73,10 +69,8 @@ const imagesToPreloadDesktop =[
   'kuvat/kartta_8.png',
   'kuvat/kartta_9.png',
   'kuvat/kartta_10.png',
-  'KysymysTausta3.png',
-  'testi.png',
-  'testi2.png',
-  'testi3.png',
+  'kuvat/KysymysTausta3.png',
+
 ];
 
 
@@ -458,8 +452,8 @@ questionSets: [
 ];
 
 const imagesToPreload = isMobile() ? imagesToPreloadMobile : imagesToPreloadDesktop;
-const taustakuva = isMobile() ? 'tausta.png' : 'tausta.png';
-document.body.style.backgroundImage = `url('${taustakuva}')`;
+const taustakuva = 'kuvat/tausta.png';
+
 const startButton = document.querySelector('.startButton');
 startButton.textContent = gametext[gameState.language].startButton;
 const header = document.querySelector('header');
@@ -518,7 +512,7 @@ function showStage(index) {
   }
 let nykyisentasonpisteet =0;
   const stage = storyStages[index];
- document.body.style.backgroundImage = `url('tausta.png')`;
+ 
   // Tarinateksti
   const textDiv = document.createElement('div');
   textDiv.textContent = stage.text;
@@ -582,7 +576,7 @@ const luettunappi = document.createElement('button');
   }, 1000);
   }
   const nykyinenkysymys = stage.questionSets[Nykyisetkysymystenpisteet];
-  document.body.style.backgroundImage = `url('KysymysTausta3.png')`;
+  document.body.style.backgroundImage = `url('kuvat/KysymysTausta3.png')`;
   const questiontext = document.createElement('div');
   questiontext.textContent = nykyinenkysymys[`questiontext_${gameState.language}`];
   questiontext.className ='questiontext';
