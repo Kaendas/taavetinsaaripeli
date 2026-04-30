@@ -332,7 +332,7 @@ questionSets: [
 }
   ],
   minimap:'kuvat/kartta_6.png',
-  audioSrc:'Kertoja6.mp3',
+  audioSrc:'Kertojakuusi.mp3',
   audioSrc_en:'puhu1.mp3',
   fontSize: "3vh"
   },
