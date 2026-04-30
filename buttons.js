@@ -56,7 +56,7 @@ const imagesToPreloadMobile = [
   'kuvat/kartta_10.png',
   'kuvat/serlachius-black.png',
   'kuvat/KysymysTausta3.png',
-    'kertoja_FI.png',
+  'kertoja_FI.png',
   'Kertoja_EN.png',
 ];
 const imagesToPreloadDesktop =[
