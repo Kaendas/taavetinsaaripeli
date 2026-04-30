@@ -202,7 +202,7 @@ const storyStages = [
   }
   ],
   minimap:'kuvat/kartta_2.png',
-  audioSrc:'kertojaäänitys/kertoja2.mp3',
+  audioSrc:'kertojaäänitys/Kertoja2.mp3',
   audioSrc_en:'puhu1.mp3',
   fontSize: "3vh" 
   },
@@ -231,7 +231,7 @@ const storyStages = [
 }
   ],
   minimap:'kuvat/kartta_3.png',
-  audioSrc:'kertojaäänitys/kertoja3.mp3',
+  audioSrc:'kertojaäänitys/Kertoja3.mp3',
   audioSrc_en:'puhu1.mp3',
   fontSize: "2.5vh"
  },
@@ -557,7 +557,8 @@ const narrator = getImage(
   gameState.language === 'fi' ? 'kertoja_FI.png' : 'Kertoja_EN.png',
   'narrator'
 );
-const narration = new Audio(stage['audioSrc_${gameState.language}']|| stage.audioSrc); 
+const narration = new Audio(stage[`audioSrc_${gameState.language}`] || stage.audioSrc);
+
 narrator.addEventListener('click', () => {
     if (narration.paused) {
     narration.play().catch(() => {});
