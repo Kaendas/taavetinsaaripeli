@@ -202,7 +202,7 @@ const storyStages = [
   }
   ],
   minimap:'kuvat/kartta_2.png',
-  audioSrc:'kertojaäänitys/Kertoja2.mp3',
+  audioSrc:'kertojaäänitys/kertoja2.mp3',
   audioSrc_en:'puhu1.mp3',
   fontSize: "3vh" 
   },
@@ -231,7 +231,7 @@ const storyStages = [
 }
   ],
   minimap:'kuvat/kartta_3.png',
-  audioSrc:'kertojaäänitys/Kertoja3.mp3',
+  audioSrc:'kertojaäänitys/kertoja3.mp3',
   audioSrc_en:'puhu1.mp3',
   fontSize: "2.5vh"
  },
