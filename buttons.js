@@ -56,7 +56,6 @@ const imagesToPreloadMobile = [
   'kuvat/kartta_10.png',
   'kuvat/serlachius-black.png',
   'kuvat/KysymysTausta3.png',
- 
 ];
 const imagesToPreloadDesktop =[
   'kuvat/kartta_1.png',
@@ -70,7 +69,6 @@ const imagesToPreloadDesktop =[
   'kuvat/kartta_9.png',
   'kuvat/kartta_10.png',
   'kuvat/KysymysTausta3.png',
-
 ];
 
 
@@ -742,7 +740,9 @@ startButton.addEventListener('click', () => {
     if (johdantopalaus) johdantopalaus.remove();
      
     showStage(0);
-   
+    const backgroundaudio = new Audio('Luontoäänet/Linnunlauluja.mp4')
+    backgroundaudio.loop =true;
+    backgroundaudio.play();
   });
 ;
 })
