@@ -771,6 +771,7 @@ startButton.addEventListener('click', () => {
      
     showStage(0);
     const backgroundaudio = new Audio('Luontoäänet/Linnunlauluja.mp4')
+    backgroundaudio.volume = 0.4;
     backgroundaudio.loop =true;
     backgroundaudio.play();
   });
