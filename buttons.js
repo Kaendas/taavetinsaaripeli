@@ -557,7 +557,7 @@ const narrator = getImage(
   gameState.language === 'fi' ? 'kertoja_FI.png' : 'Kertoja_EN.png',
   'narrator'
 );
-const narration = new Audio(stage[`audioSrc_${gameState.language}`] || stage.audioSrc);
+const narration = new Audio('kertojaäänitys/' + (stage[`audioSrc_${gameState.language}`] || stage.audioSrc));
 
 narrator.addEventListener('click', () => {
     if (narration.paused) {
