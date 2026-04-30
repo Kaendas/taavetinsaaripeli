@@ -56,6 +56,8 @@ const imagesToPreloadMobile = [
   'kuvat/kartta_10.png',
   'kuvat/serlachius-black.png',
   'kuvat/KysymysTausta3.png',
+    'kertoja_FI.png',
+  'Kertoja_EN.png',
 ];
 const imagesToPreloadDesktop =[
   'kuvat/kartta_1.png',
@@ -69,6 +71,8 @@ const imagesToPreloadDesktop =[
   'kuvat/kartta_9.png',
   'kuvat/kartta_10.png',
   'kuvat/KysymysTausta3.png',
+    'kertoja_FI.png',
+  'Kertoja_EN.png',
 ];
 
 
@@ -479,15 +483,27 @@ const latausruutu = document.createElement('div');
 latausruutu.textContent = 'ladataan';
 latausruutu.className = 'latausruutu';
 document.body.appendChild(latausruutu);
-
-
+function getImage(src, className) {
+  const img = document.createElement('img');
+  img.src = preloadimages[src] ? preloadimages[src].src : src;
+  if (className) img.className = className;
+  return img;
+}
 const preloadimages = {};
-//Aloitusnapin käytettävyyden poisto kunnes kuvat ovat ladanneet
+//aloitus nappi toiminta pois kunnes kaikki ladattuna
 startButton.disabled = true;
 let loadedCount = 0;
+
 imagesToPreload.forEach(src => {
   const img = new Image();
   img.onload = () => {
+    loadedCount++;
+    if (loadedCount === imagesToPreload.length) {
+      latausruutu.remove();
+      startButton.disabled = false;
+    }
+  };
+  img.onerror = () => {
     loadedCount++;
     if (loadedCount === imagesToPreload.length) {
       latausruutu.remove();
@@ -520,9 +536,10 @@ let nykyisentasonpisteet =0;
  if (stage.fontSize) {
   textDiv.style.fontSize = stage.fontSize;
  }
-const narrator = document.createElement('img');
-narrator.src =gameState.language === 'fi' ? 'kertoja_FI.png' :'Kertoja_EN.png';
-narrator.className ='narrator';
+const narrator = getImage(
+  gameState.language === 'fi' ? 'kertoja_FI.png' : 'Kertoja_EN.png',
+  'narrator'
+);
 const narration = new Audio(stage['audioSrc_${gameState.language}']|| stage.audioSrc); 
 narrator.addEventListener('click', () => {
     if (narration.paused) {
@@ -631,12 +648,7 @@ gameState.totalmaximunpoints += stage.questionSets.length * 10;
 document.querySelector('.pointscounter')?.remove();
 const palkintopistetekstit = document.createElement('div');
 palkintopistetekstit.className = 'palkintopistetekstit';
-
-  const minimap = document.createElement('img');
-  minimap.className ='kartta';
-  if (stage.minimap) {
-    minimap.src = stage.minimap;
-   }
+const minimap = getImage(stage.minimap, 'kartta');
 document.body.appendChild(minimap);
 
 //Pisteet
