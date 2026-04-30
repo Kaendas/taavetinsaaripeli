@@ -543,7 +543,7 @@ function showStage(index) {
   }
 let nykyisentasonpisteet =0;
   const stage = storyStages[index];
- 
+ document.body.style.backgroundImage = `url('kuvat/tausta.png')`;
   // Tarinateksti
   const textDiv = document.createElement('div');
   textDiv.textContent = stage.text;
