@@ -71,7 +71,7 @@ const imagesToPreloadDesktop =[
   'kuvat/kartta_9.png',
   'kuvat/kartta_10.png',
   'kuvat/KysymysTausta3.png',
-    'kertoja_FI.png',
+  'kertoja_FI.png',
   'Kertoja_EN.png',
 ];
 
@@ -202,7 +202,7 @@ const storyStages = [
   }
   ],
   minimap:'kuvat/kartta_2.png',
-  audioSrc:'Kertoja2.mp3',
+  audioSrc:'kertojatoinen.mp3',
   audioSrc_en:'puhu1.mp3',
   fontSize: "3vh" 
   },
