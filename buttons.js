@@ -332,7 +332,7 @@ questionSets: [
 }
   ],
   minimap:'kuvat/kartta_6.png',
-  audioSrc:'kertojaäänitys/Kertoja6.mp3',
+  audioSrc:'Kertoja6.mp3',
   audioSrc_en:'puhu1.mp3',
   fontSize: "3vh"
   },
@@ -378,7 +378,7 @@ questionSets: [
 }
   ],
   minimap:'kuvat/kartta_7.png',
-  audioSrc:'kertojaäänitys/Kertoja7.mp3',
+  audioSrc:'Kertoja7.mp3',
   audioSrc_en:'puhu1.mp3',
   fontSize: "3vh"
   },
@@ -407,7 +407,7 @@ questionSets: [
 
   ],
   minimap:'kuvat/kartta_8.png',
-  audioSrc:'kertojaäänitys/Kertoja8.mp3',
+  audioSrc:'Kertoja8.mp3',
   audioSrc_en:'puhu1.mp3',
   fontSize: "3vh"
   },
@@ -436,7 +436,7 @@ questionSets: [
 
   ],
   minimap:'kuvat/kartta_9.png',
-  audioSrc:'kertojaäänitys/Kertoja9.mp3',
+  audioSrc:'Kertoja9.mp3',
   audioSrc_en:'puhu1.mp3',
   fontSize: "3vh"
   },
@@ -464,7 +464,7 @@ questionSets: [
 }
   ],
   minimap:'kuvat/kartta_10.png',
-  audioSrc:'kertojaäänitys/Kertoja10.mp3',
+  audioSrc:'Kertoja10.mp3',
   audioSrc_en:'puhu1.mp3',
   fontSize: "3vh"
   }
