@@ -123,7 +123,7 @@ const storyStages = [
 }
   ],
   minimap:'kuvat/kartta_1.png',
-  audioSrc:'kertojaäänitys/Kertoja1.mp3',
+  audioSrc:'Kertoja1.mp3',
   audioSrc_en:'puhu1en.mp3',
   fontSize: "3vh"
   },
@@ -202,7 +202,7 @@ const storyStages = [
   }
   ],
   minimap:'kuvat/kartta_2.png',
-  audioSrc:'kertojaäänitys/Kertoja2.mp3',
+  audioSrc:'Kertoja2.mp3',
   audioSrc_en:'puhu1.mp3',
   fontSize: "3vh" 
   },
@@ -231,7 +231,7 @@ const storyStages = [
 }
   ],
   minimap:'kuvat/kartta_3.png',
-  audioSrc:'kertojaäänitys/Kertoja3.mp3',
+  audioSrc:'Kertoja3.mp3',
   audioSrc_en:'puhu1.mp3',
   fontSize: "2.5vh"
  },
@@ -259,7 +259,7 @@ const storyStages = [
 }
   ],
   minimap:'kuvat/kartta_4.png',
-  audioSrc:'kertojaäänitys/Kertoja4.mp3',
+  audioSrc:'Kertoja4.mp3',
   audioSrc_en:'puhu1.mp3',
   fontSize: "3vh"
  },
@@ -304,7 +304,7 @@ questionSets: [
   }
   ],
   minimap:'kuvat/kartta_5.png',
-  audioSrc:'kertojaäänitys/Kertoja5.mp3',
+  audioSrc:'Kertoja5.mp3',
   audioSrc_en:'puhu1.mp3',
   fontSize: "3vh"
  },
