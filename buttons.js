@@ -378,7 +378,7 @@ questionSets: [
   minimap:'kuvat/kartta_7.png',
   audioSrc:'Kertoja7.mp3',
   audioSrc_en:'puhu1.mp3',
-  fontSize: "3vh"
+  fontSize: "2.5vh"
   },
   {
   text_fi: "Oletko kokeillut istuttaa puuta?\n \nKeväällä voit poimia esimerkiksi tammenterhon ja laittaa sen vesilasiin. Kun se alkaa itää, siirrä versot maljakkoon ja myöhemmin istuta taimet maahan.\n \nKatso, kuinka siemenestä kasvaa uusi puu!",
