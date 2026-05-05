@@ -15,7 +15,7 @@ const gametext ={
     header:"Metsäpolku",
     jatka:"Jatka",
     pistetexti:"Pisteet",
-    lisäyspisteet:"+10 pistettä",
+    lisäyspisteet:"+10 Pistettä",
     suoritettu:"Suoritettu",
     johdnatonappi:"Jatka",
     johdanto:"Peli perustuu Taavetinsaaren metsäpolkuun, jossa pääset vastaamaan metsiin ja luontoon liittyviin kysymyksiin. \nPolussa on 10 erilaista pistettä, joissa voi olla useampi kysymys.",
@@ -31,7 +31,7 @@ const gametext ={
     header:"Game title",
     jatka:"Continue",
     pistetexti:"Points",
-    lisäyspisteet:"+10 points",
+    lisäyspisteet:"+10 Points",
     suoritettu:"Completed",
     johdnatonappi:"Continue",
     johdanto:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -606,7 +606,7 @@ const luettunappi = document.createElement('button');
     document.body.appendChild(oikeintaivaarin)
       setTimeout(() => {
     oikeintaivaarin.remove();
-  }, 1000);
+  }, 1700);
   }
   const nykyinenkysymys = stage.questionSets[Nykyisetkysymystenpisteet];
   document.body.style.backgroundImage = `url('kuvat/KysymysTausta3.png')`;
@@ -636,12 +636,12 @@ const luettunappi = document.createElement('button');
    // kysymykset, tarkistaa kun klikkaa kohtaa vastaukset löytyy siittä teksti pläjästä toilla ylhäällä kun joku niistä painaa niin tulee oikea vastaus, jos ei nii väärin
 }
     oikeinvaivaarin(
-      gameState.language === 'en' ? '+10 points':'+10 pistettä',
+      gameState.language === 'en' ? '+10 Points':'+10 Pistettä',
       true
     );
     } else {
       oikeinvaivaarin(
-      gameState.language === 'en' ? '+0 points':'+0 pistettä',
+      gameState.language === 'en' ? '+0 Points':'+0 Pistettä',
       false
       );
     }
@@ -771,7 +771,7 @@ startButton.addEventListener('click', () => {
      
     showStage(0);
     const backgroundaudio = new Audio('Luontoäänet/Linnunlauluja.mp4')
-    backgroundaudio.volume = 0.4;
+    backgroundaudio.volume = 0.2;
     backgroundaudio.loop =true;
     backgroundaudio.play();
   });
