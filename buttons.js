@@ -55,7 +55,7 @@ const imagesToPreloadMobile = [
   'kuvat/serlachius-black.png',
   'kuvat/KysymysTausta3.png',
   'kertoja_FI.png',
-  'Kertoja_en.png',
+  'kuvat/kertoja_en.png',
 ];
 const imagesToPreloadDesktop =[
   'kuvat/kartta_1.png',
@@ -70,7 +70,7 @@ const imagesToPreloadDesktop =[
   'kuvat/kartta_10.png',
   'kuvat/KysymysTausta3.png',
   'kertoja_FI.png',
-  'Kertoja_en.png',
+  'kuvat/Kertoja_en.png',
 ];
 
 
@@ -552,7 +552,7 @@ let nykyisentasonpisteet =0;
   textDiv.style.fontSize = stage.fontSize;
  }
 const narrator = getImage(
-  gameState.language === 'fi' ? 'kertoja_FI.png' : 'Kertoja_en.png',
+  gameState.language === 'fi' ? 'kertoja_FI.png' : 'kuvat/Kertoja_en.png',
   'narrator'
 );
 const narration = new Audio(stage[`audioSrc_${gameState.language}`] || stage.audioSrc);
