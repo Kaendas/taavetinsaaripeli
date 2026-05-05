@@ -15,7 +15,6 @@ const gametext ={
     header:"Metsäpolku",
     jatka:"Jatka",
     pistetexti:"Pisteet",
-    lisäyspisteet:"+10 Pistettä",
     suoritettu:"Suoritettu",
     johdnatonappi:"Jatka",
     johdanto:"Peli perustuu Taavetinsaaren metsäpolkuun, jossa pääset vastaamaan metsiin ja luontoon liittyviin kysymyksiin. \nPolussa on 10 erilaista pistettä, joissa voi olla useampi kysymys.",
@@ -31,7 +30,6 @@ const gametext ={
     header:"Game title",
     jatka:"Continue",
     pistetexti:"Points",
-    lisäyspisteet:"+10 Points",
     suoritettu:"Completed",
     johdnatonappi:"Continue",
     johdanto:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -594,7 +592,7 @@ const luettunappi = document.createElement('button');
     document.body.appendChild(pointsCounter);
   }
   if (Nykyisetkysymystenpisteet >= stage.questionSets.length){
-     document.querySelectorAll('.lisäyspisteet').forEach(el => el.remove());
+  
     showRewardScreen(stage, index);
     return;
   }
