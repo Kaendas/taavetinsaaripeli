@@ -554,7 +554,7 @@ let nykyisentasonpisteet =0;
   textDiv.style.fontSize = stage.fontSize;
  }
 const narrator = getImage(
-  gameState.language === 'fi' ? 'kertoja_FI.png' : 'Kertoja_EN.png',
+  gameState.language === 'fi' ? 'kertoja_FI.png' : 'Kertoja_en.png',
   'narrator'
 );
 const narration = new Audio(stage[`audioSrc_${gameState.language}`] || stage.audioSrc);
