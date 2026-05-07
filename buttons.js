@@ -19,7 +19,7 @@ const gametext ={
     johdnatonappi:"Jatka",
     johdanto:"Peli perustuu Taavetinsaaren metsäpolkuun, jossa pääset vastaamaan metsiin ja luontoon liittyviin kysymyksiin. \nPolussa on 10 erilaista pistettä, joissa voi olla useampi kysymys.",
     ohjeet:"Ohjeet: \nJokaisella pisteellä saat kysymyksen, jossa on neljä vaihtoehtoa. Jokaisesta oikeasta vastauksesta saat pisteitä, jotka lasketaan yhteen pelin loputtua. Joissain kysymyksissä ei ole vääriä vastuksia.",
-    credits:"Tekijät:\nRoope: Työnjohtaja\nElla: Graafinen suunnittelu\nPeetu: Äänittäjä\nSara: Käännös ja bugitestaus\nVänni: Bugitestaus\nLauri: Koodaus",
+    credits:"Tekijät:\nRoope Lehkonen: Työnjohtaja, kertojan ääni\nElla: Graafinen suunnittelu\nPeetu Pohjanharju: Äänittäjä\nSara Karhu: Käännös ja bugitestaus\nVänni: Bugitestaus\nLauri Julku: Koodaus",
     lopputeksti: "Kiitos että pelasitte, toivottavasti pelaatte uudestaan! Suorititte 10 tasoa",
     alkuruudunpalausnappi:"Palaa alkuruutuun"
   },
