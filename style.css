@@ -58,7 +58,7 @@ header {
    max-width: 600px;
 }
 
-.johdantovalikko{
+.introductioncontainer{
   color: white;
   display: flex;
   flex-direction: column;
@@ -73,7 +73,7 @@ header {
   transform: translateX(-50%);
   text-align: left;
 }
-.johdantopalaus
+.introductionreturn
 {
    background-color: rgb(218,43, 31);
   border: none;
@@ -112,7 +112,7 @@ header {
   60%  { transform: translateX(-50%) scale(1.2); opacity: 1; }
   100% { transform: translateX(-50%) scale(1); opacity: 1; }
 }
-.johdantonappi{
+.introductionbutton{
    background-color: rgb(218,43, 31);
   border: none;
   color: white;
@@ -215,7 +215,7 @@ header {
   z-index: 100;
 }
 
-.alkuruudunpalausnappi,
+.returnbutton,
 .continuebutton{
   background-color: rgb(218,43, 31);
   border: none;
@@ -373,7 +373,7 @@ header {
   align-items: center;
   z-index: 4;
 }
-.kartta{
+.map{
   width:100%;
   height:100%;
   z-index: 1;
@@ -415,8 +415,8 @@ padding: 0.1em 0.5em;
   white-space: pre-line;
 }
 .endtext,
-.finaalipisteet,
-.creditsteksti {
+.finalpoints,
+.creditstext {
   color: white;
   position: static; 
   display: block;

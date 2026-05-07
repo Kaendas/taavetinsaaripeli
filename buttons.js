@@ -16,12 +16,12 @@ const gametext ={
     continuebutton:"Jatka",
     pistetexti:"Pisteet",
     suoritettu:"Suoritettu",
-    johdnatonappi:"Jatka",
-    johdanto:"Peli perustuu Taavetinsaaren metsäpolkuun, jossa pääset vastaamaan metsiin ja luontoon liittyviin kysymyksiin. \nPolussa on 10 erilaista pistettä, joissa voi olla useampi kysymys.",
-    ohjeet:"Ohjeet: \nJokaisella pisteellä saat kysymyksen, jossa on neljä vaihtoehtoa. Jokaisesta oikeasta vastauksesta saat pisteitä, jotka lasketaan yhteen pelin loputtua. Joissain kysymyksissä ei ole vääriä vastuksia.",
+    introductionbutton:"Jatka",
+    introduction:"Peli perustuu Taavetinsaaren metsäpolkuun, jossa pääset vastaamaan metsiin ja luontoon liittyviin kysymyksiin. \nPolussa on 10 erilaista pistettä, joissa voi olla useampi kysymys.",
+    specification:"Ohjeet: \nJokaisella pisteellä saat kysymyksen, jossa on neljä vaihtoehtoa. Jokaisesta oikeasta vastauksesta saat pisteitä, jotka lasketaan yhteen pelin loputtua. Joissain kysymyksissä ei ole vääriä vastuksia.",
     credits:"Tekijät:\nRoope Lehkonen: Työnjohtaja, kertojan ääni\nElla: Graafinen suunnittelu\nPeetu Pohjanharju: Äänittäjä\nSara Karhu: Käännös ja bugitestaus\nVänni: Bugitestaus\nLauri Julku: Koodaus",
-    lopputeksti: "Kiitos että pelasitte, toivottavasti pelaatte uudestaan! Suorititte 10 tasoa",
-    alkuruudunpalausnappi:"Palaa alkuruutuun"
+    endtext: "Kiitos että pelasitte, toivottavasti pelaatte uudestaan! Suorititte 10 tasoa",
+    returnbutton:"Palaa alkuruutuun"
   },
 
   en:{
@@ -31,12 +31,12 @@ const gametext ={
     continuebutton:"Continue",
     pistetexti:"Points",
     suoritettu:"Completed",
-    johdnatonappi:"Continue",
-    johdanto:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    ohjeet:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    introductionbutton:"Continue",
+    introduction:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    specification:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     credits:"Credits:\nRoope: Työnjohtaja\nElla: Graafinen suunnittelu\nPeetu: Äänittäjä\nSara: Käännös ja bugitestaus\nVänni: Bugitestaus\nLauri: Koodaus",
     endtext:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    alkuruudunpalausnappi:"Return to the main menu"
+    returnbutton:"Return to the main menu"
   }
 
 };
@@ -475,7 +475,7 @@ const startButton = document.querySelector('.startButton');
 startButton.textContent = gametext[gameState.language].startButton;
 const header = document.querySelector('header');
 header.textContent = gametext[gameState.language].header;
-const liputContainer = document.querySelector('.liput');
+const liputContainer = document.querySelector('.Flags');
 suomiflag.style.display ='none';
 const etusivulogo = document.querySelector('.etusivulogo')
 
@@ -664,12 +664,12 @@ gameState.totalmaximunpoints += stage.questionSets.length * 10;
 document.querySelector('.pointscounter')?.remove();
 const pointscontainer = document.createElement('div');
 pointscontainer.className = 'pointscontainer';
-const minimap = getImage(stage.minimap, 'kartta');
+const minimap = getImage(stage.minimap, 'map');
 document.body.appendChild(minimap);
 
 //Pisteet
 const pointsamoungt = document.createElement('div');
-pointsamoungt.className ='pisteet'
+pointsamoungt.className ='pointsamoungt'
 pointsamoungt.style.textTransform = 'none';
 const maxStagePisteet = stage.questionSets.length * 10;
 pointsamoungt.textContent =`${gametext[gameState.language].pistetexti}: ${gameState.points}/${gameState.totalmaximunpoints}`;
@@ -701,30 +701,30 @@ document.body.appendChild(pointscontainer);
 }
 function showEndScreen() {
   document.body.innerHTML = '';
-  const loppulaatikko = document.createElement("div");
-  loppulaatikko.className = "loppulaatikko";
+  const endcontainer = document.createElement("div");
+  endcontainer.className = "endcontainer";
 
 // Loppuruutu
 const endtext = document.createElement("div");
   endtext.textContent = gametext[gameState.language].endtext;
   endtext.className = "endtext";
-  const finaalipisteet = document.createElement("div");
-  finaalipisteet.className = "finaalipisteet";
-  finaalipisteet.textContent = `${gametext[gameState.language].pistetexti}: ${gameState.points}`;
+  const finalpoints = document.createElement("div");
+  finalpoints.className = "finalpoints";
+  finalpoints.textContent = `${gametext[gameState.language].pistetexti}: ${gameState.points}`;
 
   const credits = document.createElement("div");
   credits.textContent =gametext[gameState.language].credits;
-  credits.className = "creditsteksti";
-  loppulaatikko.appendChild(endtext);
-  loppulaatikko.appendChild(credits);
-  loppulaatikko.appendChild(finaalipisteet)
-  document.body.appendChild(loppulaatikko);
+  credits.className = "creditstext";
+  endcontainer.appendChild(endtext);
+  endcontainer.appendChild(credits);
+  endcontainer.appendChild(finalpoints)
+  document.body.appendChild(endcontainer);
 
-  const alkuruudunpalausnappi = document.createElement("button");
-  alkuruudunpalausnappi.textContent = gametext[gameState.language].alkuruudunpalausnappi;
-  alkuruudunpalausnappi.className = "alkuruudunpalausnappi";
-  document.body.appendChild(alkuruudunpalausnappi);
-  alkuruudunpalausnappi.addEventListener('click', () => location.reload());
+  const returnbutton = document.createElement("button");
+  returnbutton.textContent = gametext[gameState.language].returnbutton;
+  returnbutton.className = "returnbutton";
+  document.body.appendChild(returnbutton);
+  returnbutton.addEventListener('click', () => location.reload());
 }
 // Johdanto ja Start-nappi
 startButton.addEventListener('click', () => {
@@ -734,37 +734,37 @@ startButton.addEventListener('click', () => {
   if (etusivulogo) etusivulogo.remove();
 
   // Johdanto
-  const johdantovalikko = document.createElement("div");
-  johdantovalikko.className = "johdantovalikko";
-  const johdanto = document.createElement("div");
-  johdanto.className = "johdanto";
-  johdanto.textContent =gametext[gameState.language].johdanto;
+  const introductioncontainer = document.createElement("div");
+  introductioncontainer.className = "introductioncontainer";
+  const introduction = document.createElement("div");
+  introduction.className = "introduction";
+  introduction.textContent =gametext[gameState.language].introduction;
   // pelin ohjeet
-  const ohjeet = document.createElement("div");
-  ohjeet.textContent =gametext[gameState.language].ohjeet;
-  ohjeet.className = "ohjeet";
-  johdantovalikko.appendChild(johdanto);
-  johdantovalikko.appendChild(ohjeet);
-  document.body.appendChild(johdantovalikko);
+  const specification = document.createElement("div");
+  specification.textContent =gametext[gameState.language].specification;
+  specification.className = "specification";
+  introductioncontainer.appendChild(introduction);
+  introductioncontainer.appendChild(specification);
+  document.body.appendChild(introductioncontainer);
 
- const johdantopalaus = document.createElement("button");
-  johdantopalaus.textContent = gametext[gameState.language].alkuruudunpalausnappi;
-  johdantopalaus.className = "johdantopalaus";
-  document.body.appendChild(johdantopalaus);
-  johdantopalaus.addEventListener('click', () => location.reload());
+ const introductionreturn = document.createElement("button");
+  introductionreturn.textContent = gametext[gameState.language].returnbutton;
+  introductionreturn.className = "introductionreturn";
+  document.body.appendChild(introductionreturn);
+  introductionreturn.addEventListener('click', () => location.reload());
 
 
-  const johdnatonappi = document.createElement("button");
-  johdnatonappi.textContent =gametext[gameState.language].johdnatonappi;
-  johdnatonappi.className = "johdantonappi";
-  document.body.appendChild(johdnatonappi);
+  const introductionbutton = document.createElement("button");
+  introductionbutton.textContent =gametext[gameState.language].introductionbutton;
+  introductionbutton.className = "introductionbutton";
+  document.body.appendChild(introductionbutton);
 
-  johdnatonappi.addEventListener('click', () => {
-    if (ohjeet) ohjeet.remove();
-    if (johdanto) johdanto.remove();
-    if (johdantovalikko) johdantovalikko.remove();
-    if (johdnatonappi) johdnatonappi.remove();
-    if (johdantopalaus) johdantopalaus.remove();
+  introductionbutton.addEventListener('click', () => {
+    if (specification) specification.remove();
+    if (introduction) introduction.remove();
+    if (introductioncontainer) introductioncontainer.remove();
+    if (introductionbutton) introductionbutton.remove();
+    if (introductionreturn) introductionreturn.remove();
      
     showStage(0);
     const backgroundaudio = new Audio('Luontoäänet/Linnunlauluja.mp4')
