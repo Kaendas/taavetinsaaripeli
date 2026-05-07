@@ -485,7 +485,7 @@ gameState.language = 'fi';
 startButton.textContent = gametext[gameState.language].startButton;
 header.textContent = gametext[gameState.language].header;
 suomiflag.style.display ='none';
-englantilflag.style.display ='inline-block';
+englantiflag.style.display ='inline-block';
 })
 document.getElementById('englantiflag')?.addEventListener('click',() =>{
 gameState.language = 'en';
@@ -680,7 +680,7 @@ document.body.appendChild(pointscontainer);
 
       // Jatka-nappi
       const continuebutton = document.createElement('button');
-      continuebutton.textContent =gametext[gameState.language].continue;
+      continuebutton.textContent =gametext[gameState.language].continuebutton;
       continuebutton.className = 'continuebutton';
       document.body.appendChild(continuebutton);
       continuebutton.disabled =true;
