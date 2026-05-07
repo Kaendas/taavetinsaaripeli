@@ -94,7 +94,7 @@ header {
   align-items: center;
   z-index: 4;
 }
-.latausruutu{
+.loadinscreen{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -161,14 +161,14 @@ header {
   margin: 0;
   background: none;
 }
-#suomilippu {
+#suomiflag {
   width: 9vh;
   height: 6vh;
   background: transparent;
   border: none;
   cursor: pointer;
 }
-#englantilippu {
+#englantiflag {
   width: 9vh;
   height: 6vh;
   background: transparent;
@@ -176,7 +176,7 @@ header {
   cursor: pointer;
 }
 
-.liput {
+.Flags{
   gap: 5px;
   display: flex;
   Position: absolute;
@@ -194,7 +194,7 @@ header {
   align-items: center;
   z-index: 4;
 }
-.pisteet{
+.pointsamoungt{
   color: white;
   font-size: 6vh;
   display: flex;
@@ -216,7 +216,7 @@ header {
 }
 
 .alkuruudunpalausnappi,
-.jatkanappi{
+.continuebutton{
   background-color: rgb(218,43, 31);
   border: none;
   color: white;
@@ -250,7 +250,7 @@ header {
   display: flex;
   top: 5vh;
 } 
-.kysymyscontainer {
+.questioncontainer {
   font-size: clamp(16px, 2.5vh, 28px);
   display: flex;
 
@@ -258,7 +258,7 @@ header {
   gap: 20px;
   padding: 20px;
 }
-.kysymys{
+.question{
   min-width: 20vh;
   font-size: 1em;
   padding: 0.8em 1.5em;
@@ -273,7 +273,7 @@ header {
   from { opacity: 1; }
   to   { opacity: 0; }
 }
-.oikeintaivaarin{
+.correctornot{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -289,11 +289,11 @@ header {
   animation: popIn 0.3s ease, fadeOut 0.5s ease 7s forwards;
 }
 
-.oikeintaivaarin.correct{
+.correctornot.correct{
   color: #4caf50;
 
 }
-.oikeintaivaarin.wrong{
+.correctornot.wrong{
   color: rgb(218,43, 31);
 
 }
@@ -313,7 +313,7 @@ header {
 
 }
 
-.luettunappi{
+.readbutton{
   background-color: rgb(218,43, 31);
   border: none;
   color: white;
@@ -390,7 +390,7 @@ padding: 0.1em 0.5em;
 }
 
 .palkintoteksti{order: 1;}
-.palkintopistetekstit {
+.pointscontainer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -414,7 +414,7 @@ padding: 0.1em 0.5em;
   padding: 0.1em 0.5em;
   white-space: pre-line;
 }
-.lopputeksti,
+.endtext,
 .finaalipisteet,
 .creditsteksti {
   color: white;

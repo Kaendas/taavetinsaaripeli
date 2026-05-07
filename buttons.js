@@ -3,7 +3,7 @@ function isMobile() {
 }
 //kielien vaihtaminen on asia.textContent =gametext[gameState.language].asia;
 const gameState = {
-  pisteet:0,
+  points:0,
   totalmaximunpoints:0,
   language:'fi',
 }
@@ -11,31 +11,31 @@ const gameState = {
 const gametext ={
   fi: {
     startButton:"Aloita",
-    luettunappi:"Luettu",
+    readbutton:"Luettu",
     header:"Metsäpolku",
-    jatka:"Jatka",
+    continuebutton:"Jatka",
     pistetexti:"Pisteet",
     suoritettu:"Suoritettu",
     johdnatonappi:"Jatka",
     johdanto:"Peli perustuu Taavetinsaaren metsäpolkuun, jossa pääset vastaamaan metsiin ja luontoon liittyviin kysymyksiin. \nPolussa on 10 erilaista pistettä, joissa voi olla useampi kysymys.",
     ohjeet:"Ohjeet: \nJokaisella pisteellä saat kysymyksen, jossa on neljä vaihtoehtoa. Jokaisesta oikeasta vastauksesta saat pisteitä, jotka lasketaan yhteen pelin loputtua. Joissain kysymyksissä ei ole vääriä vastuksia.",
     credits:"Tekijät:\nRoope: Työnjohtaja\nElla: Graafinen suunnittelu\nPeetu: Äänittäjä\nSara: Käännös ja bugitestaus\nVänni: Bugitestaus\nLauri: Koodaus",
-    lopputeksti: "Kiitos että pelasitte, toivottavasti pelaatte uudestaan! Suorititte 10 tasoa",
+    endtext: "Kiitos että pelasitte, toivottavasti pelaatte uudestaan! Suorititte 10 tasoa",
     alkuruudunpalausnappi:"Palaa alkuruutuun"
   },
 
   en:{
     startButton:"Begin",
-    luettunappi:"Read",
+    readbutton:"Read",
     header:"Game title",
-    jatka:"Continue",
+    continuebutton:"Continue",
     pistetexti:"Points",
     suoritettu:"Completed",
     johdnatonappi:"Continue",
     johdanto:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     ohjeet:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     credits:"Credits:\nRoope: Työnjohtaja\nElla: Graafinen suunnittelu\nPeetu: Äänittäjä\nSara: Käännös ja bugitestaus\nVänni: Bugitestaus\nLauri: Koodaus",
-    lopputeksti:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    endtext:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     alkuruudunpalausnappi:"Return to the main menu"
   }
 
@@ -476,28 +476,28 @@ startButton.textContent = gametext[gameState.language].startButton;
 const header = document.querySelector('header');
 header.textContent = gametext[gameState.language].header;
 const liputContainer = document.querySelector('.liput');
-suomilippu.style.display ='none';
+suomiflag.style.display ='none';
 const etusivulogo = document.querySelector('.etusivulogo')
 
 //Kielien toiminnan logiika, painamalla tiettyä nappia vaihtaakielen
-document.getElementById('suomilippu')?.addEventListener('click',() =>{
+document.getElementById('suomiflag')?.addEventListener('click',() =>{
 gameState.language = 'fi';
 startButton.textContent = gametext[gameState.language].startButton;
 header.textContent = gametext[gameState.language].header;
-suomilippu.style.display ='none';
-englantilippu.style.display ='inline-block';
+suomiflag.style.display ='none';
+englantilflag.style.display ='inline-block';
 })
-document.getElementById('englantilippu')?.addEventListener('click',() =>{
+document.getElementById('englantiflag')?.addEventListener('click',() =>{
 gameState.language = 'en';
 startButton.textContent = gametext[gameState.language].startButton;
 header.textContent = gametext[gameState.language].header;
-englantilippu.style.display ='none';
-suomilippu.style.display ='inline-block';
+englantiflag.style.display ='none';
+suomiflag.style.display ='inline-block';
 })
-const latausruutu = document.createElement('div');
-latausruutu.textContent = 'ladataan';
-latausruutu.className = 'latausruutu';
-document.body.appendChild(latausruutu);
+const loadinscreen = document.createElement('div');
+loadinscreen.textContent = 'ladataan';
+loadinscreen.className = 'loadinscreen';
+document.body.appendChild(loadinscreen);
 function getImage(src, className) {
   const img = document.createElement('img');
   img.src = preloadimages[src] ? preloadimages[src].src : src;
@@ -514,14 +514,14 @@ imagesToPreload.forEach(src => {
   img.onload = () => {
     loadedCount++;
     if (loadedCount === imagesToPreload.length) {
-      latausruutu.remove();
+      loadinscreen.remove();
       startButton.disabled = false;
     }
   };
   img.onerror = () => {
     loadedCount++;
     if (loadedCount === imagesToPreload.length) {
-      latausruutu.remove();
+      loadinscreen.remove();
       startButton.disabled = false;
     }
   };
@@ -566,21 +566,21 @@ narrator.addEventListener('click', () => {
   }
 })
 document.body.appendChild(narrator);
-const luettunappi = document.createElement('button');
-  luettunappi.textContent =gametext[gameState.language].luettunappi;
-  luettunappi.className = 'luettunappi';
-  document.body.appendChild(luettunappi);
-            luettunappi.disabled =true;
+const readbutton = document.createElement('button');
+  readbutton.textContent =gametext[gameState.language].readbutton;
+  readbutton.className = 'readbutton';
+  document.body.appendChild(readbutton);
+            readbutton.disabled =true;
      setTimeout(() => {
-   luettunappi.disabled = false;
+   readbutton.disabled = false;
   }, 500);
-  luettunappi.addEventListener('click', () => {
+  readbutton.addEventListener('click', () => {
   narration.pause();
   narration.currentTime = 0;
   narrator.remove();
-    luettunappi.remove();
+    readbutton.remove();
   textDiv.remove();
-  let Nykyisetkysymystenpisteet = 0;
+  let currentquestionpoints = 0;
   function showQuestion() {
   const maxStagePisteet = stage.questionSets.length * 10;
   
@@ -588,70 +588,70 @@ const luettunappi = document.createElement('button');
     const pointsCounter = document.createElement('div');
     
     pointsCounter.className = 'pointscounter';
-    pointsCounter.textContent = `${gametext[gameState.language].pistetexti}: ${gameState.pisteet}/${gameState.totalmaximunpoints + (stage.questionSets.length * 10)}`;
+    pointsCounter.textContent = `${gametext[gameState.language].pistetexti}: ${gameState.points}/${gameState.totalmaximunpoints + (stage.questionSets.length * 10)}`;
     document.body.appendChild(pointsCounter);
   }
-  if (Nykyisetkysymystenpisteet >= stage.questionSets.length){
+  if (currentquestionpoints >= stage.questionSets.length){
   
     showRewardScreen(stage, index);
     return;
   }
   //kysymys osio
-  function oikeinvaivaarin(text, iscorrect){
-    const oikeintaivaarin = document.createElement('div');
-    oikeintaivaarin.className = `oikeintaivaarin ${iscorrect ? 'correct':'wrong'}`;
-    oikeintaivaarin.textContent =text;
-    document.body.appendChild(oikeintaivaarin)
+  function rightorwrong(text, iscorrect){
+    const correctornot = document.createElement('div');
+    correctornot.className = `correctornot ${iscorrect ? 'correct':'wrong'}`;
+    correctornot.textContent =text;
+    document.body.appendChild(correctornot)
       setTimeout(() => {
-    oikeintaivaarin.remove();
+    correctornot.remove();
   }, 1700);
   }
-  const nykyinenkysymys = stage.questionSets[Nykyisetkysymystenpisteet];
+  const currentquestion = stage.questionSets[currentquestionpoints];
   document.body.style.backgroundImage = `url('kuvat/KysymysTausta3.png')`;
   const questiontext = document.createElement('div');
-  questiontext.textContent = nykyinenkysymys[`questiontext_${gameState.language}`];
+  questiontext.textContent = currentquestion[`questiontext_${gameState.language}`];
   questiontext.className ='questiontext';
   document.body.appendChild(questiontext)
 
-    const kysymyscontainer = document.createElement("div");
-  kysymyscontainer.className ="kysymyscontainer";
-  nykyinenkysymys[`options_${gameState.language}`].forEach((options, optionsIndex) => {
+    const questioncontainer = document.createElement("div");
+  questioncontainer.className ="questioncontainer";
+  currentquestion[`options_${gameState.language}`].forEach((options, optionsIndex) => {
 
  
-  const kysymys = document.createElement("button");
-  kysymys.textContent = options;
-  kysymys.className = "kysymys";
+  const question = document.createElement("button");
+  question.textContent = options;
+  question.className = "question";
 
-  kysymys.onclick = () => {
+  question.onclick = () => {
   
-   if (nykyinenkysymys[`oikein_${gameState.language}`] && nykyinenkysymys[`oikein_${gameState.language}`].includes(optionsIndex)) {
+   if (currentquestion[`oikein_${gameState.language}`] && currentquestion[`oikein_${gameState.language}`].includes(optionsIndex)) {
     nykyisentasonpisteet += 10; 
-    gameState.pisteet += 10;
+    gameState.points += 10;
 
     const counter = document.querySelector('.pointscounter');
     if (counter) {
-  counter.textContent = `${gametext[gameState.language].pistetexti}: ${gameState.pisteet}/${gameState.totalmaximunpoints + (stage.questionSets.length * 10)}`;
+  counter.textContent = `${gametext[gameState.language].pistetexti}: ${gameState.points}/${gameState.totalmaximunpoints + (stage.questionSets.length * 10)}`;
    // kysymykset, tarkistaa kun klikkaa kohtaa vastaukset löytyy siittä teksti pläjästä toilla ylhäällä kun joku niistä painaa niin tulee oikea vastaus, jos ei nii väärin
 }
-    oikeinvaivaarin(
+    rightorwrong(
       gameState.language === 'en' ? '+10 Points':'+10 Pistettä',
       true
     );
     } else {
-      oikeinvaivaarin(
+      rightorwrong(
       gameState.language === 'en' ? '+0 Points':'+0 Pistettä',
       false
       );
     }
   document.querySelectorAll('.questiontext').forEach(btn => btn.remove());
-  document.querySelectorAll('.kysymys').forEach(btn => btn.remove());
-   document.querySelectorAll('.kysymyscontainer').forEach(btn => btn.remove());
+  document.querySelectorAll('.question').forEach(btn => btn.remove());
+   document.querySelectorAll('.questioncontainer').forEach(btn => btn.remove());
    
- Nykyisetkysymystenpisteet++;
+ currentquestionpoints++;
   showQuestion();
   };
-  document.body.appendChild(kysymyscontainer);
-  kysymyscontainer.appendChild(kysymys);
+  document.body.appendChild(questioncontainer);
+  questioncontainer.appendChild(question);
 
 });
 
@@ -662,38 +662,37 @@ showQuestion();
 function showRewardScreen(stage, currentIndex) {
 gameState.totalmaximunpoints += stage.questionSets.length * 10;
 document.querySelector('.pointscounter')?.remove();
-const palkintopistetekstit = document.createElement('div');
-palkintopistetekstit.className = 'palkintopistetekstit';
+const pointscontainer = document.createElement('div');
+pointscontainer.className = 'pointscontainer';
 const minimap = getImage(stage.minimap, 'kartta');
 document.body.appendChild(minimap);
 
 //Pisteet
-const pistemäärä = document.createElement('div');
-pistemäärä.className ='pisteet'
-pistemäärä.style.textTransform = 'none';
+const pointsamoungt = document.createElement('div');
+pointsamoungt.className ='pisteet'
+pointsamoungt.style.textTransform = 'none';
 const maxStagePisteet = stage.questionSets.length * 10;
-pistemäärä.textContent =`${gametext[gameState.language].pistetexti}: ${gameState.pisteet}/${gameState.totalmaximunpoints}`;
-console.log(gametext[gameState.language].pistetexti);
-palkintopistetekstit.appendChild(pistemäärä);
+pointsamoungt.textContent =`${gametext[gameState.language].pistetexti}: ${gameState.points}/${gameState.totalmaximunpoints}`;
+pointscontainer.appendChild(pointsamoungt);
 
-document.body.appendChild(palkintopistetekstit);
+document.body.appendChild(pointscontainer);
 
 
       // Jatka-nappi
-      const jatka = document.createElement('button');
-      jatka.textContent =gametext[gameState.language].jatka;
-      jatka.className = 'jatkanappi';
-      document.body.appendChild(jatka);
-      jatka.disabled =true;
+      const continuebutton = document.createElement('button');
+      continuebutton.textContent =gametext[gameState.language].continue;
+      continuebutton.className = 'continuebutton';
+      document.body.appendChild(continuebutton);
+      continuebutton.disabled =true;
      setTimeout(() => {
-   jatka.disabled = false;
+   continuebutton.disabled = false;
   }, 500);
-          jatka.addEventListener('click', () => {
+          continuebutton.addEventListener('click', () => {
         
     
       
-          jatka.remove();
-          palkintopistetekstit.remove()
+          continuebutton.remove();
+          pointscontainer.remove()
           minimap.remove();
           showStage(currentIndex + 1);
         });
@@ -706,17 +705,17 @@ function showEndScreen() {
   loppulaatikko.className = "loppulaatikko";
 
 // Loppuruutu
-const lopputeksti = document.createElement("div");
-  lopputeksti.textContent = gametext[gameState.language].lopputeksti;
-  lopputeksti.className = "lopputeksti";
+const endtext = document.createElement("div");
+  endtext.textContent = gametext[gameState.language].endtext;
+  endtext.className = "endtext";
   const finaalipisteet = document.createElement("div");
   finaalipisteet.className = "finaalipisteet";
-  finaalipisteet.textContent = `${gametext[gameState.language].pistetexti}: ${gameState.pisteet}`;
+  finaalipisteet.textContent = `${gametext[gameState.language].pistetexti}: ${gameState.points}`;
 
   const credits = document.createElement("div");
   credits.textContent =gametext[gameState.language].credits;
   credits.className = "creditsteksti";
-  loppulaatikko.appendChild(lopputeksti);
+  loppulaatikko.appendChild(endtext);
   loppulaatikko.appendChild(credits);
   loppulaatikko.appendChild(finaalipisteet)
   document.body.appendChild(loppulaatikko);
