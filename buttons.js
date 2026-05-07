@@ -411,7 +411,7 @@ questionSets: [
   },
   {
   text_fi: "Metsä on ollut aina satujen ja mielikuvituksen lähde sekä loputon leikkipaikka sammalmättäineen ja kannonkoloineen.\n \nTarinoissa siellä asuvat metsän eläimet, tontut ja keijut, ja myös puihin liittyy monia uskomuksia ja myyttejä, jotka ovat siirtyneet sukupolvelta toiselle. Kun katsot tarkasti, voit kuvitella juurien lomassa piilopaikkoja peikoille ja keijuille. Metsä on täynnä salaisuuksia.\n \nNäetkö ympärilläsi metsätontun tai keijun kotikolon?",
-  text_en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  text_en: "A forest has always been a source of fairy tales and imagination, as well as an endless playground, thanks to its mossy mounds and stump holes.\n \nIn tales, the animals of the forests, elves and fairies have always lived in forests, and trees are a subject to many myths and beliefs, which have been passed on from generation to generation. When you look closely, you can imagine hideaways for gnomes and fairies among the roots. The forest is full of secrets.\n \nDo you see a forest elf or the hideaway of a fairy?",
     questionSets:[
 {
   questiontext_fi: "Minkälaisia olentoja suomalaisessa kansanperinteessä on uskottu asuvan metsässä?",
@@ -422,12 +422,12 @@ questionSets: [
     "D. Ainoastaan eläimet"
   ],
   oikein_fi:[0],
-  questiontext_en: "Lorem ipsum",
+  questiontext_en: "What kinds of creatures are believed to live in forests according to Finnish folklore?",
   options_en: [
-    "A. Lorem ipsum dolor sit amet",
-    "B. Lorem ipsum dolor sit amet",
-    "C. Lorem ipsum dolor sit amet",
-    "D. Lorem ipsum dolor sit amet",
+    "A. Elves, fairies and trolls",
+    "B. Dragons and Seahorses",
+    "C. Ghosts and Vampires",
+    "D. Only animals",
   ],
   oikein_en: [0],
 }
