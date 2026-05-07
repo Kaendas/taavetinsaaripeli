@@ -308,7 +308,7 @@ questionSets: [
  },
    {
   text_fi: "Kerää metsästä erilaisia lehtiä, oksia, käpyjä tai kiviä – valitse omat suosikkisi. Asettele ne taideteokseksi maahan tai kiven päälle, esittäväksi tai abstraktiksi teokseksi.\n \nJätä luomuksesi muiden ihailtavaksi ja ota itsellesi kuva muistoksi!",
-  text_en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  text_en: "Collect different leaves, branches, pine cones or rocks from a forest – choose your own favorites. Place them as a work of art to the ground or on a rock, as a representational or abstract work.\n \nLeave your creation for others to admire and take a photo for yourself as a memory! ",
     questionSets:[
 {
   questiontext_fi: "Mikä seuraavista on hyvä vinkki luonnonmateriaalien keräämiseen?",
@@ -319,12 +319,12 @@ questionSets: [
     "D. Kaikki edellä mainitut"
   ],
   oikein_fi:[1],
-  questiontext_en: "Lorem ipsum",
+  questiontext_en: "Which of the following is a good tip for collecting natural materials?",
   options_en: [
-    "A. Lorem ipsum dolor sit amet",
-    "B. Lorem ipsum dolor sit amet",
-    "C. Lorem ipsum dolor sit amet",
-    "D. Lorem ipsum dolor sit amet",
+    "A. Only collect materials found on the ground",
+    "B. Do not harm living plants",
+    "C. Avoid bringing trash to the nature",
+    "D. All of the above",
   ],
   oikein_en: [1],
 }
@@ -336,7 +336,7 @@ questionSets: [
   },
   {
   text_fi: "Metsät ovat olleet Suomen vaurauden ja yhteiskunnan perusta.\n \nMäntän teollistuminen alkoi Serlachiuksen perustamasta tehtaasta vuonna 1868, ja paikkakunnasta tuli merkittävä talouden ja taiteen keskus. Tehtaan tunnetuin tuote on toiletti- eli vessapaperi, jonka Serlachius toi markkinoille 1900-luvun alussa.\n \nSerla on edelleen arjen välttämättömyys. Metsäteollisuus on muuttanut maisemaa, mutta tietoisuus ja kestävät puuteollisuuden ratkaisut kehittyvät jatkuvasti.\n \nMillainen rooli metsällä on sinun mielestäsi suomalaisuudessa?",
-  text_en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  text_en: "Forests have always been the basis of Finland’s prosperity and society.\n \nThe industrialization of Mänttä started with a factory founded by Serlachius in the year 1868, and the town became a significant center of economy and art. The factory’s most well-known product is toilet paper, which Serlachius introduced to the market at the beginning of the 1900s.\n \nSerla to this day is a necessity. The forest industry has changed the landscape, but the awareness and sustainable solutions of the wood industry are constantly changing.\n \nWhat kind of a role do you think a forest has in Finnishness?",
     questionSets:[
 {
   questiontext_fi: "Miksi metsät ovat olleet Suomen vaurauden perusta?",
@@ -347,12 +347,12 @@ questionSets: [
     "D. Ne tuottavat metallia"
   ],
   oikein_fi:[0],
-  questiontext_en: "Lorem ipsum",
+  questiontext_en: "Why have forests been the basis of Finland’s prosperity?",
   options_en: [
-    "A. Lorem ipsum dolor sit amet",
-    "B. Lorem ipsum dolor sit amet",
-    "C. Lorem ipsum dolor sit amet",
-    "D. Lorem ipsum dolor sit amet",
+    "A. They provide raw ingredients to industry",
+    "B. They are the attraction to tourism",
+    "C. They are the only source of energy",
+    "D. They produce metal",
   ],
   oikein_en: [0],
 },
@@ -365,12 +365,12 @@ questionSets: [
     "D. Lopettaa metsien käyttö kokonaan"
   ],
   oikein_fi:[2],
-  questiontext_en: "Lorem ipsum",
+  questiontext_en: "What is one goal of a sustainable forest industry?",
   options_en: [
-    "A. Lorem ipsum dolor sit amet1",
-    "B. Lorem ipsum dolor sit amet1",
-    "C. Lorem ipsum dolor sit amet1",
-    "D. Lorem ipsum dolor sit amet1",
+    "A. To use as much plastic as possible",
+    "B. To reduce environmental awareness",
+    "C. Develop solutions to save nature",
+    "D. To stop using forests completely",
   ],
   oikein_en: [2],
 }
@@ -382,7 +382,7 @@ questionSets: [
   },
   {
   text_fi: "Oletko kokeillut istuttaa puuta?\n \nKeväällä voit poimia esimerkiksi tammenterhon ja laittaa sen vesilasiin. Kun se alkaa itää, siirrä versot maljakkoon ja myöhemmin istuta taimet maahan.\n \nKatso, kuinka siemenestä kasvaa uusi puu!",
-  text_en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  text_en: "Have you tried to plant a tree?\n \nIn spring, you can, for example, pick up an acorn and put it in a glass of water. When it starts to sprout, transfer the shoots to a vase and later, plant the seedling to the ground.\n \nWatch as the seed grows into a new tree!",
     questionSets:[
 {
   questiontext_fi: "Miksi siemen kannattaa ensin laittaa veteen?",
@@ -393,12 +393,12 @@ questionSets: [
     "D. Se tekee siemenestä koristeen" 
   ],
   oikein_fi:[1],
-  questiontext_en: "Lorem ipsum",
+  questiontext_en: "Why the seed should be put in a glass of water first?",
   options_en: [
-    "A. Lorem ipsum dolor sit amet",
-    "B. Lorem ipsum dolor sit amet",
-    "C. Lorem ipsum dolor sit amet",
-    "D. Lorem ipsum dolor sit amet",
+    "A. It looks pretty in a vase",
+    "B. It helps the seed to sprout before planting in the ground",
+    "C. It prevents the seed from drying out too much",
+    "D. It makes the seed into a decoration",
   ],
   oikein_en: [1],
 }
@@ -440,7 +440,7 @@ questionSets: [
   },
   {
   text_fi: "Etsi maasta käpy ja lisäksi pieniä oksia. Tee kävystä hahmo: työnnä tikut jaloiksi, lisää lehdet korviksi ja pieni oksa hännäksi.\n \nKeksi hahmollesi nimi ja tarina!",
-    text_en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    text_en: "Find a pine cone from the ground, along with some small twigs. Create a figure out of the pine cone: create legs from the twigs, add leaves as ears and a small twig for a tail.\n \nCome up with a name and a story for your character!",
     questionSets:[
 {
   questiontext_fi: "Mitä käpyhahmon tekeminen opettaa?",
@@ -451,12 +451,12 @@ questionSets: [
     "D. Kaikki edellä mainitut"
   ],
   oikein_fi: [0, 1, 2, 3],
-  questiontext_en: "Lorem ipsum",
+  questiontext_en: "What does the creation of a pine cone figure teach you?",
   options_en: [
-    "A. Lorem ipsum dolor sit amet",
-    "B. Lorem ipsum dolor sit amet",
-    "C. Lorem ipsum dolor sit amet",
-    "D. Lorem ipsum dolor sit amet",
+    "A. Forest ecology and circulation",
+    "B. Creativity and problem solving",
+    "C. Handcrafting and material identifying",
+    "D. All of the above",
   ],
   oikein_en: [0, 1, 2, 3],
 }
