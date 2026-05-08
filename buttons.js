@@ -411,7 +411,7 @@ questionSets: [
   },
   {
   text_fi: "Metsä on ollut aina satujen ja mielikuvituksen lähde sekä loputon leikkipaikka sammalmättäineen ja kannonkoloineen.\n \nTarinoissa siellä asuvat metsän eläimet, tontut ja keijut, ja myös puihin liittyy monia uskomuksia ja myyttejä, jotka ovat siirtyneet sukupolvelta toiselle. Kun katsot tarkasti, voit kuvitella juurien lomassa piilopaikkoja peikoille ja keijuille. Metsä on täynnä salaisuuksia.\n \nNäetkö ympärilläsi metsätontun tai keijun kotikolon?",
-  text_en: "A forest has always been a source of fairy tales and imagination, as well as an endless playground, thanks to its mossy mounds and stump holes.\n \nIn tales, the animals of the forests, elves and fairies have always lived in forests, and trees are a subject to many myths and beliefs, which have been passed on from generation to generation. When you look closely, you can imagine hideaways for gnomes and fairies among the roots. The forest is full of secrets.\n \nDo you see a forest elf or the hideaway of a fairy?",
+  text_en: "A forest has always been a source of fairy tales and imagination, as well as an endless playground, thanks to its mossy mounds and stump holes.\n \nIn fairy tales, forests are inhabitated by animals, elves and fairies, and trees are a subject to many myths and beliefs, which have been passed on from generation to generation. When you look closely, you can imagine hideaways for gnomes and fairies among the roots. The forest is full of secrets.\n \nDo you see a forest elf or the hideaway of a fairy?",
     questionSets:[
 {
   questiontext_fi: "Minkälaisia olentoja suomalaisessa kansanperinteessä on uskottu asuvan metsässä?",
@@ -440,7 +440,7 @@ questionSets: [
   },
   {
   text_fi: "Etsi maasta käpy ja lisäksi pieniä oksia. Tee kävystä hahmo: työnnä tikut jaloiksi, lisää lehdet korviksi ja pieni oksa hännäksi.\n \nKeksi hahmollesi nimi ja tarina!",
-    text_en: "Find a pine cone from the ground, along with some small twigs. Create a figure out of the pine cone: create legs from the twigs, add leaves as ears and a small twig for a tail.\n \nCome up with a name and a story for your character!",
+    text_en: "Find a pine cone from the ground, along with some small twigs. Create a figure out of the pine cone: create legs from the twigs, add leaves as ears and a small twig for a tail.\n \nCome up with a name and a story for your figure!",
     questionSets:[
 {
   questiontext_fi: "Mitä käpyhahmon tekeminen opettaa?",
