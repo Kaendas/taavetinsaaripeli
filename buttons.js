@@ -18,7 +18,7 @@ const gametext ={
     suoritettu:"Suoritettu",
     introductionbutton:"Jatka",
     introduction:"Peli perustuu Taavetinsaaren metsäpolkuun, jossa pääset vastaamaan metsiin ja luontoon liittyviin kysymyksiin. \nPolussa on 10 erilaista pistettä, joissa voi olla useampi kysymys.",
-    specification:"Ohjeet: \nJokaisella pisteellä saat kysymyksen, jossa on neljä vaihtoehtoa. Jokaisesta oikeasta vastauksesta saat pisteitä, jotka lasketaan yhteen pelin loputtua. Joissain kysymyksissä ei ole vääriä vastuksia.",
+    specification:"Ohjeet: \nJokaisella pisteellä saat kysymyksen, jossa on kolme tai neljä vaihtoehtoa. Jokaisesta oikeasta vastauksesta saat pisteitä, jotka lasketaan yhteen pelin loputtua. Joissain kysymyksissä ei ole vääriä vastuksia.",
     credits:"Tekijät:\nRoope Lehkonen: Työnjohtaja, kertojan ääni\nElla: Graafinen suunnittelu\nPeetu Pohjanharju: Äänittäjä\nSara Karhu: Käännös ja bugitestaus\nVänni: Bugitestaus\nLauri Julku: Koodaus",
     endtext: "Kiitos että pelasitte, toivottavasti pelaatte uudestaan! Suorititte 10 tasoa",
     returnbutton:"Palaa alkuruutuun"
@@ -27,15 +27,15 @@ const gametext ={
   en:{
     startButton:"Begin",
     readbutton:"Read",
-    header:"Game title",
+    header:"Forest path",
     continuebutton:"Continue",
     pistetexti:"Points",
     suoritettu:"Completed",
     introductionbutton:"Continue",
-    introduction:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    specification:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    credits:"Credits:\nRoope Lehkonen: Project lead\nElla: Graphical design\nPeetu Pohjanharju: Sound recording\nSara Karhu: Translations ja bugtesting\nVänni: Bugtesting\nLauri Julku: Programming",
-    endtext:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    introduction:"The game is based on the forest path at Taavetinsaari, where you get to answer to questions related to forests and nature.",
+    specification:"Instructions: \nOn every stage, you are presented with a question, where are three or four choices. On every correct answer, you get points, which are added together when the game ends. Some questions do not have incorrect answers.",
+    credits:"Credits:\nRoope Lehkonen: Project lead, narrating\nElla: Graphical design\nPeetu Pohjanharju: Sound recording\nSara Karhu: Translations ja bugtesting\nVänni: Bugtesting\nLauri Julku: Programming",
+    endtext:"Thank you for playing! We hope you will play again! You completed 10 stages",
     returnbutton:"Return to the main menu"
   }
 
