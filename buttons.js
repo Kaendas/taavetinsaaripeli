@@ -34,7 +34,7 @@ const gametext ={
     introductionbutton:"Continue",
     introduction:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     specification:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    credits:"Credits:\nRoope: Työnjohtaja\nElla: Graafinen suunnittelu\nPeetu: Äänittäjä\nSara: Käännös ja bugitestaus\nVänni: Bugitestaus\nLauri: Koodaus",
+    credits:"Credits:\nRoope Lehkonen: Project lead\nElla: Graphical design\nPeetu Pohjanharju: Sound recording\nSara Karhu: Translations ja bugtesting\nVänni: Bugtesting\nLauri Julku: Programming",
     endtext:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     returnbutton:"Return to the main menu"
   }
