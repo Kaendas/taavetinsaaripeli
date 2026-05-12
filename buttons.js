@@ -20,7 +20,8 @@ const gametext ={
     introduction:"Peli perustuu Taavetinsaaren metsäpolkuun, jossa pääset vastaamaan metsiin ja luontoon liittyviin kysymyksiin. \nPolussa on 10 erilaista pistettä, joissa voi olla useampi kysymys.",
     specification:"Ohjeet: \nJokaisella pisteellä saat kysymyksen, jossa on kolme tai neljä vaihtoehtoa. Jokaisesta oikeasta vastauksesta saat pisteitä, jotka lasketaan yhteen pelin loputtua. Joissain kysymyksissä ei ole vääriä vastuksia.",
     credits:"Tekijät:\nRoope Lehkonen: Työnjohtaja, kertojan ääni\nElla: Graafinen suunnittelu\nPeetu Pohjanharju: Äänittäjä\nSara Karhu: Käännös ja bugitestaus\nVänni: Bugitestaus\nLauri Julku: Koodaus",
-    endtext: "Kiitos että pelasitte, toivottavasti pelaatte uudestaan! Suorititte 10 tasoa",
+    endtext:"Kiitos että pelasitte, toivottavasti pelaatte uudestaan! Suorititte 10 tasoa",
+    endplace:"Tehty SASKY Mäntän Seudun Koulutuskeskuksella 2025-2026",
     returnbutton:"Palaa alkuruutuun"
   },
 
@@ -36,6 +37,7 @@ const gametext ={
     specification:"Instructions: \nOn every stage, you are presented with a question, where are three or four choices. On every correct answer, you get points, which are added together when the game ends. Some questions do not have incorrect answers.",
     credits:"Credits:\nRoope Lehkonen: Project lead, narrating\nElla: Graphical design\nPeetu Pohjanharju: Sound recording\nSara Karhu: Translations ja bugtesting\nVänni: Bugtesting\nLauri Julku: Programming",
     endtext:"Thank you for playing! We hope you will play again! You completed 10 stages",
+    endplace:"Made at SASKY Mänttä Regional Vocational Education Centre",
     returnbutton:"Return to the main menu"
   }
 
@@ -479,7 +481,7 @@ const liputContainer = document.querySelector('.Flags');
 suomiflag.style.display ='none';
 const etusivulogo = document.querySelector('.etusivulogo')
 
-//Kielien toiminnan logiika, painamalla tiettyä nappia vaihtaakielen
+//Kielien toiminnan logiika: painamalla tiettyä nappia vaihtaa kielen
 document.getElementById('suomiflag')?.addEventListener('click',() =>{
 gameState.language = 'fi';
 startButton.textContent = gametext[gameState.language].startButton;
@@ -505,7 +507,7 @@ function getImage(src, className) {
   return img;
 }
 const preloadimages = {};
-//aloitus nappi toiminta pois kunnes kaikki ladattuna
+//Aloitusnappi toiminta pois, kunnes kaikki ladattuna
 startButton.disabled = true;
 let loadedCount = 0;
 
