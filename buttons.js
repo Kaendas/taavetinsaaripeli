@@ -716,14 +716,14 @@ const endtext = document.createElement("div");
   const endplace = document.createElement("div");
   endplace.textContent =gametext[gameState.language].endplace;
   endplace.className = "endplace"
-
+document.body.appendChild(endplace)
   const credits = document.createElement("div");
   credits.textContent =gametext[gameState.language].credits;
   credits.className = "creditstext";
  
   endcontainer.appendChild(endtext);
   endcontainer.appendChild(credits);
-   endcontainer.appendChild(endplace)
+  
   endcontainer.appendChild(finalpoints)
   document.body.appendChild(endcontainer);
 

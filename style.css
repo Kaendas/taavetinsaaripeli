@@ -82,7 +82,7 @@ header {
   position: absolute;     
   bottom: 5vh; 
   width: 15vh;
-  height: 5vh;
+  height: auto;
   left: 5vh;
   padding: 15px 30px;
   max-width: 500px;
@@ -224,14 +224,15 @@ header {
   position: absolute;     
   bottom: 5vh; 
   width: 20vh;
-  height: 6vh;
+   height: auto;
   padding: 15px 30px;
   margin: 10px;
   border-radius: 8px;
   max-width: 500px;
   text-align: center;
-  font-size: 2.5vh;
+  font-size: 2vh;
   display: flex;
+  text-align: left;
   justify-content: center;
   align-items: center;
   z-index: 4;
@@ -414,7 +415,7 @@ padding: 0.1em 0.5em;
   padding: 0.1em 0.5em;
   white-space: pre-line;
 }
-.endplace,
+
 .endtext,
 .finalpoints,
 .creditstext {
@@ -426,5 +427,17 @@ padding: 0.1em 0.5em;
   padding: 0.1em 0.5em;
   border-radius: 1vh;
   font-size: 3vh;
+  white-space: pre-line;
+}
+.endplace{
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  text-align: left;
+  max-width: 900px;
+  Position: absolute;
+  display: flex;
+  bottom: 15vh;
+  font-size: 2vh;
+  z-index: 4;
   white-space: pre-line;
 }
