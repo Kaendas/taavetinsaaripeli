@@ -230,7 +230,7 @@ header {
   border-radius: 8px;
   max-width: 500px;
   text-align: center;
-  font-size: 3vh;
+  font-size: 2.5vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -414,6 +414,7 @@ padding: 0.1em 0.5em;
   padding: 0.1em 0.5em;
   white-space: pre-line;
 }
+.endplace,
 .endtext,
 .finalpoints,
 .creditstext {

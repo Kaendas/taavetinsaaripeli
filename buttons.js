@@ -713,12 +713,17 @@ const endtext = document.createElement("div");
   const finalpoints = document.createElement("div");
   finalpoints.className = "finalpoints";
   finalpoints.textContent = `${gametext[gameState.language].pistetexti}: ${gameState.points}`;
+  const endplace = document.createElement("div");
+  endplace.textContent =gametext[gameState.language].endplace;
+  endplace.className = "endplace"
 
   const credits = document.createElement("div");
   credits.textContent =gametext[gameState.language].credits;
   credits.className = "creditstext";
+ 
   endcontainer.appendChild(endtext);
   endcontainer.appendChild(credits);
+   endcontainer.appendChild(endplace)
   endcontainer.appendChild(finalpoints)
   document.body.appendChild(endcontainer);
 
