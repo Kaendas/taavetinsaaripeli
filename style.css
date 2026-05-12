@@ -203,15 +203,17 @@ header {
   align-items: center;
   z-index: 4;
 }
-.end-container {
+.endcontainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20vh;
+  gap: 1vh;
+   align-items: flex-start;
+  width: auto;
   position: fixed;
-  top: 2vh;
-  left: 50%;
-  transform: translateX(-50%);
+  max-width: 900px;
+  top: 25vh;
+  text-align: left;
   z-index: 100;
 }
 
@@ -424,9 +426,9 @@ padding: 0.1em 0.5em;
   display: block;
   margin: 0;
   width: auto;
-  padding: 0.1em 0.5em;
+ 
   border-radius: 1vh;
-  font-size: 3vh;
+  font-size: 2vh;
   white-space: pre-line;
 }
 .endplace{
@@ -436,7 +438,7 @@ padding: 0.1em 0.5em;
   max-width: 900px;
   Position: absolute;
   display: flex;
-  bottom: 16vh;
+  bottom: 25vh;
   font-size: 2vh;
   z-index: 4;
   white-space: pre-line;

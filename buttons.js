@@ -720,12 +720,12 @@ document.body.appendChild(endplace)
   const credits = document.createElement("div");
   credits.textContent =gametext[gameState.language].credits;
   credits.className = "creditstext";
- 
+  document.body.appendChild(endcontainer);
   endcontainer.appendChild(endtext);
   endcontainer.appendChild(credits);
   
   endcontainer.appendChild(finalpoints)
-  document.body.appendChild(endcontainer);
+ 
 
   const returnbutton = document.createElement("button");
   returnbutton.textContent = gametext[gameState.language].returnbutton;
