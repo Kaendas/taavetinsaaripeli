@@ -435,7 +435,7 @@ questionSets: [
   ],
   minimap:'kuvat/kartta_9.png',
   audioSrc:'Kertoja9.mp3',
-  audioSrc_en:'KertojaEng9',
+  audioSrc_en:'KertojaEng9.mp3',
   fontSize: "3vh"
   },
   {
