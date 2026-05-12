@@ -436,7 +436,7 @@ padding: 0.1em 0.5em;
   max-width: 900px;
   Position: absolute;
   display: flex;
-  bottom: 15vh;
+  bottom: 16vh;
   font-size: 2vh;
   z-index: 4;
   white-space: pre-line;
