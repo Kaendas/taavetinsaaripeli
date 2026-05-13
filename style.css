@@ -212,7 +212,7 @@ header {
   width: auto;
   position: fixed;
   max-width: 900px;
-  top: 25vh;
+  top: 15vh;
   text-align: left;
   z-index: 100;
 }
@@ -424,11 +424,10 @@ padding: 0.1em 0.5em;
   color: white;
   position: static; 
   display: block;
-  margin: 0;
+
   width: auto;
- 
-  border-radius: 1vh;
-  font-size: 2vh;
+  font-size: 3vh;
+  max-width: 900px;
   white-space: pre-line;
 }
 .endplace{
