@@ -716,16 +716,15 @@ const endtext = document.createElement("div");
   const endplace = document.createElement("div");
   endplace.textContent =gametext[gameState.language].endplace;
   endplace.className = "endplace"
-document.body.appendChild(endplace)
+
   const credits = document.createElement("div");
   credits.textContent =gametext[gameState.language].credits;
   credits.className = "creditstext";
   document.body.appendChild(endcontainer);
   endcontainer.appendChild(endtext);
   endcontainer.appendChild(credits);
-  
   endcontainer.appendChild(finalpoints)
- 
+  endcontainer.appendChild(endplace)
 
   const returnbutton = document.createElement("button");
   returnbutton.textContent = gametext[gameState.language].returnbutton;

@@ -366,12 +366,12 @@ header {
 }
 
 .endtext,
+.endplace,
 .finalpoints,
 .creditstext {
   color: white;
   position: static; 
   display: block;
-
   width: auto;
   font-size: 3vh;
   max-width: 900px;
@@ -379,13 +379,10 @@ header {
 }
 .endplace{
   color: rgb(255, 255, 255);
-  display: inline-block;
+  display: block;
   text-align: left;
   max-width: 900px;
-  Position: absolute;
-  display: flex;
-  bottom: 25vh;
+  position: static;
   font-size: 2vh;
-  z-index: 4;
   white-space: pre-line;
 }
