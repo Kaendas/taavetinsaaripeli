@@ -132,23 +132,7 @@ header {
   align-items: center;
   z-index: 4;
 }
-.sulje{ 
-  background-color: rgb(218,43, 31);
-  border: none;
-  color: white;
-  cursor: pointer;
-  position: absolute;     
-  bottom: 5vh; 
-  width: 20vh;
-  height: 6vh;
-  text-align: center;
-  font-size: 3vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 31;
-  padding: 15px 30px;
-}
+
 /* lippujen paikka ja väri */
 /* joo ei sitte mitää hajua miten nää on siel nurkassa varmaan pimeellä taijalla*/
 .flagbutton img {
@@ -185,15 +169,6 @@ header {
   right:10px  
 }
 
-
-.palkintoteksti {
-  color: white;
-  font-size: 5vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 4;
-}
 .pointsamoungt{
   color: white;
   font-size: 6vh;
@@ -355,27 +330,6 @@ header {
   animation: bounce 0.3s infinite alternate;
 } 
 
-.aktiiviteettitehty{
-  background-color: rgb(218,43, 31);
-  border: none;
-  color: white;
-  cursor: pointer;
-  position: absolute;     
-  bottom: 5vh; 
-  right: 2vh;
-  width: 20vh;
-  height: 6vh;
-  padding: 15px 30px;
-  border-radius: 8px;
-  margin: 10px;
-  max-width: 500px;
-  text-align: center;
-  font-size: 3vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 4;
-}
 .map{
   width:100%;
   height:100%;
@@ -384,13 +338,6 @@ header {
   object-position: center;
 
    }
-.palkintoteksti {
-display: block;
-margin: 10px;
-width: auto;
-font-size: 4vh;
-padding: 0.1em 0.5em;
-}
 
 .palkintoteksti{order: 1;}
 .pointscontainer {
