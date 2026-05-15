@@ -200,7 +200,7 @@ const storyStages = [
   ],
   minimap:'kuvat/kartta_2.png',
   audioSrc:'kertojatoinen.mp3',
-  audioSrc_en:'Kertoja2Eng.mp3',
+  audioSrc_en:'KertojaEng2.mp3',
   fontSize: "3vh" 
   },
  {
@@ -229,7 +229,7 @@ const storyStages = [
   ],
   minimap:'kuvat/kartta_3.png',
   audioSrc:'Kertoja3.mp3',
-  audioSrc_en:'Kertoja3Eng.mp3',
+  audioSrc_en:'KertojaEng3.mp3',
   fontSize: "2.5vh"
  },
  {
@@ -257,7 +257,7 @@ const storyStages = [
   ],
   minimap:'kuvat/kartta_4.png',
   audioSrc:'Kertoja4.mp3',
-  audioSrc_en:'Kertoja4Eng.mp3',
+  audioSrc_en:'KertojaEng4.mp3',
   fontSize: "3vh"
  },
  {
@@ -301,7 +301,7 @@ questionSets: [
   ],
   minimap:'kuvat/kartta_5.png',
   audioSrc:'Kertoja5.mp3',
-  audioSrc_en:'Kertoja5Eng.mp3',
+  audioSrc_en:'KertojaEng5.mp3',
   fontSize: "3vh"
  },
    {
