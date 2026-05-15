@@ -200,7 +200,7 @@ const storyStages = [
   ],
   minimap:'kuvat/kartta_2.png',
   audioSrc:'kertojatoinen.mp3',
-  audioSrc_en:'KertojaEng2.mp3',
+  audioSrc_en:'Kertoja2Eng.mp3',
   fontSize: "3vh" 
   },
  {
