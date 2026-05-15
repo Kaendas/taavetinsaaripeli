@@ -115,7 +115,7 @@ const storyStages = [
   questiontext_en: "What does the forest mean to you?",
    options_en:[
     "A. Relaxation and ease",
-    "B. Lorem ipsum dolor sit amet",
+    "B. Gifts of the forest",
     "C. Livelihood and prosperity",
     "D. The forest doesn’t mean anything to me",
   ],
