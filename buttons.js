@@ -101,7 +101,7 @@ const imagesToPreloadDesktop =[
 const storyStages = [
   {
   text_fi: "Metsä on tiheästi kasvavien puiden ja monimuotoisen elinympäristön muodostama kokonaisuus.\n \nSe on koti tuhansille eläin-, kasvi- ja sienilajeille sekä tärkeä hiilinielu ja -varasto.\n \nMonelle metsä tarjoaa työtä ja toimeentuloa, toisille rauhoittumisen paikan ja hyvinvoinnin lähteen.\n \nSuomalaisista puhutaan metsäkansana ja monilla on metsään oma, ainutlaatuinen suhteensa.",
-  text_en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  text_en: "A forest is a whole consisting of densely growing trees, and a diverse habitat.\n \nIt is home to thousands of animal, plant and fungal species, it is also an important carbon sink and storage.\n \nTo many, a forest provides work and livelihood, to others a place of relaxation and a source of well-being.\n \nFinnish people are considered the people of the forest, and many have a personal, unique bond with it.",
   questionSets:[
     {
   questiontext_fi: "Mitä metsä sinulle merkitsee?",
@@ -112,12 +112,12 @@ const storyStages = [
     "D. Metsä ei merkitse minulle mitään",
   ],
   oikein_fi:[0, 1, 2, 3 ],
-  questiontext_en: "Lorem ipsum",
+  questiontext_en: "What does the forest mean to you?",
    options_en:[
-    "A. Lorem ipsum dolor sit amet",
+    "A. Relaxation and ease",
     "B. Lorem ipsum dolor sit amet",
-    "C. Lorem ipsum dolor sit amet",
-    "D. Lorem ipsum dolor sit amet",
+    "C. Livelihood and prosperity",
+    "D. The forest doesn’t mean anything to me",
   ],
   oikein_en:[0, 1, 2, 3 ],
 }
@@ -129,7 +129,7 @@ const storyStages = [
   },
   {
   text_fi: "Metsä muuttuu vuodenaikojen mukana: keväällä se herää kosteiden tuoksujen ja lintujen laulun myötä, kesällä metsä kasvaa ja kuhisee elämää.\n \nSyksyllä metsä hehkuu keltaisen ja punaisen sävyissä ja tarjoaa herkullista satoaan, kun taas talvella metsä peittyy lumeen ja rauhoittuu lepoon.\n \nPohdi metsän ääniä, tuoksuja ja värejä: milloin metsä on sinusta kauneimmillaan?",
-  text_en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  text_en: "The forest changes according to the seasons: in spring, the forest wakes up to the moist earthy scents and the song of the birds, in summer the forest grows and is buzzing with life.\n \nIn autumn, the forest glows in yellow and red tones and offers its delicious harvest, while in winter the forest gets covered in snow and settles into rest.\n \nPonder the sounds of the forest, the scents and colors: when is the forest at its most beautiful?",
   questionSets: [
   {
   questiontext_fi: "Mikä ääni on varma kevään merkki?",
@@ -139,12 +139,11 @@ const storyStages = [
   "C. Lintujen laulu"
   ],
   oikein_fi: [2],
-  questiontext_en: "Lorem ipsum",
+  questiontext_en: "What sound is the clearest sign of summer?",
   options_en: [
-    "A. Lorem ipsum dolor sit amet",
-    "B. Lorem ipsum dolor sit amet",
-    "C. Lorem ipsum dolor sit amet",
-    "D. Lorem ipsum dolor sit amet",
+    "A. The creaking of the ice",
+    "B. The screech of the wind",
+    "C. The song of birds",
   ],
   oikein_en: [2],
   },
@@ -156,12 +155,11 @@ const storyStages = [
   "C. Kosteiden lehtien ja maan tuoksu"
   ],
   oikein_fi: [1],
-  questiontext_en: "Lorem ipsum",
+  questiontext_en: "What smell is the most typical in a summery forest?",
   options_en: [
-    "A. Lorem ipsum dolor sit amet1",
-    "B. Lorem ipsum dolor sit amet1",
-    "C. Lorem ipsum dolor sit amet1",
-    "D. Lorem ipsum dolor sit amet1",
+    "A. The smell of smoke",
+    "B. The smell of flowers and fresh vegetation",
+    "C. The smell of moist leaves and ground",
   ],
   oikein_en: [1],
   },
@@ -173,12 +171,11 @@ const storyStages = [
   "C. Harmaan ja valkoisen sävyinen"
   ],
   oikein_fi: [0],
-  questiontext_en: "Lorem ipsum",
+  questiontext_en: "What color is the forest in autumn?",
   options_en: [
-    "A. Lorem ipsum dolor sit amet2",
-    "B. Lorem ipsum dolor sit amet2",
-    "C. Lorem ipsum dolor sit amet2",
-    "D. Lorem ipsum dolor sit amet2",
+    "A. Tones of yellow and red",
+    "B. Tones of blue and violet",
+    "C. Tones of grey and white",
   ],
   oikein_en: [0],
   },
@@ -191,12 +188,12 @@ const storyStages = [
   "D. Se peittyy lumeen ja rauhoittuu"
   ],
   oikein_fi: [3],
-  questiontext_en: "Lorem ipsum",
+  questiontext_en: "How does the forest change in winter?",
   options_en: [
-    "A. Lorem ipsum dolor sit amet3",
-    "B. Lorem ipsum dolor sit amet3",
-    "C. Lorem ipsum dolor sit amet3",
-    "D. Lorem ipsum dolor sit amet3",
+    "A. It becomes greener",
+    "B. It buzzes with the noise of the animals",
+    "C. It fills up with flowers",
+    "D. It gets covered in snow and rests",
   ],
   oikein_en: [3],
   }
@@ -208,7 +205,7 @@ const storyStages = [
   },
  {
   text_fi: "Metsä rauhoittaa ja antaa uutta voimaa. Useat tutkimukset ovat osoittaneet, että jo pienikin metsässä vietetty aika saa sydämen sykkeen tasaantumaan ja mielen rauhoittumaan.\n \nMetsän hyvinvointivaikutukset voi saavuttaa usein tahdosta riippumatta, kun vain antautuu aistien vietäväksi. Luonnon kauneus, sen kiinnostavuus ja turvallisuus sekä puhdas ilmanlaatu ja hiljaisuus vaikuttavat sieltä saatuihin hyötyihin.\n \nMoni löytää metsästä oman lempipaikkansa: hyvän marjamättään, riistaseudun tai vaikkapa leposijan metsälammen rannalta.\n \nMikä on sinun lempipaikkasi metsässä? ",
-  text_en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  text_en: "The forest calms us and gives us new strength. Multiple studies have shown that even a brief time spent in a forest makes the heartbeat stabilize and calms the mind.\n \nThe forest’s health benefits can be achieved regardless of will when surrendering with your senses. The beauty of the forest, its interest and safety as well as the clean air and silence, contribute to its benefits.\n \nMany people find their own favorite place in a forest: a good berry patch, a good game hunting area, or even a resting spot on the shore of a forest pond.\n \nWhat is your favorite place in the forest?",
   questionSets:[
 {
   questiontext_fi: "Mitkä metsän ominaisuudet tukevat hyvinvointia?",
@@ -220,12 +217,12 @@ const storyStages = [
     
   ],
   oikein_fi:[1],
-  questiontext_en: "Lorem ipsum",
+  questiontext_en: "What qualities of the forest support well-being?",
   options_en: [
-    "A. Lorem ipsum dolor sit amet",
-    "B. Lorem ipsum dolor sit amet",
-    "C. Lorem ipsum dolor sit amet",
-    "D. Lorem ipsum dolor sit amet",
+    "A. Bright lights and music",
+    "B. Silence, clean air and beauty",
+    "C. Busy traffic",
+    "D. The city noise",
   ],
   oikein_en: [1],
 }
@@ -237,7 +234,7 @@ const storyStages = [
  },
  {
   text_fi: "Asetu selin makuulle kalliolle tai sammalmatolle, katse kohti taivasta. Hengitä syvään ja anna hengityksen vähitellen tasaantua. Tunne maa koko kehosi alla.\n \nVoit ensin katsella mitä näet, sitten sulkea silmät ja kuunnella: veden ääntä, lintujen laulua, tuulen huminaa puissa. Miltä kädet ja iho tuntuvat – lämpimältä vai viileältä? Tyhjennä mieli ajatuksista, voit vaikka torkahtaa.\n \nHerättyäsi aisti olotilaasi: auttoiko luonto sinua rauhoittumaan?",
-  text_en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  text_en: "Lie down on a rock or the moss mat, eyes towards the sky. Breathe deeply and let your breathing slowly steady. Feel the ground beneath your whole body.\n \nYou can first watch what you see, then close your eyes and listen: the noises of the water, song of the birds, the wind humming in the trees. What do your hands and skin feel – warm or cool? Empty your mind of thoughts, you could doze off.\n \nWhen you wake up, notice how you feel: did nature aid your relaxation?",
   questionSets: [
   {
   questiontext_fi: "Mikä seuraavista EI kuulu rentoutusharjoitukseen?",
@@ -248,12 +245,12 @@ const storyStages = [
   "D. Mielen tyhjentäminen ja torkkuminen"
   ],
   oikein_fi: [2],
-  questiontext_en: "Lorem ipsum",
+  questiontext_en: "Which of the following does NOT belong in relaxation exercises?",
   options_en: [
-    "A. Lorem ipsum dolor sit amet",
-    "B. Lorem ipsum dolor sit amet",
-    "C. Lorem ipsum dolor sit amet",
-    "D. Lorem ipsum dolor sit amet",
+    "A. The steadying of breathing and lying against the ground",
+    "B. The closing of one’s eyes and listening to nature",
+    "C. The scrolling of one’s phone and listening to music with headphones",
+    "D. The emptying of the mind and napping",
   ],
   oikein_en: [2],
 }
@@ -265,7 +262,7 @@ const storyStages = [
  },
  {
   text_fi: "Metsällä on vahva asema suomalaisessa kulttuurissa ja taiteessa.\n \nKultakauden mestarit, kuten Akseli Gallen-Kallela, löysivät inspiraation erämaasta ja sen kauneudesta. Heidän teoksissaan korostuu luonnon monimuotoisuus ja rauha, mutta myös huoli metsien säilymisestä.\n \nNykytaiteessa metsä nähdään edelleen merkityksellisenä, se voi olla pakopaikka arjesta, symboli suomalaisuudesta tai kannanotto ympäristön tilaan.",
-  text_en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  text_en: "The forest has a major role in Finnish culture and art.\n \nThe masters of the golden age, such as Akseli Gallen-Kallela, found inspiration from wilderness and from its beauty. In their pieces, the diversity of nature and peace can be seen but also concern for forest conservation.\n \nIn contemporary art, the forest is still seen as meaningful, it can be retreat from everyday life, a symbol of Finnishness or statement for the state of the forest.",
 questionSets: [
 {
   questiontext_fi: "Miksi metsien säilyminen on ollut huolenaihe taiteessa?",
@@ -275,12 +272,11 @@ questionSets: [
   "C. Koska metsät eivät liity kulttuuriin"
   ],
   oikein_fi: [1],
-  questiontext_en: "Lorem ipsum",
+  questiontext_en: "Why has forest conservation been a topic of concern in art?",
   options_en: [
-    "A. Lorem ipsum dolor sit amet",
-    "B. Lorem ipsum dolor sit amet",
-    "C. Lorem ipsum dolor sit amet",
-    "D. Lorem ipsum dolor sit amet",
+    "A. Because forests prevent building",
+    "B. Because forests have been endangered and their value is to be preserved",
+    "C. Because forests aren’t related to culture",
   ],
   oikein_en: [1],
   },
@@ -293,12 +289,12 @@ questionSets: [
   "D. Rakennetun kaupunkiympäristön"
   ],   
   oikein_fi: [0, 1, 2, 3],
-  questiontext_en: "Lorem ipsum",
+  questiontext_en: "What kind of landscape would you like to leave for future generations?",
   options_en: [
-    "A. Lorem ipsum dolor sit amet1",
-    "B. Lorem ipsum dolor sit amet1",
-    "C. Lorem ipsum dolor sit amet1",
-    "D. Lorem ipsum dolor sit amet1",
+    "A. The diversity of nature and a peaceful forest",
+    "B. An industrial estate",
+    "C. A deserted field landscape",
+    "D. A built urban environment",
   ],
   oikein_en: [0, 1, 2, 3],
   }
