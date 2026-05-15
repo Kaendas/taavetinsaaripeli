@@ -124,7 +124,7 @@ const storyStages = [
   ],
   minimap:'kuvat/kartta_1.png',
   audioSrc:'Kertoja1.mp3',
-  audioSrc_en:'puhu1en.mp3',
+  audioSrc_en:'KertojaEng1.mp3',
   fontSize: "3vh"
   },
   {
@@ -200,7 +200,7 @@ const storyStages = [
   ],
   minimap:'kuvat/kartta_2.png',
   audioSrc:'kertojatoinen.mp3',
-  audioSrc_en:'puhu1.mp3',
+  audioSrc_en:'KertojaEng2.mp3',
   fontSize: "3vh" 
   },
  {
@@ -229,7 +229,7 @@ const storyStages = [
   ],
   minimap:'kuvat/kartta_3.png',
   audioSrc:'Kertoja3.mp3',
-  audioSrc_en:'puhu1.mp3',
+  audioSrc_en:'Kertoja3Eng.mp3',
   fontSize: "2.5vh"
  },
  {
@@ -257,12 +257,12 @@ const storyStages = [
   ],
   minimap:'kuvat/kartta_4.png',
   audioSrc:'Kertoja4.mp3',
-  audioSrc_en:'puhu1.mp3',
+  audioSrc_en:'Kertoja4Eng.mp3',
   fontSize: "3vh"
  },
  {
   text_fi: "Metsällä on vahva asema suomalaisessa kulttuurissa ja taiteessa.\n \nKultakauden mestarit, kuten Akseli Gallen-Kallela, löysivät inspiraation erämaasta ja sen kauneudesta. Heidän teoksissaan korostuu luonnon monimuotoisuus ja rauha, mutta myös huoli metsien säilymisestä.\n \nNykytaiteessa metsä nähdään edelleen merkityksellisenä, se voi olla pakopaikka arjesta, symboli suomalaisuudesta tai kannanotto ympäristön tilaan.",
-  text_en: "The forest has a major role in Finnish culture and art.\n \nThe masters of the golden age, such as Akseli Gallen-Kallela, found inspiration from wilderness and from its beauty. In their pieces, the diversity of nature and peace can be seen but also concern for forest conservation.\n \nIn contemporary art, the forest is still seen as meaningful, it can be retreat from everyday life, a symbol of Finnishness or statement for the state of the forest.",
+  text_en: "The forest has a major role in Finnish culture and art.\n \nThe masters of the golden age, such as Akseli Gallen-Kallela, found inspiration from the wilderness and from its beauty. In their pieces, the diversity of nature and peace can be seen but also concern for forest conservation.\n \nIn contemporary art, the forest is still seen as meaningful, it can be retreat from everyday life, a symbol of Finnishness or statement for the state of the forest.",
 questionSets: [
 {
   questiontext_fi: "Miksi metsien säilyminen on ollut huolenaihe taiteessa?",
@@ -301,7 +301,7 @@ questionSets: [
   ],
   minimap:'kuvat/kartta_5.png',
   audioSrc:'Kertoja5.mp3',
-  audioSrc_en:'puhu1.mp3',
+  audioSrc_en:'Kertoja5Eng.mp3',
   fontSize: "3vh"
  },
    {
