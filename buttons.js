@@ -769,7 +769,7 @@ startButton.addEventListener('click', () => {
     if (introductionreturn) introductionreturn.remove();
      
     showStage(0);
-    const backgroundaudio = new Audio('Luontoäänet/Linnunlauluja.mp4')
+    const backgroundaudio = new Audio('Luontoäänet/LinnunlaulujaTausta.wav')
     backgroundaudio.volume = 0.2;
     backgroundaudio.loop =true;
     backgroundaudio.play();

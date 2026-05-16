@@ -341,6 +341,7 @@ header {
 
 .palkintoteksti{order: 1;}
 .pointscontainer {
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -353,6 +354,7 @@ header {
   z-index: 3;
 }
 .tarinateksti {
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
   color: rgb(255, 255, 255);
   display: inline-block;
   text-align: left;
