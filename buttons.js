@@ -123,8 +123,8 @@ const storyStages = [
 }
   ],
   minimap:'kuvat/kartta_1.png',
-  audioSrc:'Kertoja1.mp3',
-  audioSrc_en:'KertojaEng1.mp3',
+  audioSrc:'kertojaäänet/Kertoja1.mp3',
+  audioSrc_en:'kertojaäänet/KertojaEng1.mp3',
   fontSize: "3vh"
   },
   {
@@ -199,8 +199,8 @@ const storyStages = [
   }
   ],
   minimap:'kuvat/kartta_2.png',
-  audioSrc:'kertojatoinen.mp3',
-  audioSrc_en:'KertojaEng2.mp3',
+  audioSrc:'kertojaäänet/kertojatoinen.mp3',
+  audioSrc_en:'kertojaäänet/KertojaEng2.mp3',
   fontSize: "3vh" 
   },
  {
@@ -228,8 +228,8 @@ const storyStages = [
 }
   ],
   minimap:'kuvat/kartta_3.png',
-  audioSrc:'Kertoja3.mp3',
-  audioSrc_en:'KertojaEng3.mp3',
+  audioSrc:'kertojaäänet/Kertoja3.mp3',
+  audioSrc_en:'kertojaäänet/KertojaEng3.mp3',
   fontSize: "2.5vh"
  },
  {
@@ -256,8 +256,8 @@ const storyStages = [
 }
   ],
   minimap:'kuvat/kartta_4.png',
-  audioSrc:'Kertoja4.mp3',
-  audioSrc_en:'KertojaEng4.mp3',
+  audioSrc:'kertojaäänet/Kertoja4.mp3',
+  audioSrc_en:'kertojaäänet/KertojaEng4.mp3',
   fontSize: "3vh"
  },
  {
@@ -300,8 +300,8 @@ questionSets: [
   }
   ],
   minimap:'kuvat/kartta_5.png',
-  audioSrc:'Kertoja5.mp3',
-  audioSrc_en:'KertojaEng5.mp3',
+  audioSrc:'kertojaäänet/Kertoja5.mp3',
+  audioSrc_en:'kertojaäänet/KertojaEng5.mp3',
   fontSize: "3vh"
  },
    {
@@ -328,8 +328,8 @@ questionSets: [
 }
   ],
   minimap:'kuvat/kartta_6.png',
-  audioSrc:'Kertojakuusi.mp3',
-  audioSrc_en:'KertojaEng6.mp3',
+  audioSrc:'kertojaäänet/Kertojakuusi.mp3',
+  audioSrc_en:'kertojaäänet/KertojaEng6.mp3',
   fontSize: "3vh"
   },
   {
@@ -374,8 +374,8 @@ questionSets: [
 }
   ],
   minimap:'kuvat/kartta_7.png',
-  audioSrc:'Kertoja7.mp3',
-  audioSrc_en:'KertojaEng7.mp3',
+  audioSrc:'kertojaäänet/Kertoja7.mp3',
+  audioSrc_en:'kertojaäänet/KertojaEng7.mp3',
   fontSize: "2.5vh"
   },
   {
@@ -403,8 +403,8 @@ questionSets: [
 
   ],
   minimap:'kuvat/kartta_8.png',
-  audioSrc:'Kertoja8.mp3',
-  audioSrc_en:'KertojaEng8.mp3',
+  audioSrc:'kertojaäänet/Kertoja8.mp3',
+  audioSrc_en:'kertojaäänet/KertojaEng8.mp3',
   fontSize: "3vh"
   },
   {
@@ -432,8 +432,8 @@ questionSets: [
 
   ],
   minimap:'kuvat/kartta_9.png',
-  audioSrc:'Kertoja9.mp3',
-  audioSrc_en:'KertojaEng9.mp3',
+  audioSrc:'kertojaäänet/Kertoja9.mp3',
+  audioSrc_en:'kertojaäänet/KertojaEng9.mp3',
   fontSize: "3vh"
   },
   {
@@ -460,8 +460,8 @@ questionSets: [
 }
   ],
   minimap:'kuvat/kartta_10.png',
-  audioSrc:'Kertoja10.mp3',
-  audioSrc_en:'KertojaEng10.mp3',
+  audioSrc:'kertojaäänet/Kertoja10.mp3',
+  audioSrc_en:'kertojaäänet/KertojaEng10.mp3',
   fontSize: "3vh"
   }
 ];
