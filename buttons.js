@@ -409,7 +409,7 @@ questionSets: [
   },
   {
   text_fi: "Metsä on ollut aina satujen ja mielikuvituksen lähde sekä loputon leikkipaikka sammalmättäineen ja kannonkoloineen.\n \nTarinoissa siellä asuvat metsän eläimet, tontut ja keijut, ja myös puihin liittyy monia uskomuksia ja myyttejä, jotka ovat siirtyneet sukupolvelta toiselle. Kun katsot tarkasti, voit kuvitella juurien lomassa piilopaikkoja peikoille ja keijuille. Metsä on täynnä salaisuuksia.\n \nNäetkö ympärilläsi metsätontun tai keijun kotikolon?",
-  text_en: "A forest has always been a source of fairy tales and imagination, as well as an endless playground, thanks to its mossy mounds and stump holes.\n \nIn fairy tales, forests are inhabited by animals, elves and fairies, and trees are the subject to many myths and beliefs, which have been passed down from generation to generation. When you look closely, you can imagine hiding places for gnomes and fairies among the roots. The forest is full of secrets.\n \nDo you see a forest elf or the hiding place of a fairy?",
+  text_en: "A forest has always been a source of fairy tales and imagination, as well as an endless playground, thanks to its mossy mounds and stump holes.\n \nIn fairy tales, forests are inhabited by animals, elves and fairies, and trees are the subject of many myths and beliefs, which have been passed down from generation to generation. When you look closely, you can imagine hiding places for gnomes and fairies among the roots. The forest is full of secrets.\n \nDo you see a forest elf or the hiding place of a fairy?",
     questionSets:[
 {
   questiontext_fi: "Minkälaisia olentoja suomalaisessa kansanperinteessä on uskottu asuvan metsässä?",
