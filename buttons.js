@@ -33,8 +33,8 @@ const gametext ={
     pistetexti:"Points",
     suoritettu:"Completed",
     introductionbutton:"Continue",
-    introduction:"The game is based on the forest path at Taavetinsaari, where you get to answer to questions related to forests and nature.",
-    specification:"Instructions: \nOn every stage, you are presented with a question, where are three or four choices. On every correct answer, you get points, which are added together when the game ends. Some questions do not have incorrect answers.",
+    introduction:"The game is based on the forest path at Taavetinsaari, where you get to answer questions related to forests and nature.",
+    specification:"Instructions: \nOn every stage, you are presented with a question for which there are three or four choices. On every correct answer, you get points, which are added together when the game ends. Some questions do not have incorrect answers.",
     credits:"Credits:\nRoope Lehkonen: Project lead, narrating\nElla: Graphical design\nPeetu Pohjanharju: Sound recording\nSara Karhu: Translations ja bugtesting\nVänni: Bugtesting\nLauri Julku: Programming",
     endtext:"Thank you for playing! We hope you will play again! You completed 10 stages",
     endplace:"Made at SASKY Mänttä Regional Vocational Education Centre",
@@ -334,7 +334,7 @@ questionSets: [
   },
   {
   text_fi: "Metsät ovat olleet Suomen vaurauden ja yhteiskunnan perusta.\n \nMäntän teollistuminen alkoi Serlachiuksen perustamasta tehtaasta vuonna 1868, ja paikkakunnasta tuli merkittävä talouden ja taiteen keskus. Tehtaan tunnetuin tuote on toiletti- eli vessapaperi, jonka Serlachius toi markkinoille 1900-luvun alussa.\n \nSerla on edelleen arjen välttämättömyys. Metsäteollisuus on muuttanut maisemaa, mutta tietoisuus ja kestävät puuteollisuuden ratkaisut kehittyvät jatkuvasti.\n \nMillainen rooli metsällä on sinun mielestäsi suomalaisuudessa?",
-  text_en: "Forests have always been the basis of Finland’s prosperity and society.\n \nThe industrialization of Mänttä started with a factory founded by Serlachius in the year 1868, and the town became a significant center of economy and art. The factory’s most well-known product is toilet paper, which Serlachius introduced to the market at the beginning of the 1900s.\n \nSerla to this day is a necessity. The forest industry has changed the landscape, but the awareness and sustainable solutions of the wood industry are constantly changing.\n \nWhat kind of a role do you think a forest has in Finnishness?",
+  text_en: "Forests have always been the basis of Finland’s prosperity and society.\n \nThe industrialization of Mänttä started with a factory founded by Serlachius in the year 1868, and the town became a significant center of economy and art. The factory’s most well-known product is toilet paper, which Serlachius introduced to the market at the beginning of the 20th century.\n \nSerla to this day is a necessity. The forest industry has changed the landscape, but the awareness and sustainable solutions of the wood industry are constantly changing.\n \nWhat kind of a role do you think a forest has in Finnishness?",
     questionSets:[
 {
   questiontext_fi: "Miksi metsät ovat olleet Suomen vaurauden perusta?",
@@ -347,7 +347,7 @@ questionSets: [
   oikein_fi:[0],
   questiontext_en: "Why have forests been the basis of Finland’s prosperity?",
   options_en: [
-    "A. They provide raw ingredients to industry",
+    "A. They provide raw ingredients to the industry",
     "B. They are the attraction to tourism",
     "C. They are the only source of energy",
     "D. They produce metal",
@@ -394,7 +394,7 @@ questionSets: [
   questiontext_en: "Why the seed should be put in a glass of water first?",
   options_en: [
     "A. It looks pretty in a vase",
-    "B. It helps the seed to sprout before planting in the ground",
+    "B. It helps the seed to sprout before planting it to the ground",
     "C. It prevents the seed from drying out too much",
     "D. It makes the seed into a decoration",
   ],
@@ -409,7 +409,7 @@ questionSets: [
   },
   {
   text_fi: "Metsä on ollut aina satujen ja mielikuvituksen lähde sekä loputon leikkipaikka sammalmättäineen ja kannonkoloineen.\n \nTarinoissa siellä asuvat metsän eläimet, tontut ja keijut, ja myös puihin liittyy monia uskomuksia ja myyttejä, jotka ovat siirtyneet sukupolvelta toiselle. Kun katsot tarkasti, voit kuvitella juurien lomassa piilopaikkoja peikoille ja keijuille. Metsä on täynnä salaisuuksia.\n \nNäetkö ympärilläsi metsätontun tai keijun kotikolon?",
-  text_en: "A forest has always been a source of fairy tales and imagination, as well as an endless playground, thanks to its mossy mounds and stump holes.\n \nIn fairy tales, forests are inhabitated by animals, elves and fairies, and trees are a subject to many myths and beliefs, which have been passed on from generation to generation. When you look closely, you can imagine hideaways for gnomes and fairies among the roots. The forest is full of secrets.\n \nDo you see a forest elf or the hideaway of a fairy?",
+  text_en: "A forest has always been a source of fairy tales and imagination, as well as an endless playground, thanks to its mossy mounds and stump holes.\n \nIn fairy tales, forests are inhabited by animals, elves and fairies, and trees are the subject to many myths and beliefs, which have been passed down from generation to generation. When you look closely, you can imagine hiding places for gnomes and fairies among the roots. The forest is full of secrets.\n \nDo you see a forest elf or the hiding place of a fairy?",
     questionSets:[
 {
   questiontext_fi: "Minkälaisia olentoja suomalaisessa kansanperinteessä on uskottu asuvan metsässä?",
@@ -423,8 +423,8 @@ questionSets: [
   questiontext_en: "What kinds of creatures are believed to live in forests according to Finnish folklore?",
   options_en: [
     "A. Elves, fairies and trolls",
-    "B. Dragons and Seahorses",
-    "C. Ghosts and Vampires",
+    "B. Dragons and seahorses",
+    "C. Ghosts and vampires",
     "D. Only animals",
   ],
   oikein_en: [0],
