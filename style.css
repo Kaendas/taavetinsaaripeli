@@ -33,6 +33,7 @@ position: absolute;
 }
 /* aloitus textin keskitys  */
 header {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
   color: rgb(255, 255, 255);
   border-radius: 10px;
   padding: 0.1em 0.5em;
